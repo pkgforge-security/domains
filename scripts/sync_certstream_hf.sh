@@ -192,7 +192,9 @@ if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
    done
 else
   echo -e "\n[-] FATAL: Failed to Set Dates\n"
-  echo -e "[+] Tags: ${I_DATES[*]}"
+  echo -e "[+] Date (Pre Filter): ${I_DATES_TMP[*]}"
+  echo -e "[+] Date (Post Filter): ${I_DATES[*]}"
+  echo -e "[+] Date (Exists): ${HF_EXISTS[*]}"
  exit 1
 fi
 #-------------------------------------------------------#
