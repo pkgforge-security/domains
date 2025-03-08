@@ -95,7 +95,7 @@ jobs:
         continue-on-error: true
 
       - name: Attest Build Provenance
-        uses: actions/attest-build-provenance@v2.2.2
+        uses: actions/attest-build-provenance@v2.2.3
         with:
           subject-name: "${{ matrix.source }}-${{ matrix.dest }}"
           subject-path: |
