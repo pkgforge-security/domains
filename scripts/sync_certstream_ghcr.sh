@@ -146,30 +146,31 @@ if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
       unset GHCRPKG_TAG INPUT_TMP NO_GZ SRC_URL
       INPUT_TMP="$(echo "${I_D}" | tr -d '[:space:]')"
       if [[ "${INPUT_TMP}" == "$(date --utc -d "-1 day" '+%Y-%m-%d' | tr -d '[:space:]')" ]]; then
-        NO_GZ="TRUE"
-        SRC_URL="${SRC_URL_TMP}/${INPUT_TMP}.txt"
+        #NO_GZ="TRUE"
+        #SRC_URL="${SRC_URL_TMP}/${INPUT_TMP}.txt"
+        SRC_URL="${SRC_URL_TMP}/${INPUT_TMP}.txt.gz"
       else
         SRC_URL="${SRC_URL_TMP}/${INPUT_TMP}.txt.gz"
       fi
      #Get
       for i in {1..2}; do
-        if [[ "${NO_GZ}" == "TRUE" ]]; then
-          curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
-          if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 1000000 ]]; then
-             du -sh "${TMPDIR}/${I_D}.txt"
-             #Copy
-               rm -rf "${ORAS_LOCAL}/DATA/certstream" 2>/dev/null
-               mkdir -p "${ORAS_LOCAL}/DATA/certstream"
-               cp -fv "${TMPDIR}/${I_D}.txt" "${ORAS_LOCAL}/DATA/certstream/${I_D}.txt"
-             #Upload
-               sync_to_ghcr
-             #Break
-               pushd "${TMPDIR}" &>/dev/null ; break
-          else
-             echo "Retrying... ${i}/2"
-            sleep 2
-          fi
-        else
+        #if [[ "${NO_GZ}" == "TRUE" ]]; then
+        #  curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
+        #  if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 1000000 ]]; then
+        #     du -sh "${TMPDIR}/${I_D}.txt"
+        #     #Copy
+        #       rm -rf "${ORAS_LOCAL}/DATA/certstream" 2>/dev/null
+        #       mkdir -p "${ORAS_LOCAL}/DATA/certstream"
+        #       cp -fv "${TMPDIR}/${I_D}.txt" "${ORAS_LOCAL}/DATA/certstream/${I_D}.txt"
+        #     #Upload
+        #       sync_to_ghcr
+        #     #Break
+        #       pushd "${TMPDIR}" &>/dev/null ; break
+        #  else
+        #     echo "Retrying... ${i}/2"
+        #    sleep 2
+        #  fi
+        #else
           curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt.gz"
           if [[ -s "${TMPDIR}/${I_D}.txt.gz" && $(stat -c%s "${TMPDIR}/${I_D}.txt.gz") -gt 1000000 ]]; then
              du -sh "${TMPDIR}/${I_D}.txt.gz"
@@ -195,7 +196,7 @@ if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
              echo "Retrying... ${i}/2"
             sleep 2
           fi
-        fi
+        #fi
       done
    done
 else
