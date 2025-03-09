@@ -178,23 +178,23 @@ if [[ -d "${SRC_REPO}" ]] && [[ "$(du -s "${SRC_REPO}" | cut -f1 | tr -d '[:spac
      sort --version-sort --unique "${TMPDIR}/DATA/cloud.txt" --output "${HF_REPO_LOCAL}/DATA/trickest/cloud.txt"
     #Archive
      if [[ -s "${HF_REPO_LOCAL}/DATA/trickest/cloud.txt" && $(stat -c%s "${HF_REPO_LOCAL}/DATA/trickest/cloud.txt") -gt 1000000 ]]; then
-        mv -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.txt" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.txt"
+        cp -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.txt" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.txt"
      else
         echo -e "\n[X] FATAL: Failed to Parse Data\n"
         du -sh "${HF_REPO_LOCAL}/DATA/trickest/cloud.txt"
        exit 1
      fi
      if [[ -s "${HF_REPO_LOCAL}/DATA/trickest/cloud.csv" && $(stat -c%s "${HF_REPO_LOCAL}/DATA/trickest/cloud.csv") -gt 1000000 ]]; then
-       mv -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.csv" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.csv"
-       qsv to sqlite "${HF_REPO_LOCAL}/DATA/trickest/cloud.db" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.csv"
-       mv -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.db" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.db"
+       cp -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.csv" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.csv"
+       qsv to sqlite "${HF_REPO_LOCAL}/DATA/trickest/cloud.db" "${HF_REPO_LOCAL}/DATA/trickest/cloud.csv"
+       cp -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.db" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.db"
      else
         echo -e "\n[X] FATAL: Failed to Parse CSV Data\n"
         du -sh "${HF_REPO_LOCAL}/DATA/trickest/cloud.csv"
      fi
      if [[ -s "${HF_REPO_LOCAL}/DATA/trickest/cloud.json" && $(stat -c%s "${HF_REPO_LOCAL}/DATA/trickest/cloud.json") -gt 1000000 ]]; then
-       mv -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.json" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.json"
-       mv -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.jsonl" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.jsonl"
+       cp -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.json" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.json"
+       cp -fv "${HF_REPO_LOCAL}/DATA/trickest/cloud.jsonl" "${HF_REPO_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.jsonl"
      else
         echo -e "\n[X] FATAL: Failed to Parse JSON Data\n"
         du -sh "${HF_REPO_LOCAL}/DATA/trickest/cloud.json"
