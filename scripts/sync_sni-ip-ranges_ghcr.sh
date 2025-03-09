@@ -37,7 +37,7 @@ fi
 sync_to_ghcr()
 {
  if [[ -d "${ORAS_LOCAL}/DATA/sni-ip-ranges" ]] && \
-  [[ "$(du -s "${ORAS_LOCAL}/DATA/sni-ip-ranges" | cut -f1 | tr -cd '0-9' | tr -d '[:space:]')" -gt 100000 ]]; then
+  [[ "$(du -s "${ORAS_LOCAL}/DATA/sni-ip-ranges" | cut -f1 | tr -cd '0-9' | tr -d '[:space:]')" -gt 1000 ]]; then
   pushd "${ORAS_LOCAL}" &>/dev/null &&\
    unset GHCRPKG_TAG
    GHCRPKG_TAG="$(echo "${I_D}-${MODTIME}" | sed 's/[^a-zA-Z0-9._-]/_/g; s/_*$//')"

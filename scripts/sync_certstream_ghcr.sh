@@ -118,7 +118,7 @@ pushd "${TMPDIR}" &>/dev/null && export DOMAIN_SRC="certstream"
 #CS data for the current day is available tomorrow @ 00:15 UTC
 #mapfile -t "I_DATES" < <(for i in $(seq 0 $((10#$(date --utc +%d) - 1))); do date --utc -d "-${i} days" +%Y-%m-%d; done)
 I_DATES_TMP=() ; mapfile -t "I_DATES_TMP" < <(for i in $(seq 1 $((10#$(date --utc +%d) - 0))); do date --utc -d "-${i} days" +%Y-%m-%d; done | sort --version-sort --unique)
-GHCR_EXISTS=() ; mapfile -t "GHCR_EXISTS" < <(oras repo tags "${GHCRPKG_URL}" 2>/dev/null | sort --version-sort --unique)
+GHCR_EXISTS=() ; mapfile -t "GHCR_EXISTS" < <(oras repo tags "${GHCRPKG_URL}" 2>/dev/null | sort --version-sort --unique | sed 'N;$!P;$!D;$d' | sort -u)
 I_DATES=() ; mapfile -t I_DATES < <(printf "%s\n" "${I_DATES_TMP[@]}" | grep -Fxv -f <(printf "%s\n" "${GHCR_EXISTS[@]}" | grep -oP '^\d{4}-\d{2}-\d{2}'))
 echo -e "\n[+] Data: ${I_DATES[*]}\n"
 if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then

@@ -49,7 +49,7 @@ popd &>/dev/null
 sync_to_hf() 
 {
  if [[ -d "${HF_REPO_LOCAL}/DATA/sni-ip-ranges" ]] && \
-  [[ "$(du -s "${HF_REPO_LOCAL}/DATA/sni-ip-ranges" | cut -f1 | tr -cd '0-9' | tr -d '[:space:]')" -gt 100000 ]]; then
+  [[ "$(du -s "${HF_REPO_LOCAL}/DATA/sni-ip-ranges" | cut -f1 | tr -cd '0-9' | tr -d '[:space:]')" -gt 1000 ]]; then
   pushd "${HF_REPO_LOCAL}" &>/dev/null &&\
     git remote -v
     COMMIT_MSG="[+] sni-ip-ranges [${I_D}] (${MODTIME})"
