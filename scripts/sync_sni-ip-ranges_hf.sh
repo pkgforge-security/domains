@@ -133,7 +133,7 @@ if [[ -n "${I_SRCS[*]}" && "${#I_SRCS[@]}" -ge 1 ]]; then
      #Get
       for i in {1..2}; do
         curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -kfSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
-        if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 1000000 ]]; then
+        if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 10000 ]]; then
            du -sh "${TMPDIR}/${I_D}.txt"
            #Get modtime
             MODTIME="$(curl -A "${USER_AGENT}" -qfksSL "http://kaeferjaeger.gay/?dir=sni-ip-ranges/${I_D}" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}[[:space:]]+[0-9]{2}:[0-9]{2}:[0-9]{2}' | sed -E 's/[[:space:]]+/_/; s/:/-/g' | tr -d '[:space:]')"
@@ -146,6 +146,7 @@ if [[ -n "${I_SRCS[*]}" && "${#I_SRCS[@]}" -ge 1 ]]; then
              rm -rf "${HF_REPO_LOCAL}/DATA/sni-ip-ranges" 2>/dev/null
              mkdir -p "${HF_REPO_LOCAL}/DATA/sni-ip-ranges"
              cp -fv "${TMPDIR}/${I_D}.txt" "${HF_REPO_LOCAL}/DATA/sni-ip-ranges/${I_D}.txt"
+             cp -fv "${TMPDIR}/${I_D}.txt" "${HF_REPO_LOCAL}/DATA/sni-ip-ranges/${I_D}-${MODTIME}.txt"
            #Upload
              sync_to_hf
            #Break

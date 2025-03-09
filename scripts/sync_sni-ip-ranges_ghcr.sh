@@ -75,7 +75,7 @@ sync_to_ghcr()
         ghcr_push+=(--annotation "org.opencontainers.image.url=${SRC_URL}")
         ghcr_push+=(--annotation "org.opencontainers.image.vendor=pkgforge-security")
         ghcr_push+=(--annotation "org.opencontainers.image.version=${I_D}")
-        ghcr_push+=("${GHCRPKG_URL}:${GHCRPKG_TAG}")
+        ghcr_push+=("${GHCRPKG_URL}:${GHCRPKG_TAG},${I_D}")
         pushd "${ORAS_LOCAL}/DATA/sni-ip-ranges" &>/dev/null
         oras_files=() ; mapfile -t oras_files < <(find "." -maxdepth 1 -type f -not -path "*/\.*" -print 2>/dev/null)
          for o_f in "${oras_files[@]}"; do
@@ -144,7 +144,7 @@ if [[ -n "${I_SRCS[*]}" && "${#I_SRCS[@]}" -ge 1 ]]; then
      #Get
       for i in {1..2}; do
         curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -kfSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
-        if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 1000000 ]]; then
+        if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 10000 ]]; then
            du -sh "${TMPDIR}/${I_D}.txt"
            #Get modtime
             MODTIME="$(curl -A "${USER_AGENT}" -qfksSL "http://kaeferjaeger.gay/?dir=sni-ip-ranges/${I_D}" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}[[:space:]]+[0-9]{2}:[0-9]{2}:[0-9]{2}' | sed -E 's/[[:space:]]+/_/; s/:/-/g' | tr -d '[:space:]')"
