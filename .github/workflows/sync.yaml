@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
   schedule:
    - cron: "0 1 * * *" #UTC 01:00 AM --> 06:45 AM NPT Everyday
+   - cron: "0 13 * * *" #UTC 01:00 PM --> 06:45 PM NPT Everyday
 jobs:
   sync:
     runs-on: ${{ matrix.runner }}
@@ -19,7 +20,7 @@ jobs:
       packages: write
       statuses: read
     strategy:
-      max-parallel: 6
+      max-parallel: 2
       fail-fast: false
       matrix:
         include:
@@ -32,6 +33,16 @@ jobs:
             source: "certstream"
             dest: "hf"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_certstream_hf.sh"
+
+          - runner: "ubuntu-latest"
+            source: "sni-ip-ranges"
+            dest: "ghcr"
+            script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_sni-ip-ranges_ghcr.sh"
+
+          - runner: "ubuntu-latest"
+            source: "sni-ip-ranges"
+            dest: "hf"
+            script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_sni-ip-ranges_hf.sh"
 
     steps:
       - name: Install Addons

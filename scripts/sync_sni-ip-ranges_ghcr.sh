@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## <DO NOT RUN STANDALONE, meant for CI Only>
-## Meant to Sync Certstream ==> GHCR
-## Self: https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_certstream_ghcr.sh
+## Meant to Sync sni-ip-ranges ==> GHCR
+## Self: https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_sni-ip-ranges_ghcr.sh
 #-------------------------------------------------------#
 
 
@@ -27,7 +27,7 @@ if [[ -z "${USER_AGENT}" ]]; then
 fi
 ##Repo
  ORAS_LOCAL="$(mktemp -d)"
- GHCRPKG_URL="ghcr.io/pkgforge-security/domains/certstream"
+ GHCRPKG_URL="ghcr.io/pkgforge-security/domains/sni-ip-ranges"
  PKG_WEBPAGE="$(echo "https://github.com/pkgforge-security/domains" | sed 's|^/*||; s|/*$||' | tr -d '[:space:]')"
  export GHCRPKG_URL ORAS_LOCAL PKG_WEBPAGE
 #-------------------------------------------------------#
@@ -36,10 +36,12 @@ fi
 ##Func
 sync_to_ghcr()
 {
- if [[ -d "${ORAS_LOCAL}/DATA/certstream" ]] && \
-  [[ "$(du -s "${ORAS_LOCAL}/DATA/certstream" | cut -f1 | tr -cd '0-9' | tr -d '[:space:]')" -gt 100000 ]]; then
+ if [[ -d "${ORAS_LOCAL}/DATA/sni-ip-ranges" ]] && \
+  [[ "$(du -s "${ORAS_LOCAL}/DATA/sni-ip-ranges" | cut -f1 | tr -cd '0-9' | tr -d '[:space:]')" -gt 100000 ]]; then
   pushd "${ORAS_LOCAL}" &>/dev/null &&\
-   export GHCRPKG_TAG="${I_D}"
+   unset GHCRPKG_TAG
+   GHCRPKG_TAG="$(echo "${I_D}-${MODTIME}" | sed 's/[^a-zA-Z0-9._-]/_/g; s/_*$//')"
+   export GHCRPKG_TAG
    #Check Tag
     if ! oras manifest fetch "${GHCRPKG_URL}:${GHCRPKG_TAG}" |\
       jq -r '.annotations["org.opencontainers.image.created"]' | tr -d '[:space:]' |\
@@ -63,18 +65,18 @@ sync_to_ghcr()
         ghcr_push+=(--annotation "dev.pkgforge-security.domains.upload_date=${PKG_DATE}")
         ghcr_push+=(--annotation "org.opencontainers.image.authors=https://docs.pkgforge.dev/contact/chat")
         ghcr_push+=(--annotation "org.opencontainers.image.created=${PKG_DATE}")
-        ghcr_push+=(--annotation "org.opencontainers.image.description=certstream-data-${I_D}")
+        ghcr_push+=(--annotation "org.opencontainers.image.description=sni-ip-ranges-data-${I_D}")
         ghcr_push+=(--annotation "org.opencontainers.image.documentation=${PKG_WEBPAGE}")
         ghcr_push+=(--annotation "org.opencontainers.image.licenses=blessing")
         ghcr_push+=(--annotation "org.opencontainers.image.ref.name=${I_D}")
         ghcr_push+=(--annotation "org.opencontainers.image.revision=${I_D}")
         ghcr_push+=(--annotation "org.opencontainers.image.source=${PKG_WEBPAGE}")
-        ghcr_push+=(--annotation "org.opencontainers.image.title=certstream-${I_D}")
+        ghcr_push+=(--annotation "org.opencontainers.image.title=sni-ip-ranges-${I_D}")
         ghcr_push+=(--annotation "org.opencontainers.image.url=${SRC_URL}")
         ghcr_push+=(--annotation "org.opencontainers.image.vendor=pkgforge-security")
         ghcr_push+=(--annotation "org.opencontainers.image.version=${I_D}")
         ghcr_push+=("${GHCRPKG_URL}:${GHCRPKG_TAG}")
-        pushd "${ORAS_LOCAL}/DATA/certstream" &>/dev/null
+        pushd "${ORAS_LOCAL}/DATA/sni-ip-ranges" &>/dev/null
         oras_files=() ; mapfile -t oras_files < <(find "." -maxdepth 1 -type f -not -path "*/\.*" -print 2>/dev/null)
          for o_f in "${oras_files[@]}"; do
            [[ -f "${o_f}" && -s "${o_f}" ]] && ghcr_push+=("${o_f}")
@@ -83,7 +85,7 @@ sync_to_ghcr()
        #Check
         if [[ "$(oras manifest fetch "${GHCRPKG_URL}:${GHCRPKG_TAG}" | jq -r '.annotations["dev.pkgforge-security.domains.upload_date"]' | tr -d '[:space:]')" == "${PKG_DATE}" ]]; then
           echo -e "\n[+] Registry --> https://${GHCRPKG_URL}"
-          cp -rfv "${ORAS_LOCAL}/DATA/certstream/." "${SYSTMP}/DATA"
+          cp -rfv "${ORAS_LOCAL}/DATA/sni-ip-ranges/." "${SYSTMP}/DATA"
           pushd "${TMPDIR}" &>/dev/null ; return
         else
           echo -e "\n[-] Failed to Push Artifact to ${GHCRPKG_URL}:${GHCRPKG_TAG} (Retrying ${i}/10)\n"
@@ -106,103 +108,68 @@ sync_to_ghcr()
            pushd "${TMPDIR}" &>/dev/null ; return
          fi
      fi
-  du -sh "${ORAS_LOCAL}/DATA/certstream" && realpath "${ORAS_LOCAL}/DATA/certstream"
+  du -sh "${ORAS_LOCAL}/DATA/sni-ip-ranges" && realpath "${ORAS_LOCAL}/DATA/sni-ip-ranges"
  fi
 }
 export -f sync_to_ghcr
 #-------------------------------------------------------#
 
+
 #-------------------------------------------------------#
 ##SRC//DEST
-pushd "${TMPDIR}" &>/dev/null && export DOMAIN_SRC="certstream"
-#CS data for the current day is available tomorrow @ 00:15 UTC
-#mapfile -t "I_DATES" < <(for i in $(seq 0 $((10#$(date --utc +%d) - 1))); do date --utc -d "-${i} days" +%Y-%m-%d; done)
-I_DATES_TMP=() ; mapfile -t "I_DATES_TMP" < <(for i in $(seq 1 $((10#$(date --utc +%d) - 0))); do date --utc -d "-${i} days" +%Y-%m-%d; done | sort --version-sort --unique)
-GHCR_EXISTS=() ; mapfile -t "GHCR_EXISTS" < <(oras repo tags "${GHCRPKG_URL}" 2>/dev/null | sort --version-sort --unique)
-I_DATES=() ; mapfile -t I_DATES < <(printf "%s\n" "${I_DATES_TMP[@]}" | grep -Fxv -f <(printf "%s\n" "${GHCR_EXISTS[@]}" | grep -oP '^\d{4}-\d{2}-\d{2}'))
-echo -e "\n[+] Data: ${I_DATES[*]}\n"
-if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
+pushd "${TMPDIR}" &>/dev/null && export DOMAIN_SRC="sni-ip-ranges"
+#https://kaeferjaeger.gay/?dir=sni-ip-ranges
+I_SRCS=(amazon digitalocean google microsoft oracle)
+echo -e "\n[+] Data: ${I_SRCS[*]}\n"
+if [[ -n "${I_SRCS[*]}" && "${#I_SRCS[@]}" -ge 1 ]]; then
   #Check
-   unset I_D PKG_DATE PKG_DATETMP SRC_URL_STATUS SRC_URL_TMP
-   SRC_URL_STATUS="$(curl -X "HEAD" -qfsSL "https://cs1.ip.thc.org" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
+   unset I_D SRC_URL_STATUS SRC_URL_TMP
+   SRC_URL_STATUS="$(curl -X "HEAD" -qfksSL "https://kaeferjaeger.gay/?dir=sni-ip-ranges" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
    if echo "${SRC_URL_STATUS}" | grep -qiv '200$'; then
-     SRC_URL_STATUS="$(curl -X "HEAD" -qfsSL "https://cs2.ip.thc.org" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
-     if [[ "${SRC_URL_STATUS}" == "200" ]]; then
-        SRC_URL_TMP="https://cs2.ip.thc.org"
-     else
-        echo -e "\n[-] FATAL: Server seems to be Offline\n"
-        curl -w "(SERVER) <== %{url}\n" -X "HEAD" -qfsSL "https://cs1.ip.thc.org" -I ; echo -e "\n"
-        curl -w "(SERVER) <== %{url}\n" -X "HEAD" -qfsSL "https://cs2.ip.thc.org" -I ; echo -e "\n"
-       exit 1
-     fi
+      SRC_URL_STATUS="$(curl -A "${USER_AGENT}" -X "HEAD" -qfksSL "https://kaeferjaeger.gay/?dir=sni-ip-ranges" -I | sed -n 's/^[[:space:]]*HTTP\/[0-9.]*[[:space:]]\+\([0-9]\+\).*/\1/p' | tail -n1 | tr -d '[:space:]')"
+      echo -e "\n[-] FATAL: Server seems to be Offline\n"
+      curl -A "${USER_AGENT}" -w "(SERVER) <== %{url}\n" -X "HEAD" -qfksSL "https://kaeferjaeger.gay/?dir=sni-ip-ranges" -I ; echo -e "\n"
+     exit 1
    elif [[ "${SRC_URL_STATUS}" == "200" ]]; then
-     SRC_URL_TMP="https://cs1.ip.thc.org"
+     SRC_URL_TMP="https://kaeferjaeger.gay/?dir=sni-ip-ranges"
    fi
    echo -e "\n[+] Server ==> ${SRC_URL_TMP}"
   #Download
-   for I_D in "${I_DATES[@]}"; do 
+   for I_D in "${I_SRCS[@]}"; do 
     echo -e "\n[+] Processing ${I_D}"
      #Set
-      unset GHCRPKG_TAG INPUT_TMP NO_GZ SRC_URL
+      unset INPUT_TMP MODTIME MODTIME_TEMP NO_GZ SRC_URL
       INPUT_TMP="$(echo "${I_D}" | tr -d '[:space:]')"
-      if [[ "${INPUT_TMP}" == "$(date --utc -d "-1 day" '+%Y-%m-%d' | tr -d '[:space:]')" ]]; then
-        NO_GZ="TRUE"
-        SRC_URL="${SRC_URL_TMP}/${INPUT_TMP}.txt"
-      else
-        SRC_URL="${SRC_URL_TMP}/${INPUT_TMP}.txt.gz"
-      fi
+      SRC_URL="https://kaeferjaeger.gay/sni-ip-ranges/${I_D}/ipv4_merged_sni.txt"
      #Get
       for i in {1..2}; do
-        if [[ "${NO_GZ}" == "TRUE" ]]; then
-          curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
-          if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 1000000 ]]; then
-             du -sh "${TMPDIR}/${I_D}.txt"
-             #Copy
-               rm -rf "${ORAS_LOCAL}/DATA/certstream" 2>/dev/null
-               mkdir -p "${ORAS_LOCAL}/DATA/certstream"
-               cp -fv "${TMPDIR}/${I_D}.txt" "${ORAS_LOCAL}/DATA/certstream/${I_D}.txt"
-             #Upload
-               sync_to_ghcr
-             #Break
-               pushd "${TMPDIR}" &>/dev/null ; break
-          else
-             echo "Retrying... ${i}/2"
-            sleep 2
-          fi
+        curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -kfSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
+        if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 1000000 ]]; then
+           du -sh "${TMPDIR}/${I_D}.txt"
+           #Get modtime
+            MODTIME="$(curl -A "${USER_AGENT}" -qfksSL "http://kaeferjaeger.gay/?dir=sni-ip-ranges/${I_D}" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}[[:space:]]+[0-9]{2}:[0-9]{2}:[0-9]{2}' | sed -E 's/[[:space:]]+/_/; s/:/-/g' | tr -d '[:space:]')"
+            if [[ -z "${MODTIME+x}" ]] || [[ "$(printf '%s' "${MODTIME}" | wc -c)" -lt 10 ]]; then
+               MODTIME_TEMP="$(date --utc +%Y-%m-%d_T%H-%M-%S)"
+               MODTIME="$(echo "${MODTIME_TEMP}" | sed 's/ZZ\+/Z/Ig' | tr -d '[:space:]')"
+            fi
+            export MODTIME
+           #Copy
+             rm -rf "${ORAS_LOCAL}/DATA/sni-ip-ranges" 2>/dev/null
+             mkdir -p "${ORAS_LOCAL}/DATA/sni-ip-ranges"
+             cp -fv "${TMPDIR}/${I_D}.txt" "${ORAS_LOCAL}/DATA/sni-ip-ranges/${I_D}.txt"
+           #Upload
+             sync_to_ghcr
+           #Break
+             pushd "${TMPDIR}" &>/dev/null ; break
         else
-          curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt.gz"
-          if [[ -s "${TMPDIR}/${I_D}.txt.gz" && $(stat -c%s "${TMPDIR}/${I_D}.txt.gz") -gt 1000000 ]]; then
-             du -sh "${TMPDIR}/${I_D}.txt.gz"
-             #Extract
-               7z x "${TMPDIR}/${I_D}.txt.gz"
-             #Copy
-               if [[ ! -s "${TMPDIR}/${I_D}.txt" || $(stat -c%s "${TMPDIR}/${I_D}.txt") -lt 1000000 ]]; then
-                 echo -e "[-] FATAL: Failed to Extract ${TMPDIR}/${I_D}.txt.gz ==> ${TMPDIR}/${I_D}.txt"
-                 mv -fv "${TMPDIR}/${I_D}.txt.gz" "${SYSTMP}/DATA"
-                break
-               else
-                 rm -rf "${ORAS_LOCAL}/DATA/certstream" 2>/dev/null
-                 mkdir -p "${ORAS_LOCAL}/DATA/certstream"
-                 cp -fv "${TMPDIR}/${I_D}.txt" "${ORAS_LOCAL}/DATA/certstream/${I_D}.txt"
-                 cp -fv "${TMPDIR}/${I_D}.txt.gz" "${ORAS_LOCAL}/DATA/certstream/${I_D}.txt.gz"
-                 ls "${ORAS_LOCAL}/DATA/certstream"
-               fi
-             #Upload
-               sync_to_ghcr
-             #Break
-               pushd "${TMPDIR}" &>/dev/null ; break
-          else
-             echo "Retrying... ${i}/2"
-            sleep 2
-          fi
+           echo "Retrying... ${i}/2"
+          sleep 2
         fi
       done
    done
 else
-  echo -e "\n[-] FATAL: Failed to Set Dates\n"
-  echo -e "[+] Date (Pre Filter): ${I_DATES_TMP[*]}"
-  echo -e "[+] Date (Post Filter): ${I_DATES[*]}"
-  echo -e "[+] Date (Exists): ${GHCR_EXISTS[*]}"
+  echo -e "\n[-] FATAL: Failed to Set Sources\n"
+  echo -e "[+] Sources : ${I_SRCS[*]}"
  exit 1
 fi
 #-------------------------------------------------------#
