@@ -1,6 +1,8 @@
 ```mathematica
- 60K └─┬ main
- 48K   ├─┬ scripts
+ 84K └─┬ main
+ 72K   ├─┬ scripts
+ 12K   │ ├── sync_trickest_hf.sh
+ 12K   │ ├── sync_trickest_ghcr.sh
  12K   │ ├── sync_sni-ip-ranges_ghcr.sh
  12K   │ ├── sync_certstream_hf.sh
  12K   │ ├── sync_certstream_ghcr.sh
