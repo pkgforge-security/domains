@@ -197,7 +197,7 @@ if [[ -d "${SRC_REPO}" ]] && [[ "$(du -s "${SRC_REPO}" | cut -f1 | tr -d '[:spac
      fi
      if [[ -s "${ORAS_LOCAL}/DATA/trickest/cloud.csv" && $(stat -c%s "${ORAS_LOCAL}/DATA/trickest/cloud.csv") -gt 1000000 ]]; then
        cp -fv "${ORAS_LOCAL}/DATA/trickest/cloud.csv" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.csv"
-       qsv to sqlite "${ORAS_LOCAL}/DATA/trickest/cloud.db" "${HF_REPO_LOCAL}/DATA/trickest/cloud.csv"
+       qsv to sqlite "${ORAS_LOCAL}/DATA/trickest/cloud.db" "${ORAS_LOCA}/DATA/trickest/cloud.csv"
        cp -fv "${ORAS_LOCAL}/DATA/trickest/cloud.db" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.db"
      else
         echo -e "\n[X] FATAL: Failed to Parse CSV Data\n"
