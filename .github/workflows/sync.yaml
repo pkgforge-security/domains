@@ -119,7 +119,8 @@ jobs:
             ARTIFACTS_DIR="$(mktemp -d)"
             touch "${ARTIFACTS_DIR}/.keep"
           fi
-          ls -lah "${ARTIFACTS_DIR}"
+          realpath "${ARTIFACTS_DIR}" && ls -lah "${ARTIFACTS_DIR}"
+          du -sh "${ARTIFACTS_DIR}"
           echo "ARTIFACTS_DIR=${ARTIFACTS_DIR}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
