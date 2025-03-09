@@ -87,7 +87,8 @@ sync_to_hf()
          git pull origin main 2>/dev/null
          if git push -u origin main; then
             echo -e "\n[+] Pushed ==> [https://huggingface.co/datasets/pkgforge-security/domains/tree/main/DATA/trickest/]\n"
-            mv -fv "${HF_REPO_LOCAL}/DATA/trickest/." "${SYSTMP}/DATA"
+            #mv -fv "${HF_REPO_LOCAL}/DATA/trickest/." "${SYSTMP}/DATA"
+            echo "ARTIFACTS_PATH=${HF_REPO_LOCAL}/DATA/trickest" >> "${GITHUB_ENV}" 2>/dev/null
             break
          fi
         #Sleep randomly 
