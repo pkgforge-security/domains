@@ -112,6 +112,15 @@ jobs:
           #PARALLEL_LIMIT="1" bash "./sync.sh"
           wait ; echo
           find "${SYSTMP}/DATA" -type f -size +1990M -exec rm -rvf "{}" \;
+          if [[ -d "${{ env.ARTIFACTS_PATH }}" && "${{ env.ARTIFACTS_PATH }}" == /tmp/* ]]; then
+            ARTIFACTS_DIR="$(realpath ${{ env.ARTIFACTS_PATH }})"
+            echo -e "\n[+] Artifacts ==> ${ARTIFACTS_DIR}\n"
+          else
+            ARTIFACTS_DIR="$(mktemp -d)"
+            touch "${ARTIFACTS_DIR}/.keep"
+          fi
+          ls -lah "${ARTIFACTS_DIR}"
+          echo "ARTIFACTS_DIR=${ARTIFACTS_DIR}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
       - name: Upload (LOG) Artifacts [${{ matrix.source }}<==>${{ matrix.dest }}]
@@ -120,7 +129,7 @@ jobs:
             name: ${{ matrix.source }}_${{ matrix.dest }}
             path: |
               /tmp/DATA/**
-              ${{ env.ARTIFACTS_PATH }}/**
+              ${{ env.ARTIFACTS_DIR }}/**
             compression-level: 0 # no compression, [Default: 6 (GNU Gzip)]
             retention-days: 30
             overwrite: true
@@ -132,6 +141,6 @@ jobs:
           subject-name: "${{ matrix.source }}-${{ matrix.dest }}"
           subject-path: |
             /tmp/DATA/**
-            ${{ env.ARTIFACTS_PATH }}/**
+            ${{ env.ARTIFACTS_DIR }}/**
           show-summary: true
         continue-on-error: true
