@@ -93,7 +93,7 @@ sync_to_ghcr()
        #Check
         if [[ "$(oras manifest fetch "${GHCRPKG_URL}:${GHCRPKG_TAG}" | jq -r '.annotations["dev.pkgforge-security.domains.upload_date"]' | tr -d '[:space:]')" == "${PKG_DATE}" ]]; then
           echo -e "\n[+] Registry --> https://${GHCRPKG_URL}"
-          cp -rfv "${ORAS_LOCAL}/DATA/trickest/." "${SYSTMP}/DATA"
+          mv -fv "${ORAS_LOCAL}/DATA/trickest/." "${SYSTMP}/DATA"
           pushd "${TMPDIR}" &>/dev/null ; return
         else
           echo -e "\n[-] Failed to Push Artifact to ${GHCRPKG_URL}:${GHCRPKG_TAG} (Retrying ${i}/10)\n"
@@ -189,23 +189,23 @@ if [[ -d "${SRC_REPO}" ]] && [[ "$(du -s "${SRC_REPO}" | cut -f1 | tr -d '[:spac
      sort --version-sort --unique "${TMPDIR}/DATA/cloud.txt" --output "${ORAS_LOCAL}/DATA/trickest/cloud.txt"
     #Archive
      if [[ -s "${ORAS_LOCAL}/DATA/trickest/cloud.txt" && $(stat -c%s "${ORAS_LOCAL}/DATA/trickest/cloud.txt") -gt 1000000 ]]; then
-        cp -fv "${ORAS_LOCAL}/DATA/trickest/cloud.txt" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.txt"
+        mv -fv "${ORAS_LOCAL}/DATA/trickest/cloud.txt" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.txt"
      else
         echo -e "\n[X] FATAL: Failed to Parse Data\n"
         du -sh "${ORAS_LOCAL}/DATA/trickest/cloud.txt"
        exit 1
      fi
      if [[ -s "${ORAS_LOCAL}/DATA/trickest/cloud.csv" && $(stat -c%s "${ORAS_LOCAL}/DATA/trickest/cloud.csv") -gt 1000000 ]]; then
-       cp -fv "${ORAS_LOCAL}/DATA/trickest/cloud.csv" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.csv"
-       qsv to sqlite "${ORAS_LOCAL}/DATA/trickest/cloud.db" "${ORAS_LOCA}/DATA/trickest/cloud.csv"
-       cp -fv "${ORAS_LOCAL}/DATA/trickest/cloud.db" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.db"
+       mv -fv "${ORAS_LOCAL}/DATA/trickest/cloud.csv" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.csv"
+       qsv to sqlite "${ORAS_LOCAL}/DATA/trickest/cloud.db" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.csv"
+       mv -fv "${ORAS_LOCAL}/DATA/trickest/cloud.db" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.db"
      else
         echo -e "\n[X] FATAL: Failed to Parse CSV Data\n"
         du -sh "${ORAS_LOCAL}/DATA/trickest/cloud.csv"
      fi
      if [[ -s "${ORAS_LOCAL}/DATA/trickest/cloud.json" && $(stat -c%s "${ORAS_LOCAL}/DATA/trickest/cloud.json") -gt 1000000 ]]; then
-       cp -fv "${ORAS_LOCAL}/DATA/trickest/cloud.json" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.json"
-       cp -fv "${ORAS_LOCAL}/DATA/trickest/cloud.jsonl" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.jsonl"
+       mv -fv "${ORAS_LOCAL}/DATA/trickest/cloud.json" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.json"
+       mv -fv "${ORAS_LOCAL}/DATA/trickest/cloud.jsonl" "${ORAS_LOCAL}/DATA/trickest/cloud-${COMMIT_DATE}.jsonl"
      else
         echo -e "\n[X] FATAL: Failed to Parse JSON Data\n"
         du -sh "${ORAS_LOCAL}/DATA/trickest/cloud.json"
