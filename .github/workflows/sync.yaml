@@ -20,7 +20,7 @@ jobs:
       packages: write
       statuses: read
     strategy:
-      max-parallel: 2
+      max-parallel: 3
       fail-fast: false
       matrix:
         include:
@@ -33,6 +33,16 @@ jobs:
             source: "certstream"
             dest: "hf"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_certstream_hf.sh"
+
+          - runner: "ubuntu-latest"
+            source: "trickest"
+            dest: "ghcr"
+            script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_trickest_ghcr.sh"
+
+          - runner: "ubuntu-latest"
+            source: "trickest"
+            dest: "hf"
+            script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_trickest_hf.sh"
 
           - runner: "ubuntu-latest"
             source: "sni-ip-ranges"
@@ -89,9 +99,11 @@ jobs:
           curl -qfsSL "${{ matrix.script }}" -o "./sync.sh"
           dos2unix --quiet "./sync.sh"
           chmod +x "./sync.sh"
+          #export FORCE_PUSH="YES"
           PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
           #PARALLEL_LIMIT="1" bash "./sync.sh"
           wait ; echo
+          find "${SYSTMP}/DATA" -type f -size +1990M -exec rm -rvf "{}" \;
         continue-on-error: true
 
       - name: Upload (LOG) Artifacts [${{ matrix.source }}<==>${{ matrix.dest }}]
