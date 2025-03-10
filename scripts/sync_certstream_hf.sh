@@ -169,8 +169,8 @@ if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
           if [[ -s "${TMPDIR}/${I_D}.txt.gz" && $(stat -c%s "${TMPDIR}/${I_D}.txt.gz") -gt 1000000 ]]; then
              du -sh "${TMPDIR}/${I_D}.txt.gz"
              #Extract
-               7z x "${TMPDIR}/${I_D}.txt.gz"
-               TXT_FILE="$(find "${TMPDIR}" -type f -exec file -i "{}" \; | grep -Ei "text/plain" | cut -d":" -f1 | xargs realpath | grep -i "${I_D}" | tr -d '[:space:]')"
+               7z x -y "${TMPDIR}/${I_D}.txt.gz"
+               TXT_FILE="$(find "${TMPDIR}" -type f -exec file -i "{}" \; | grep -Ei "text/plain" | cut -d":" -f1 | xargs realpath | grep -Ei "${I_D}|latest" -m1 | tr -d '[:space:]')"
              #Copy
                if [[ ! -s "${TXT_FILE}" || $(stat -c%s "${TXT_FILE}") -lt 1000000 ]]; then
                  echo -e "[-] FATAL: Failed to Extract ${TMPDIR}/${I_D}.txt.gz ==> ${TXT_FILE}"

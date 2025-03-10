@@ -28,13 +28,13 @@ jobs:
             source: "certstream"
             dest: "ghcr"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_certstream_ghcr.sh"
-            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_certstream_ghcr.sh"
+            merge-script: "N/A"
 
           - runner: "ubuntu-latest"
             source: "certstream"
             dest: "hf"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_certstream_hf.sh"
-            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_certstream_hf.sh"
+            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_certstream_ghcr_hf.sh"
 
           - runner: "ubuntu-latest"
             source: "trickest"
@@ -163,11 +163,13 @@ jobs:
           #Presets
           set +x ; set +e
           #--------------#
-          find "${SYSTMP}" -type f -size +10M -exec rm -rf "{}" \; 2>/dev/null
-          find "${SYSTMP}" -type d -exec bash -c 'test $(du -sb "{}" | cut -f1 | tr -d "[:space:]") -gt 10485760 && rm -rf "{}"' \; 2>/dev/null
-          curl -qfsSL "${{ matrix.merge-script }}" -o "./sync.sh"
-          dos2unix --quiet "./sync.sh"
-          chmod +x "./sync.sh"
-          PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
-          wait ; echo
+          if echo "${{ matrix.merge-script }}" | grep -qi "http"; then
+             find "${SYSTMP}" -type f -size +10M -exec rm -rf "{}" \; 2>/dev/null
+             find "${SYSTMP}" -type d -exec bash -c 'test $(du -sb "{}" | cut -f1 | tr -d "[:space:]") -gt 10485760 && rm -rf "{}"' \; 2>/dev/null
+             curl -qfsSL "${{ matrix.merge-script }}" -o "./sync.sh"
+             dos2unix --quiet "./sync.sh"
+             chmod +x "./sync.sh"
+             PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+             wait ; echo
+          fi
         continue-on-error: true

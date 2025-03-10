@@ -83,7 +83,7 @@ sync_to_ghcr()
        #Check
         if [[ "$(oras manifest fetch "${GHCRPKG_URL}:${GHCRPKG_TAG}" | jq -r '.annotations["dev.pkgforge-security.domains.upload_date"]' | tr -d '[:space:]')" == "${PKG_DATE}" ]]; then
           echo -e "\n[+] Registry --> https://${GHCRPKG_URL}"
-          echo "MERGE_DATA=YES" >> "${GITHUB_ENV}" 2>/dev/null
+          #echo "MERGE_DATA=YES" >> "${GITHUB_ENV}" 2>/dev/null
           cp -rfv "${ORAS_LOCAL}/DATA/certstream/." "${SYSTMP}/DATA"
           echo "ARTIFACTS_PATH=${ORAS_LOCAL}/DATA/certstream" >> "${GITHUB_ENV}" 2>/dev/null
           pushd "${TMPDIR}" &>/dev/null ; return
@@ -177,8 +177,8 @@ if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
           if [[ -s "${TMPDIR}/${I_D}.txt.gz" && $(stat -c%s "${TMPDIR}/${I_D}.txt.gz") -gt 1000000 ]]; then
              du -sh "${TMPDIR}/${I_D}.txt.gz"
              #Extract
-               7z x "${TMPDIR}/${I_D}.txt.gz"
-               TXT_FILE="$(find "${TMPDIR}" -type f -exec file -i "{}" \; | grep -Ei "text/plain" | cut -d":" -f1 | xargs realpath | grep -i "${I_D}" | tr -d '[:space:]')"
+               7z x -y "${TMPDIR}/${I_D}.txt.gz"
+               TXT_FILE="$(find "${TMPDIR}" -type f -exec file -i "{}" \; | grep -Ei "text/plain" | cut -d":" -f1 | xargs realpath | grep -Ei "${I_D}|latest" -m1 | tr -d '[:space:]')"
              #Copy
                if [[ ! -s "${TXT_FILE}" || $(stat -c%s "${TXT_FILE}") -lt 1000000 ]]; then
                  echo -e "[-] FATAL: Failed to Extract ${TMPDIR}/${I_D}.txt.gz ==> ${TXT_FILE}"
