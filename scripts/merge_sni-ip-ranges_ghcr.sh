@@ -145,7 +145,7 @@ pushd "${TMPDIR}" &>/dev/null
       INPUT_TMP="$(echo "${I_D}" | tr -d '[:space:]')"
      #Get
       for i in {1..2}; do
-        curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -kfSL "${SRC_URL}/${I_D}.txt" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
+        curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}/${I_D}.txt" --retry 3 --retry-all-errors -o "${TMPDIR}/${I_D}.txt"
         if [[ -s "${TMPDIR}/${I_D}.txt" && $(stat -c%s "${TMPDIR}/${I_D}.txt") -gt 1000 ]]; then
            du -sh "${TMPDIR}/${I_D}.txt"
            pushd "${TMPDIR}" &>/dev/null ; break
@@ -176,7 +176,6 @@ pushd "${TMPDIR}" &>/dev/null
      echo -e "[+] Appending ${I_F} ==> ${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt"
      cat "${I_F}" | anew-rs -q "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt"
      du -sh "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt"
-     sort --version-sort --unique "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" --output "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt"
    else
      echo -e "\n[-] FATAL: Failed to Find ${I_F}"
      exit 1
@@ -185,6 +184,7 @@ pushd "${TMPDIR}" &>/dev/null
 #Filter Domains
  if [[ -s "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" && $(stat -c%s "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt") -gt 100000 ]]; then
   echo -e "[+] Cleaning up & Merging ${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt ==> ${ORAS_LOCAL}/DATA/sni-ip-ranges/domains.txt"
+  sort --version-sort --unique "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" --output "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt"
   cat "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" |\
     awk -F '[[:space:]]*--[[:space:]]*\\[|\\]' '{print $2}' | tr -s '[:space:]' '\n' |\
     sed -E '/^[[:space:]]*$/d; s/^[[:space:]]*\*\.?[[:space:]]*//; s/[A-Z]/\L&/g' |\
