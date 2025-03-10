@@ -137,7 +137,7 @@ if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
    for I_D in "${I_DATES[@]}"; do 
     echo -e "\n[+] Processing ${I_D}"
      #Set
-      unset INPUT_TMP NO_GZ SRC_URL
+      unset INPUT_TMP NO_GZ SRC_URL TXT_FILE
       INPUT_TMP="$(echo "${I_D}" | tr -d '[:space:]')"
       if [[ "${INPUT_TMP}" == "$(date --utc -d "-1 day" '+%Y-%m-%d' | tr -d '[:space:]')" ]]; then
         #NO_GZ="TRUE"
@@ -170,15 +170,16 @@ if [[ -n "${I_DATES[*]}" && "${#I_DATES[@]}" -ge 1 ]]; then
              du -sh "${TMPDIR}/${I_D}.txt.gz"
              #Extract
                7z x "${TMPDIR}/${I_D}.txt.gz"
+               TXT_FILE="$(find "${TMPDIR}" -type f -exec file -i "{}" \; | grep -Ei "text/plain" | cut -d":" -f1 | xargs realpath | tr -d '[:space:]')"
              #Copy
-               if [[ ! -s "${TMPDIR}/${I_D}.txt" || $(stat -c%s "${TMPDIR}/${I_D}.txt") -lt 1000000 ]]; then
-                 echo -e "[-] FATAL: Failed to Extract ${TMPDIR}/${I_D}.txt.gz ==> ${TMPDIR}/${I_D}.txt"
+               if [[ ! -s "${TXT_FILE}" || $(stat -c%s "${TXT_FILE}") -lt 1000000 ]]; then
+                 echo -e "[-] FATAL: Failed to Extract ${TMPDIR}/${I_D}.txt.gz ==> ${TXT_FILE}"
                  mv -fv "${TMPDIR}/${I_D}.txt.gz" "${SYSTMP}/DATA"
                 break
                else
                  rm -rf "${HF_REPO_LOCAL}/DATA/certstream" 2>/dev/null
                  mkdir -p "${HF_REPO_LOCAL}/DATA/certstream"
-                 cp -fv "${TMPDIR}/${I_D}.txt" "${HF_REPO_LOCAL}/DATA/certstream/${I_D}.txt"
+                 cp -fv "${TXT_FILE}" "${HF_REPO_LOCAL}/DATA/certstream/${I_D}.txt"
                  cp -fv "${TMPDIR}/${I_D}.txt.gz" "${HF_REPO_LOCAL}/DATA/certstream/${I_D}.txt.gz"
                  ls "${HF_REPO_LOCAL}/DATA/certstream"
                fi
