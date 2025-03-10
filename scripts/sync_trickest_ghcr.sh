@@ -94,6 +94,7 @@ sync_to_ghcr()
         if [[ "$(oras manifest fetch "${GHCRPKG_URL}:${GHCRPKG_TAG}" | jq -r '.annotations["dev.pkgforge-security.domains.upload_date"]' | tr -d '[:space:]')" == "${PKG_DATE}" ]]; then
           echo -e "\n[+] Registry --> https://${GHCRPKG_URL}"
           #mv -fv "${ORAS_LOCAL}/DATA/trickest/." "${SYSTMP}/DATA"
+          #echo "MERGE_DATA=YES" >> "${GITHUB_ENV}" 2>/dev/null
           echo "ARTIFACTS_PATH=${ORAS_LOCAL}/DATA/trickest" >> "${GITHUB_ENV}" 2>/dev/null
           pushd "${TMPDIR}" &>/dev/null ; return
         else
@@ -134,7 +135,7 @@ pushd "$(mktemp -d)" &>/dev/null &&\
  COMMIT_HASH="$(git --git-dir="${SRC_REPO}/.git" --no-pager log -1 --pretty=format:'HEAD-%h-%cd' --date=format:'%y%m%dT%H%M%S' | tr -d '[:space:]')"
  COMMIT_DATE="$(git --git-dir="${SRC_REPO}/.git" --no-pager log -1 --pretty=format:'%cd' --date=format:'%y%m%dT%H%M%S' | tr -d '[:space:]')"
  UPDATED_AT="$(git --git-dir="${SRC_REPO}/.git" --no-pager log -1 --date=format-local:'%Y-%m-%d_%H-%M-%S' --format='%cd' | tr -d '[:space:]')"
- UPSTREAM_HASH="$(oras repo tags "${GHCRPKG_URL}" 2>/dev/null | awk -F'-' '{print $NF}' | sort --version-sort --unique | tail -n 1 | tr -d '[:space:]')"
+ UPSTREAM_HASH="$(oras repo tags "${GHCRPKG_URL}" 2>/dev/null | grep -Ei 'HEAD-' | awk -F'-' '{print $NF}' | sort --version-sort --unique | tail -n 1 | tr -d '[:space:]')"
 #Sanity Check 
  if [[ "$(echo "${COMMIT_HASH##*-}" | tr -d '[:space:]')" == "${UPSTREAM_HASH}" ]]; then
    if [[ "${FORCE_PUSH}" != "YES" ]]; then

@@ -28,31 +28,37 @@ jobs:
             source: "certstream"
             dest: "ghcr"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_certstream_ghcr.sh"
+            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_certstream_ghcr.sh"
 
           - runner: "ubuntu-latest"
             source: "certstream"
             dest: "hf"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_certstream_hf.sh"
+            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_certstream_hf.sh"
 
           - runner: "ubuntu-latest"
             source: "trickest"
             dest: "ghcr"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_trickest_ghcr.sh"
+            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_trickest_ghcr.sh"
 
           - runner: "ubuntu-latest"
             source: "trickest"
             dest: "hf"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_trickest_hf.sh"
+            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_trickest_hf.sh"
 
           - runner: "ubuntu-latest"
             source: "sni-ip-ranges"
             dest: "ghcr"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_sni-ip-ranges_ghcr.sh"
+            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_sni-ip-ranges_ghcr.sh"
 
           - runner: "ubuntu-latest"
             source: "sni-ip-ranges"
             dest: "hf"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_sni-ip-ranges_hf.sh"
+            merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_sni-ip-ranges_hf.sh"
 
     steps:
       - name: Install Addons
@@ -144,4 +150,24 @@ jobs:
             /tmp/DATA/**
             ${{ env.ARTIFACTS_DIR }}/**
           show-summary: true
+        continue-on-error: true
+        
+      - name: Merge [${{ matrix.source }} ==> ${{ matrix.dest }}]
+        if: env.MERGE_DATA == 'YES'
+        env:
+          GHCR_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          find "${SYSTMP}" -type f -size +10M -exec rm -rf "{}" \; 2>/dev/null
+          find "${SYSTMP}" -type d -exec bash -c 'test $(du -sb "{}" | cut -f1 | tr -d "[:space:]") -gt 10485760 && rm -rf "{}"' \; 2>/dev/null
+          curl -qfsSL "${{ matrix.merge-script }}" -o "./sync.sh"
+          dos2unix --quiet "./sync.sh"
+          chmod +x "./sync.sh"
+          PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+          wait ; echo
         continue-on-error: true

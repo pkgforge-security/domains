@@ -88,6 +88,7 @@ sync_to_hf()
          if git push -u origin main; then
             echo -e "\n[+] Pushed ==> [https://huggingface.co/datasets/pkgforge-security/domains/tree/main/DATA/trickest/]\n"
             #mv -fv "${HF_REPO_LOCAL}/DATA/trickest/." "${SYSTMP}/DATA"
+            #echo "MERGE_DATA=YES" >> "${GITHUB_ENV}" 2>/dev/null
             echo "ARTIFACTS_PATH=${HF_REPO_LOCAL}/DATA/trickest" >> "${GITHUB_ENV}" 2>/dev/null
             break
          fi
