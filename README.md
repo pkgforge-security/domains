@@ -9,3 +9,5 @@ Misc Domain data collected, filtered & parsed from various sources
 - https://ip.thc.org/: https://cs1.ip.thc.org & https://cs2.ip.thc.org
 - https://kaeferjaeger.gay/?dir=sni-ip-ranges
 - https://github.com/trickest/cloud
+- https://github.com/xRuffKez/NRD
+- https://github.com/cenk/nrd
