@@ -1,6 +1,7 @@
 ```mathematica
-132K └─┬ main
-116K   ├─┬ scripts
+152K └─┬ main
+136K   ├─┬ scripts
+ 20K   │ ├── sync_nrd_ghcr_hf.sh
  20K   │ ├── merge_certstream_ghcr_hf.sh
  12K   │ ├── sync_trickest_hf.sh
  12K   │ ├── sync_trickest_ghcr.sh
