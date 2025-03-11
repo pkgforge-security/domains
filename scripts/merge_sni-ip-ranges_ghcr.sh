@@ -185,7 +185,7 @@ pushd "${TMPDIR}" &>/dev/null
  if [[ -s "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" && $(stat -c%s "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt") -gt 100000 ]]; then
   echo -e "[+] Cleaning up & Merging ${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt ==> ${ORAS_LOCAL}/DATA/sni-ip-ranges/domains.txt"
   sort --version-sort --unique "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" --output "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt"
-  cat "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" |\
+  cat "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" | sed '/^[[:space:]]*#/d' |\
     awk -F '[[:space:]]*--[[:space:]]*\\[|\\]' '{print $2}' | tr -s '[:space:]' '\n' |\
     sed -E '/^[[:space:]]*$/d; s/^[[:space:]]*\*\.?[[:space:]]*//; s/[A-Z]/\L&/g' |\
     sed -E '/([0-9].*){40}/d; s/^[[:space:]]*//; s/[[:space:]]*$//; s/[${}%]//g' | sed 's/[()]//g' |\

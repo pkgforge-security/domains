@@ -49,6 +49,12 @@ jobs:
             merge-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/merge_trickest_hf.sh"
 
           - runner: "ubuntu-latest"
+            source: "nrd"
+            dest: "ghcr-hf"
+            script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_nrd_ghcr_hf.sh"
+            merge-script: "N/A"
+
+          - runner: "ubuntu-latest"
             source: "sni-ip-ranges"
             dest: "ghcr"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/sync_sni-ip-ranges_ghcr.sh"
