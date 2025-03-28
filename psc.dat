@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-03-27_20-04-35_UTC
-// COMMIT: 0041a72f51491848484deece38e976dc3f04caee
+// VERSION: 2025-03-28_06-41-00_UTC
+// COMMIT: 09be8307bc42500a7c65ac92d0263d2ef854b13f
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12000,6 +12000,11 @@ analytics-gateway.eu-west-1.amazonaws.com
 analytics-gateway.us-east-1.amazonaws.com
 analytics-gateway.us-east-2.amazonaws.com
 analytics-gateway.us-west-2.amazonaws.com
+
+// Appwrite : https://appwrite.io
+// Submitted by Steven Nguyen <security@appwrite.io>
+appwrite.global
+*.appwrite.run
 
 // AWS Amplify
 // Submitted by AWS Security <psl-maintainers@amazon.com>
