@@ -1,4 +1,7 @@
-152K └─┬ main
+896K └─┬ main
+312K   ├── psc.dat
+160K   ├── psc.re
+140K   ├── psc.ext
 136K   ├─┬ scripts
  20K   │ ├── sync_nrd_ghcr_hf.sh
  20K   │ ├── merge_certstream_ghcr_hf.sh
@@ -10,9 +13,7 @@
  12K   │ ├── merge_sni-ip-ranges_hf.sh
  12K   │ ├── merge_sni-ip-ranges_ghcr.sh
 8.0K   │ └── sync_sni-ip-ranges_hf.sh
+132K   ├── psc.txt
 4.0K   ├── README.md
 4.0K   ├── NRD.MD
-4.0K   ├── LICENSE
-  0B   ├── psc.txt
-  0B   ├── psc.re
-  0B   └── psc.ext
+4.0K   └── LICENSE
