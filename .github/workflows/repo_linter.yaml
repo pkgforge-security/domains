@@ -91,7 +91,7 @@ jobs:
           #Presets
           set +x ; set +e
           #--------------#
-          curl "(DL) <== %{url}\n" -fSL "https://publicsuffix.org/list/public_suffix_list.dat" --retry 3 --retry-all-errors -o "${GITHUB_WORKSPACE}/main/psc.dat"
+          curl -w "(DL) <== %{url}\n" -fSL "https://publicsuffix.org/list/public_suffix_list.dat" --retry 3 --retry-all-errors -o "${GITHUB_WORKSPACE}/main/psc.dat"
           dos2unix --quiet "${GITHUB_WORKSPACE}/main/psc.dat"
           cat "${GITHUB_WORKSPACE}/main/psc.dat" | ansi2txt | sed '/!/d' |\
            sed 's,/.*,,' | sed '/^[[:space:]]*$/d' | sed -E 's/[[:space:]]+//g; s/^.*\*\.\s*|\s*$//' |\
