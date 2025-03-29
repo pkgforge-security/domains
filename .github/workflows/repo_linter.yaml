@@ -100,17 +100,17 @@ jobs:
            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${GITHUB_WORKSPACE}/main/psl/psl.txt"
            sed 's/^/./' "${GITHUB_WORKSPACE}/main/psl/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl/psl.ext"
            awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${GITHUB_WORKSPACE}/main/psl/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl/psl.re"
-           if command -v python >/dev/null && ! command -v python3 >/dev/null; then
-             sudo ln -fsv "$(realpath $(command -v python))" "/usr/local/bin/python3"
+           if command -v python3 >/dev/null && ! command -v python >/dev/null; then
+             sudo ln -fsv "$(realpath $(command -v python3))" "/usr/local/bin/python"
            elif ! command -v python >/dev/null && ! command -v python3 >/dev/null; then
              exit 1
            fi
-           cat "${GITHUB_WORKSPACE}/main/psl/psl.txt" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.txt.len"
-           cat "${GITHUB_WORKSPACE}/main/psl/psl.txt" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.txt.len.rev"
-           cat "${GITHUB_WORKSPACE}/main/psl/psl.ext" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.ext.len"
-           cat "${GITHUB_WORKSPACE}/main/psl/psl.ext" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.ext.len.rev"
-           cat "${GITHUB_WORKSPACE}/main/psl/psl.re" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.re.len"
-           cat "${GITHUB_WORKSPACE}/main/psl/psl.re" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.re.len.rev"
+           cat "${GITHUB_WORKSPACE}/main/psl/psl.txt" | python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.txt.len"
+           cat "${GITHUB_WORKSPACE}/main/psl/psl.txt" | python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.txt.len.rev"
+           cat "${GITHUB_WORKSPACE}/main/psl/psl.ext" | python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.ext.len"
+           cat "${GITHUB_WORKSPACE}/main/psl/psl.ext" | python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.ext.len.rev"
+           cat "${GITHUB_WORKSPACE}/main/psl/psl.re" | python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.re.len"
+           cat "${GITHUB_WORKSPACE}/main/psl/psl.re" | python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl/psl.re.len.rev"
         continue-on-error: true
 
       - name: Generate Repo Metadata (git-sizer)
