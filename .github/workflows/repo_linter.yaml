@@ -99,6 +99,17 @@ jobs:
            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${GITHUB_WORKSPACE}/main/psl.txt"
            sed 's/^/./' "${GITHUB_WORKSPACE}/main/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl.ext"
            awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${GITHUB_WORKSPACE}/main/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl.re"
+           if command -v python >/dev/null && ! command -v python3 >/dev/null; then
+             sudo ln -fsv "$(realpath $(command -v python))" "/usr/local/bin/python3"
+           elif ! command -v python >/dev/null && ! command -v python3 >/dev/null; then
+             exit 1
+           fi
+           cat "${GITHUB_WORKSPACE}/main/psl.txt" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl.txt.len"
+           cat "${GITHUB_WORKSPACE}/main/psl.txt" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl.txt.len.rev"
+           cat "${GITHUB_WORKSPACE}/main/psl.ext" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl.ext.len"
+           cat "${GITHUB_WORKSPACE}/main/psl.ext" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl.ext.len.rev"
+           cat "${GITHUB_WORKSPACE}/main/psl.re" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl.re.len"
+           cat "${GITHUB_WORKSPACE}/main/psl.re" | python3 -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${GITHUB_WORKSPACE}/main/psl.re.len.rev"
         continue-on-error: true
 
       - name: Generate Repo Metadata (git-sizer)
