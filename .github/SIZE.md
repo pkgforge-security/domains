@@ -1,12 +1,16 @@
 ```mathematica
 1.8M └─┬ main
-312K   ├── psl.dat
-180K   ├── psl.re.len.rev
-180K   ├── psl.re.len
-180K   ├── psl.re
-140K   ├── psl.ext.len.rev
-140K   ├── psl.ext.len
-140K   ├── psl.ext
+1.6M   ├─┬ psl
+312K   │ ├── psl.dat
+180K   │ ├── psl.re.len.rev
+180K   │ ├── psl.re.len
+180K   │ ├── psl.re
+140K   │ ├── psl.ext.len.rev
+140K   │ ├── psl.ext.len
+140K   │ ├── psl.ext
+132K   │ ├── psl.txt.len.rev
+132K   │ ├── psl.txt.len
+132K   │ └── psl.txt
 136K   ├─┬ scripts
  20K   │ ├── sync_nrd_ghcr_hf.sh
  20K   │ ├── merge_certstream_ghcr_hf.sh
@@ -18,9 +22,6 @@
  12K   │ ├── merge_sni-ip-ranges_hf.sh
  12K   │ ├── merge_sni-ip-ranges_ghcr.sh
 8.0K   │ └── sync_sni-ip-ranges_hf.sh
-132K   ├── psl.txt.len.rev
-132K   ├── psl.txt.len
-132K   ├── psl.txt
 4.0K   ├── README.md
 4.0K   ├── NRD.MD
 4.0K   └── LICENSE
