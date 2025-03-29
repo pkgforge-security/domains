@@ -98,7 +98,7 @@ jobs:
            sed 's/^\*\.\(.*\)/\1/; s/^\*//' | sed 's/^\.//; s/\.$//' | sed 's/[A-Z]/\L&/g' |\
            sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${GITHUB_WORKSPACE}/main/psl.txt"
            sed 's/^/./' "${GITHUB_WORKSPACE}/main/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl.ext"
-           sed 's/^/.*./' "${GITHUB_WORKSPACE}/main/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl.re"
+           awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${GITHUB_WORKSPACE}/main/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl.re"
         continue-on-error: true
 
       - name: Generate Repo Metadata (git-sizer)
