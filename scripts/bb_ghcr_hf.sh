@@ -179,12 +179,14 @@ sync_to_hf()
     COMMIT_MSG="[+] bb [Latest List]"
     git sparse-checkout set ""
     git sparse-checkout set --no-cone --sparse-index "/README.md"
-    git checkout
+    git checkout -b "${HF_BRANCH}" || git checkout "${HF_BRANCH}"
     git pull origin "${HF_BRANCH}"
     git pull origin "${HF_BRANCH}" --ff-only || git pull --rebase origin "${HF_BRANCH}"
     git merge --no-ff -m "Merge & Sync"
     git fetch origin "${HF_BRANCH}"
-    find "./DATA" -type f -not -path "*/\.*" -exec basename "{}" \; | xargs -I "{}" git sparse-checkout add "DATA/{}"
+    git sparse-checkout add "**"
+    git sparse-checkout list
+    find "./DATA" -type f -not -path "*/\.*" -exec basename "{}" \; | xargs -I "{}" add "DATA/{}"
     git lfs track "./DATA/**"
     git sparse-checkout list 2>/dev/null
     git lfs untrack '.gitattributes' 2>/dev/null
