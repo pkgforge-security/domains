@@ -34,6 +34,11 @@ if ! command -v oras &> /dev/null; then
 else
   oras login --username "Azathothas" --password "${GHCR_TOKEN}" "ghcr.io"
 fi
+if command -v python3 >/dev/null && ! command -v python >/dev/null; then
+  sudo ln -fsv "$(realpath $(command -v python3))" "/usr/local/bin/python"
+elif ! command -v python >/dev/null && ! command -v python3 >/dev/null; then
+  exit 1
+fi
 if ! command -v ripgrep &> /dev/null; then
   echo -e "[-] Failed to find ripgrep\n"
  exit 1
@@ -556,6 +561,14 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_inscope.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt" |\
+       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re"
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re.len"
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re.len.rev"
   fi
  #Merge [BBP]
   if [[ -s "${HF_REPO_LOCAL}/DATA/arkadiyt/bugcrowd_all_domains_bbp.txt" ]] &&\
@@ -566,6 +579,14 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_bbp.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt" |\
+       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_bbp.re"
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_bbp.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_bbp.re.len"
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_bbp.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_bbp.re.len.rev"
   fi
  #Merge [VDP]
   if [[ -s "${HF_REPO_LOCAL}/DATA/arkadiyt/bugcrowd_all_domains_vdp.txt" ]] &&\
@@ -576,11 +597,27 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_vdp.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt" |\
+       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_vdp.re"
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_vdp.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_vdp.re.len"
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_vdp.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_vdp.re.len.rev"
   fi
  #Merge [Wildcards]
   find "${HF_REPO_LOCAL}/DATA/arkadiyt" -type f -iname "*_inscope_wildcards*" -exec cat "{}" \; |\
    sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt"
    cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt"
+   awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt" |\
+    sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re"
+   cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re" |\
+    python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
+    sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re.len"
+   cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re" |\
+    python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' |\
+    sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re.len.rev"
 pushd "${TMPDIR}" &>/dev/null
 #-------------------------------------------------------#
 
@@ -599,12 +636,28 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/rix4uni/yeswehack_inscope.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt" |\
+       sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_inscope.re"
+      cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_inscope.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/rix4uni/all_inscope.re.len"
+      cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_inscope.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/rix4uni/all_inscope.re.len.rev"
   fi
  #Merge [Wildcards]
   if [[ -s "${HF_REPO_LOCAL}/DATA/rix4uni/inscope_wildcards.txt" ]]; then
     cat "${HF_REPO_LOCAL}/DATA/rix4uni/inscope_wildcards.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt" |\
+       sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re"
+      cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re.len"
+      cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re" |\
+       python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=True))' |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re.len.rev"
   fi
 pushd "${TMPDIR}" &>/dev/null
 #-------------------------------------------------------#
