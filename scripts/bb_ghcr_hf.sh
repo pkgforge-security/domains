@@ -186,7 +186,8 @@ sync_to_hf()
     git fetch origin "${HF_BRANCH}"
     git sparse-checkout add "**"
     git sparse-checkout list
-    find "./DATA" -type f -not -path "*/\.*" -exec basename "{}" \; | xargs -I "{}" add "DATA/{}"
+    pushd "${HF_REPO_LOCAL}" &&\
+    find "./DATA" -type f -not -path "*/\.*" -exec basename "{}" \; | xargs -I "{}" git add "DATA/{}" --verbose
     git lfs track "./DATA/**"
     git sparse-checkout list 2>/dev/null
     git lfs untrack '.gitattributes' 2>/dev/null
@@ -220,7 +221,9 @@ sync_to_hf()
        git --no-pager log '-1' --pretty="format:'%h - %ar - %s - %an'"
        if ! git ls-remote --heads origin | grep -qi "$(git rev-parse HEAD)"; then
          echo -e "\n[-] FATAL: Failed to push ==> [Latest List]\n"
-         retry_git_push
+         rm -rf "${HF_REPO_LOCAL}/.git" 2>/dev/null
+         echo -e "\n[+] Trying with HuggingFace CLI ...\n"
+         huggingface-cli upload "pkgforge-security/domains" "${HF_REPO_LOCAL}" --repo-type "dataset" --revision "${HF_BRANCH}" --commit-message "${COMMIT_MSG}"
        fi
       fi
   du -sh "${HF_REPO_LOCAL}/DATA" && realpath "${HF_REPO_LOCAL}/DATA"
