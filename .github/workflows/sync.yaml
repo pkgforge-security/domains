@@ -179,3 +179,140 @@ jobs:
              wait ; echo
           fi
         continue-on-error: true
+
+  bb:
+    runs-on: ${{ matrix.runner }}
+    needs: [sync]
+    if: always()
+    timeout-minutes: 320
+    permissions:
+      attestations: write   
+      contents: write
+      id-token: write
+      issues: write
+      packages: write
+      statuses: read
+    strategy:
+      max-parallel: 3
+      fail-fast: false
+      matrix:
+        include:
+          - runner: "ubuntu-latest"
+            source: "bb"
+            dest: "ghcr-hf"
+            script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/bb_ghcr_hf.sh"
+            merge-script: "N/A"
+
+    steps:
+      - name: Install Addons
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          export DEBIAN_FRONTEND="noninteractive"
+          sudo apt update -y -qq
+          sudo apt install 7zip b3sum bc coreutils curl dos2unix fdupes jq git git-lfs moreutils wget util-linux -y -qq
+          sudo apt install 7zip b3sum bc coreutils curl dos2unix fdupes jq git git-lfs moreutils wget util-linux -y -qq
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Linux/install_bins_curl.sh")
+        continue-on-error: true
+
+      - name: Debloat Runner
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          bash <(curl -qfsSL "https://raw.githubusercontent.com/pkgforge/devscripts/main/Github/Runners/debloat_ubuntu.sh")
+        continue-on-error: true
+
+      - name: Setup Env
+        run: |
+          #presets
+          set +x ; set +e
+          #-------------#
+          #tmp
+          SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
+          echo "SYSTMP=${SYSTMP}" >> "${GITHUB_ENV}"
+          #-------------#
+          #Git
+          sudo apt-get install git-lfs -y -qq
+          echo "GH_PAGER=" >> "${GITHUB_ENV}"
+          gh config set prompt disabled
+          #-------------#
+          ##User-Agent
+          USER_AGENT="$(curl -qfsSL 'https://raw.githubusercontent.com/pkgforge/devscripts/refs/heads/main/Misc/User-Agents/ua_firefox_macos_latest.txt')" && export USER_AGENT="${USER_AGENT}"
+          echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Sync Mirror [${{ matrix.source }} ==> ${{ matrix.dest }}]
+        env:
+          GHCR_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          curl -qfsSL "${{ matrix.script }}" -o "./sync.sh"
+          dos2unix --quiet "./sync.sh"
+          chmod +x "./sync.sh"
+          #export FORCE_PUSH="YES"
+          PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+          #PARALLEL_LIMIT="1" bash "./sync.sh"
+          wait ; echo
+          find "${SYSTMP}/DATA" -type f -size +1990M -exec rm -rvf "{}" \;
+          if [[ -d "${{ env.ARTIFACTS_PATH }}" && "${{ env.ARTIFACTS_PATH }}" == /tmp/* ]]; then
+            ARTIFACTS_DIR="$(realpath ${{ env.ARTIFACTS_PATH }})"
+            echo -e "\n[+] Artifacts ==> ${ARTIFACTS_DIR}\n"
+          else
+            ARTIFACTS_DIR="$(mktemp -d)"
+            touch "${ARTIFACTS_DIR}/.keep"
+          fi
+          realpath "${ARTIFACTS_DIR}" && ls -lah "${ARTIFACTS_DIR}"
+          du -sh "${ARTIFACTS_DIR}"
+          echo "ARTIFACTS_DIR=${ARTIFACTS_DIR}" >> "${GITHUB_ENV}"
+        continue-on-error: true
+
+      - name: Upload (LOG) Artifacts [${{ matrix.source }}<==>${{ matrix.dest }}]
+        uses: actions/upload-artifact@v4
+        with:
+            name: ${{ matrix.source }}_${{ matrix.dest }}
+            path: |
+              /tmp/DATA/**
+              ${{ env.ARTIFACTS_DIR }}/**
+            compression-level: 0 # no compression, [Default: 6 (GNU Gzip)]
+            retention-days: 30
+            overwrite: true
+        continue-on-error: true
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v2.2.3
+        with:
+          subject-name: "${{ matrix.source }}-${{ matrix.dest }}"
+          subject-path: |
+            /tmp/DATA/**
+            ${{ env.ARTIFACTS_DIR }}/**
+          show-summary: true
+        continue-on-error: true
+        
+      - name: Merge [${{ matrix.source }} ==> ${{ matrix.dest }}]
+        if: env.MERGE_DATA == 'YES'
+        env:
+          GHCR_TOKEN: "${{ github.token }}"
+          GITHUB_TOKEN: "${{ github.token }}"
+          #GITHUB_TOKEN: "${{ secrets.RO_GHTOKEN }}"
+          HF_TOKEN: "${{ secrets.HF_TOKEN }}"
+        run: |
+          #Presets
+          set +x ; set +e
+          #--------------#
+          if echo "${{ matrix.merge-script }}" | grep -qi "http"; then
+             find "${SYSTMP}" -type f -size +10M -exec rm -rf "{}" \; 2>/dev/null
+             find "${SYSTMP}" -type d -exec bash -c 'test $(du -sb "{}" | cut -f1 | tr -d "[:space:]") -gt 10485760 && rm -rf "{}"' \; 2>/dev/null
+             curl -qfsSL "${{ matrix.merge-script }}" -o "./sync.sh"
+             dos2unix --quiet "./sync.sh"
+             chmod +x "./sync.sh"
+             PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+             wait ; echo
+          fi
+        continue-on-error: true

@@ -187,6 +187,7 @@ pushd "${TMPDIR}" &>/dev/null
   sort --version-sort --unique "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" --output "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt"
   cat "${ORAS_LOCAL}/DATA/sni-ip-ranges/all.txt" | sed '/^[[:space:]]*#/d' |\
     awk -F '[[:space:]]*--[[:space:]]*\\[|\\]' '{print $2}' | tr -s '[:space:]' '\n' |\
+    sed -E 's/[[:space:]]+//g; s/^.*\*\.\s*|\s*$//' |\
     sed -E '/^[[:space:]]*$/d; s/^[[:space:]]*\*\.?[[:space:]]*//; s/[A-Z]/\L&/g' |\
     sed -E '/([0-9].*){40}/d; s/^[[:space:]]*//; s/[[:space:]]*$//; s/[${}%]//g' | sed 's/[()]//g' |\
     sed "s/'//g" | sed 's/"//g' | sed 's/^\.\(.*\)/\1/' | sed 's/^\*//' | sed 's/^\.\(.*\)/\1/' |\

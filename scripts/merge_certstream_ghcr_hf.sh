@@ -259,6 +259,7 @@ cleanup_domains()
 {
  set -x ; echo -e "\n"
  echo -e "\n" && time sed -E '/^[[:space:]]*$/d' -i "$1" ; du -sh "$1"
+ echo -e "\n" && time sed -E 's/[[:space:]]+//g; s/^.*\*\.\s*|\s*$//' -i "$1" ; du -sh "$1"
  echo -e "\n" && time sed 's/^\*\.\(.*\)/\1/; s/^\*//' -i "$1" ; du -sh "$1"
  echo -e "\n" && time sed 's/[A-Z]/\L&/g' -i "$1" ; du -sh "$1"
  echo -e "\n" && time sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "$1" ; du -sh "$1"

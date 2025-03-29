@@ -281,6 +281,7 @@ pushd "${TMPDIR}" &>/dev/null
 cleanup_domains()
 {
  set -x ; echo -e "\n"
+ echo -e "\n" && time sed -E 's/[[:space:]]+//g; s/^.*\*\.\s*|\s*$//' -i "$1"
  echo -e "\n" && time sed -E '/^[[:space:]]*$/d; s/^[[:space:]]*\*\.?[[:space:]]*//; s/[A-Z]/\L&/g' -i "$1"
  echo -e "\n" && time sed -E '/([0-9].*){40}/d; s/^[[:space:]]*//; s/[[:space:]]*$//; s/[${}%]//g' -i "$1"
  echo -e "\n" && time sed 's/[()]//g' -i "$1"
