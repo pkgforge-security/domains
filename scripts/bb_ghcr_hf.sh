@@ -715,7 +715,7 @@ pushd "${TMPDIR}" &>/dev/null
 #Generate Certstream [Latest]
 pushd "${TMPDIR}" &>/dev/null
  unset DST_DIR DST_FILE DST_FILE_N DST_FILE_R SRC_FILE SRC_URL
- DST_DIR="${HF_REPO_LOCAL}/DATA/certstream"
+ DST_DIR="${HF_REPO_LOCAL}/DATA/ct"
  DST_FILE="${DST_DIR}/latest.txt"
  DST_FILE_R="${DST_DIR}/latest.raw.txt"
  SRC_URL="https://huggingface.co/datasets/pkgforge-security/domains/resolve/main/DATA/certstream/latest.txt"
@@ -743,7 +743,7 @@ pushd "${TMPDIR}" &>/dev/null
 #Generate Certstream [Weekly]
 pushd "${TMPDIR}" &>/dev/null
  unset DST_DIR DST_FILE DST_FILE_N DST_FILE_R SRC_FILE SRC_URL
- DST_DIR="${HF_REPO_LOCAL}/DATA/certstream"
+ DST_DIR="${HF_REPO_LOCAL}/DATA/ct"
  DST_FILE="${DST_DIR}/weekly.txt"
  DST_FILE_R="${DST_DIR}/weekly.raw.txt"
  SRC_URL="https://huggingface.co/datasets/pkgforge-security/domains/resolve/main/DATA/certstream/weekly.txt"
@@ -776,7 +776,7 @@ pushd "${TMPDIR}" &>/dev/null
  find "${HF_REPO_LOCAL}/DATA/" -type f -size -3c -print -delete \; 2>/dev/null
  tree "${HF_REPO_LOCAL}/DATA" || find "${HF_REPO_LOCAL}/DATA" | sort | awk -F/ '{indent=""; for (i=2; i<NF; i++) indent=indent " "; print (NF>1 ? indent "--> " $NF : $NF)}' ; echo -e "\n"
  realpath "${HF_REPO_LOCAL}/DATA/arkadiyt" && ls -sh "${HF_REPO_LOCAL}/DATA/arkadiyt" ; echo -e "\n"
- realpath "${HF_REPO_LOCAL}/DATA/certstream" && ls -sh "${HF_REPO_LOCAL}/DATA/certstream" ; echo -e "\n"
+ realpath "${HF_REPO_LOCAL}/DATA/ct" && ls -sh "${HF_REPO_LOCAL}/DATA/ct" ; echo -e "\n"
  realpath "${HF_REPO_LOCAL}/DATA/rix4uni" && ls -sh "${HF_REPO_LOCAL}/DATA/rix4uni" ; echo -e "\n"
  echo "ARTIFACTS_PATH=${HF_REPO_LOCAL}/DATA" >> "${GITHUB_ENV}" 2>/dev/null
  sync_to_ghcr
