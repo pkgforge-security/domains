@@ -187,7 +187,6 @@ sync_to_hf()
     git sparse-checkout add "**"
     git sparse-checkout list
     pushd "${HF_REPO_LOCAL}" &&\
-    find "./DATA" -type f -not -path "*/\.*" -exec basename "{}" \; | xargs -I "{}" git add "DATA/{}" --verbose
     git lfs track "./DATA/**"
     git sparse-checkout list 2>/dev/null
     git lfs untrack '.gitattributes' 2>/dev/null
