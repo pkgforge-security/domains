@@ -43,6 +43,18 @@ if ! command -v ripgrep &> /dev/null; then
   echo -e "[-] Failed to find ripgrep\n"
  exit 1
 fi
+sudo curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)-$(uname -s)/scopegen" -o "/usr/local/bin/scopegen" &&\
+sudo chmod 'a+x' -v "/usr/local/bin/scopegen"
+if ! command -v scopegen &> /dev/null; then
+  echo -e "[-] Failed to find scopegen\n"
+ exit 1
+fi
+sudo curl -qfsSL "https://bin.pkgforge.dev/$(uname -m)-$(uname -s)/subxtract" -o "/usr/local/bin/subxtract" &&\
+sudo chmod 'a+x' -v "/usr/local/bin/subxtract"
+if ! command -v subxtract &> /dev/null; then
+  echo -e "[-] Failed to find subxtract\n"
+ exit 1
+fi
 ##ENV
 export TZ="UTC"
 SYSTMP="$(dirname $(mktemp -u))" && export SYSTMP="${SYSTMP}"
@@ -561,7 +573,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_inscope.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt"
-      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt" |\
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt" | subxtract --domains 2>/dev/null |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope_roots.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope_roots.txt" |\
        sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re"
       cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re" |\
        python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
@@ -579,7 +593,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_bbp.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt"
-      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt" |\
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt" | subxtract --domains 2>/dev/null |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp_roots.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp_roots.txt" |\
        sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_bbp.re"
       cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_bbp.re" |\
        python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
@@ -597,7 +613,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_vdp.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt"
-      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt" |\
+      cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt" | subxtract --domains 2>/dev/null |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp_roots.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp_roots.txt" |\
        sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_vdp.re"
       cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_vdp.re" |\
        python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
@@ -610,7 +628,9 @@ pushd "${TMPDIR}" &>/dev/null
   find "${HF_REPO_LOCAL}/DATA/arkadiyt" -type f -iname "*_inscope_wildcards*" -exec cat "{}" \; |\
    sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt"
    cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt"
-   awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt" |\
+   cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt" | subxtract --domains 2>/dev/null |\
+    sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.txt"
+   awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.txt" |\
     sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re"
    cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re" |\
     python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
@@ -636,7 +656,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/rix4uni/yeswehack_inscope.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt"
-      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt" |\
+      cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt" | subxtract --domains 2>/dev/null |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope_roots.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope_roots.txt" |\
        sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_inscope.re"
       cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_inscope.re" |\
        python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
@@ -650,7 +672,9 @@ pushd "${TMPDIR}" &>/dev/null
     cat "${HF_REPO_LOCAL}/DATA/rix4uni/inscope_wildcards.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt"
-      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt" |\
+      cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt" | subxtract --domains 2>/dev/null |\
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.txt"
+      awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.txt" |\
        sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re"
       cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re" |\
        python -c 'import sys; sys.stdout.buffer.writelines(sorted(sys.stdin.buffer.readlines(), key=len, reverse=False))' |\
