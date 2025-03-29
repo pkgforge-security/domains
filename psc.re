@@ -426,6 +426,8 @@
 .*.appspaceusercontent.com
 .*.appspot.com
 .*.appudo.net
+.*.appwrite.global
+.*.appwrite.run
 .*.aq
 .*.aq.it
 .*.aquarelle
