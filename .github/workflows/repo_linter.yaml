@@ -91,14 +91,14 @@ jobs:
           #Presets
           set +x ; set +e
           #--------------#
-          curl -w "(DL) <== %{url}\n" -fSL "https://publicsuffix.org/list/public_suffix_list.dat" --retry 3 --retry-all-errors -o "${GITHUB_WORKSPACE}/main/psc.dat"
-          dos2unix --quiet "${GITHUB_WORKSPACE}/main/psc.dat"
-          cat "${GITHUB_WORKSPACE}/main/psc.dat" | ansi2txt | sed '/!/d' |\
+          curl -w "(DL) <== %{url}\n" -fSL "https://publicsuffix.org/list/public_suffix_list.dat" --retry 3 --retry-all-errors -o "${GITHUB_WORKSPACE}/main/psl.dat"
+          dos2unix --quiet "${GITHUB_WORKSPACE}/main/psl.dat"
+          cat "${GITHUB_WORKSPACE}/main/psl.dat" | ansi2txt | sed '/!/d' |\
            sed 's,/.*,,' | sed '/^[[:space:]]*$/d' | sed -E 's/[[:space:]]+//g; s/^.*\*\.\s*|\s*$//' |\
            sed 's/^\*\.\(.*\)/\1/; s/^\*//' | sed 's/^\.//; s/\.$//' | sed 's/[A-Z]/\L&/g' |\
-           sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${GITHUB_WORKSPACE}/main/psc.txt"
-           sed 's/^/./' "${GITHUB_WORKSPACE}/main/psc.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psc.ext"
-           sed 's/^/.*./' "${GITHUB_WORKSPACE}/main/psc.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psc.re"
+           sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${GITHUB_WORKSPACE}/main/psl.txt"
+           sed 's/^/./' "${GITHUB_WORKSPACE}/main/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl.ext"
+           sed 's/^/.*./' "${GITHUB_WORKSPACE}/main/psl.txt" | sort -u -o "${GITHUB_WORKSPACE}/main/psl.re"
         continue-on-error: true
 
       - name: Generate Repo Metadata (git-sizer)
