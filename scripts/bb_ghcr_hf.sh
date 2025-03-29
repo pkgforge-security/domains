@@ -532,7 +532,7 @@ pushd "${TMPDIR}" &>/dev/null
        sort -u "${DST_DIR}/intigriti_all_domains_vdp.txt" -o "${DST_DIR}/intigriti_all_domains_vdp.txt"
     fi
   #Cleanup
-   find "${HF_REPO_LOCAL}/DATA/" -type f -size -3c -print -delete \; 2>/dev/null  
+   find "${HF_REPO_LOCAL}/DATA/" -type f -size -3c -print -delete \; 2>/dev/null
   #List
    tree "${HF_REPO_LOCAL}/DATA" || find "${HF_REPO_LOCAL}/DATA" | sort | awk -F/ '{indent=""; for (i=2; i<NF; i++) indent=indent " "; print (NF>1 ? indent "--> " $NF : $NF)}' ; echo -e "\n"
    realpath "${HF_REPO_LOCAL}/DATA/arkadiyt" && ls -sh "${HF_REPO_LOCAL}/DATA/arkadiyt" ; echo -e "\n"
@@ -609,6 +609,7 @@ pushd "${TMPDIR}" &>/dev/null
 #-------------------------------------------------------#
 #Upload
 pushd "${TMPDIR}" &>/dev/null
+ find "${HF_REPO_LOCAL}/DATA/" -type f -size -3c -print -delete \; 2>/dev/null
  tree "${HF_REPO_LOCAL}/DATA" || find "${HF_REPO_LOCAL}/DATA" | sort | awk -F/ '{indent=""; for (i=2; i<NF; i++) indent=indent " "; print (NF>1 ? indent "--> " $NF : $NF)}' ; echo -e "\n"
  realpath "${HF_REPO_LOCAL}/DATA/arkadiyt" && ls -sh "${HF_REPO_LOCAL}/DATA/arkadiyt" ; echo -e "\n"
  realpath "${HF_REPO_LOCAL}/DATA/rix4uni" && ls -sh "${HF_REPO_LOCAL}/DATA/rix4uni" ; echo -e "\n"
