@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-03-28_06-41-00_UTC
-// COMMIT: 09be8307bc42500a7c65ac92d0263d2ef854b13f
+// VERSION: 2025-03-28_19-52-32_UTC
+// COMMIT: b39e35ef3835c5db7aaf311c179fc1f6d92b92d5
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -6749,7 +6749,7 @@ org.zw
 
 // newGTLDs
 
-// List of new gTLDs imported from https://www.icann.org/resources/registries/gtlds/v2/gtlds.json on 2025-02-28T15:18:00Z
+// List of new gTLDs imported from https://www.icann.org/resources/registries/gtlds/v2/gtlds.json on 2025-03-28T15:18:17Z
 // This list is auto-generated, don't edit it manually.
 // aaa : American Automobile Association, Inc.
 // https://www.iana.org/domains/root/db/aaa.html
@@ -9087,7 +9087,7 @@ marriott
 // https://www.iana.org/domains/root/db/marshalls.html
 marshalls
 
-// mattel : Mattel Sites, Inc.
+// mattel : Mattel IT Services, Inc.
 // https://www.iana.org/domains/root/db/mattel.html
 mattel
 
