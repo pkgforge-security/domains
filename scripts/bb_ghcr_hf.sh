@@ -287,6 +287,15 @@ export -f cleanup_domains
 #-------------------------------------------------------#
 
 #-------------------------------------------------------#
+filter_noise()
+{
+  sed '/accessdomain\.com$\|aivencloud\.com$\|amazon\.com$\|amazonaws\.com$\|amazonaws\.com\.cn$\|\android\.biz$\|aws\.a2z\.com$\|azure-api\.net$\|blockchainnodeengine\.com$\|cisco\.com$\|cloud\.goog$\|cloud\.jedox\.com$\|com\.ru$\|ddns\.net$\|defend\.egress\.com$\|dynamic-m\.com$\|dynamics\.com$\|dzcdn\.net$\|episerver\.net$\|google\.com$\|googleapis\.com$\|googleusercontent\.com$\|herokuapp\.com$\|host\.secureserver\.net$\|members\.linode\.com$\|microsoft\.com$\|nsw\.gov\.au$\|ondigitalocean\.com$\|p\.azurewebsites\.net$\|pages\.dev$\|register\.com$\|sa\.com$\|sdm\.network$\|siemens\.com$\|slack\.com$\|snowflakecomputing\.com$\|staff\.hostgator\.com$\|teleport\.sh$\|unifi-hosting\.ui\.com$\|us\.com$\|vercel\.app$\|workers\.dev$\|zendesk\.com$/d' -i "$1"
+}
+#export
+ export -f filter_noise
+#-------------------------------------------------------#
+
+#-------------------------------------------------------#
 ##SRC//DEST
 #https://huggingface.co/datasets/pkgforge-security/domains/tree/bb/DATA
 pushd "${TMPDIR}" &>/dev/null
@@ -560,7 +569,6 @@ pushd "${TMPDIR}" &>/dev/null
    realpath "${HF_REPO_LOCAL}/DATA/rix4uni" && ls -sh "${HF_REPO_LOCAL}/DATA/rix4uni" ; echo -e "\n"
 #-------------------------------------------------------#
 
-
 #-------------------------------------------------------#
 #Merge [Arkadiyt]
 pushd "${TMPDIR}" &>/dev/null
@@ -573,6 +581,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_inscope.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt"
+      scopegen -t "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt" -in > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.sc" 2>/dev/null
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.sc"
+       sort -u "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.sc" -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.sc"
       cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope.txt" | subxtract --domains 2>/dev/null |\
        sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope_roots.txt"
       awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_inscope_roots.txt" |\
@@ -593,6 +604,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_bbp.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt"
+      scopegen -t "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt" -in > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.sc" 2>/dev/null
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.sc"
+       sort -u "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.sc" -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.sc"
       cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp.txt" | subxtract --domains 2>/dev/null |\
        sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp_roots.txt"
       awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_bbp_roots.txt" |\
@@ -613,6 +627,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/arkadiyt/intigriti_all_domains_vdp.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt"
+      scopegen -t "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt" -in > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.sc" 2>/dev/null
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.sc"
+       sort -u "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.sc" -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.sc"
       cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp.txt" | subxtract --domains 2>/dev/null |\
        sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp_roots.txt"
       awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_vdp_roots.txt" |\
@@ -630,6 +647,9 @@ pushd "${TMPDIR}" &>/dev/null
    cleanup_domains "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt"
    cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards.txt" | subxtract --domains 2>/dev/null |\
     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.txt"
+   scopegen -t "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.txt" -wl > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.sc" 2>/dev/null
+    sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.sc"
+    sort -u "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.sc" -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.sc"
    awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/arkadiyt/all_domains_wildcards_roots.txt" |\
     sort -u -o "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re"
    cat "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re" |\
@@ -640,7 +660,6 @@ pushd "${TMPDIR}" &>/dev/null
     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' > "${HF_REPO_LOCAL}/DATA/arkadiyt/all_wildcards.re.len.rev"
 pushd "${TMPDIR}" &>/dev/null
 #-------------------------------------------------------#
-
 
 #-------------------------------------------------------#
 #Merge [rix4uni]
@@ -656,6 +675,9 @@ pushd "${TMPDIR}" &>/dev/null
       "${HF_REPO_LOCAL}/DATA/rix4uni/yeswehack_inscope.txt" |\
       sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt"
       cleanup_domains "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt"
+      scopegen -t "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt" -in > "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.sc" 2>/dev/null
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.sc"
+       sort -u "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.sc" -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.sc"
       cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope.txt" | subxtract --domains 2>/dev/null |\
        sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope_roots.txt"
       awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_inscope_roots.txt" |\
@@ -674,6 +696,9 @@ pushd "${TMPDIR}" &>/dev/null
       cleanup_domains "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt"
       cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards.txt" | subxtract --domains 2>/dev/null |\
        sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.txt"
+      scopegen -t "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.txt" -wl > "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.sc" 2>/dev/null
+       sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.sc"
+       sort -u "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.sc" -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.sc"
       awk '{gsub(/[ \t]+/, ""); gsub(/\./, "\\."); print ".*\\." $0}' "${HF_REPO_LOCAL}/DATA/rix4uni/all_domains_wildcards_roots.txt" |\
        sort -u -o "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re"
       cat "${HF_REPO_LOCAL}/DATA/rix4uni/all_wildcards.re" |\
@@ -686,6 +711,64 @@ pushd "${TMPDIR}" &>/dev/null
 pushd "${TMPDIR}" &>/dev/null
 #-------------------------------------------------------#
 
+#-------------------------------------------------------#
+#Generate Certstream [Latest]
+pushd "${TMPDIR}" &>/dev/null
+ unset DST_DIR DST_FILE DST_FILE_N DST_FILE_R SRC_FILE SRC_URL
+ DST_DIR="${HF_REPO_LOCAL}/DATA/certstream"
+ DST_FILE="${DST_DIR}/latest.txt"
+ DST_FILE_R="${DST_DIR}/latest.raw.txt"
+ SRC_URL="https://huggingface.co/datasets/pkgforge-security/domains/resolve/main/DATA/certstream/latest.txt"
+ curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/certstream-latest.txt"
+ if [[ -s "${TMPDIR}/certstream-latest.txt" && $(stat -c%s "${TMPDIR}/certstream-latest.txt") -gt 100000 ]]; then
+   mkdir -p "${DST_DIR}"
+   rm -rf "${DST_FILE}" "${DST_FILE_R}" 2>/dev/null
+   if [[ "$(wc -l < "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re.len.rev" | tr -cd '0-9')" -ge 100 ]]; then
+     ripgrep "${TMPDIR}/certstream-latest.txt" --color="never" --engine="auto" --file="${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re.len.rev" --ignore-case --no-line-number > "${DST_FILE_R}" 2>/dev/null
+     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${DST_FILE_R}"
+     sort -u "${DST_FILE_R}" -o "${DST_FILE_R}"
+     cp -fv "${DST_FILE_R}" "${DST_FILE}"
+     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${DST_FILE}"
+     filter_noise "${DST_FILE}"
+     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${DST_FILE}"
+     sort -u "${DST_FILE}" -o "${DST_FILE}"
+   else
+     echo "" > "${DST_FILE}"
+     echo "" > "${DST_FILE_R}"
+   fi
+ else
+   echo "" > "${DST_FILE}"
+   echo "" > "${DST_FILE_R}"
+ fi
+#Generate Certstream [Weekly]
+pushd "${TMPDIR}" &>/dev/null
+ unset DST_DIR DST_FILE DST_FILE_N DST_FILE_R SRC_FILE SRC_URL
+ DST_DIR="${HF_REPO_LOCAL}/DATA/certstream"
+ DST_FILE="${DST_DIR}/weekly.txt"
+ DST_FILE_R="${DST_DIR}/weekly.raw.txt"
+ SRC_URL="https://huggingface.co/datasets/pkgforge-security/domains/resolve/main/DATA/certstream/weekly.txt"
+ curl -A "${USER_AGENT}" -w "(DL) <== %{url}\n" -fSL "${SRC_URL}" --retry 3 --retry-all-errors -o "${TMPDIR}/certstream-weekly.txt"
+ if [[ -s "${TMPDIR}/certstream-weekly.txt" && $(stat -c%s "${TMPDIR}/certstream-weekly.txt") -gt 100000 ]]; then
+   mkdir -p "${DST_DIR}"
+   rm -rf "${DST_FILE}" "${DST_FILE_R}" 2>/dev/null
+   if [[ "$(wc -l < "${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re.len.rev" | tr -cd '0-9')" -ge 100 ]]; then
+     ripgrep "${TMPDIR}/certstream-weekly.txt" --color="never" --engine="auto" --file="${HF_REPO_LOCAL}/DATA/arkadiyt/all_inscope.re.len.rev" --ignore-case --no-line-number > "${DST_FILE_R}" 2>/dev/null
+     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${DST_FILE_R}"
+     sort -u "${DST_FILE_R}" -o "${DST_FILE_R}"
+     cp -fv "${DST_FILE_R}" "${DST_FILE}"
+     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${DST_FILE}"
+     filter_noise "${DST_FILE}"
+     sed 's/^[[:space:]]*//;s/[[:space:]]*$//' -i "${DST_FILE}"
+     sort -u "${DST_FILE}" -o "${DST_FILE}"
+   else
+     echo "" > "${DST_FILE}"
+     echo "" > "${DST_FILE_R}"
+   fi
+ else
+   echo "" > "${DST_FILE}"
+   echo "" > "${DST_FILE_R}"
+ fi
+#-------------------------------------------------------#
 
 #-------------------------------------------------------#
 #Upload
@@ -693,6 +776,7 @@ pushd "${TMPDIR}" &>/dev/null
  find "${HF_REPO_LOCAL}/DATA/" -type f -size -3c -print -delete \; 2>/dev/null
  tree "${HF_REPO_LOCAL}/DATA" || find "${HF_REPO_LOCAL}/DATA" | sort | awk -F/ '{indent=""; for (i=2; i<NF; i++) indent=indent " "; print (NF>1 ? indent "--> " $NF : $NF)}' ; echo -e "\n"
  realpath "${HF_REPO_LOCAL}/DATA/arkadiyt" && ls -sh "${HF_REPO_LOCAL}/DATA/arkadiyt" ; echo -e "\n"
+ realpath "${HF_REPO_LOCAL}/DATA/certstream" && ls -sh "${HF_REPO_LOCAL}/DATA/certstream" ; echo -e "\n"
  realpath "${HF_REPO_LOCAL}/DATA/rix4uni" && ls -sh "${HF_REPO_LOCAL}/DATA/rix4uni" ; echo -e "\n"
  echo "ARTIFACTS_PATH=${HF_REPO_LOCAL}/DATA" >> "${GITHUB_ENV}" 2>/dev/null
  sync_to_ghcr
