@@ -1,5 +1,5 @@
 ```mathematica
-1.8M └─┬ main
+1.9M └─┬ main
 1.6M   ├─┬ psl
 312K   │ ├── psl.dat
 180K   │ ├── psl.re.len.rev
@@ -11,10 +11,11 @@
 132K   │ ├── psl.txt.len.rev
 132K   │ ├── psl.txt.len
 132K   │ └── psl.txt
-188K   ├─┬ scripts
+208K   ├─┬ scripts
  52K   │ ├── bb_ghcr_hf.sh
  20K   │ ├── sync_nrd_ghcr_hf.sh
  20K   │ ├── merge_certstream_ghcr_hf.sh
+ 20K   │ ├── bb-crt_ghcr_hf.sh
  12K   │ ├── sync_trickest_hf.sh
  12K   │ ├── sync_trickest_ghcr.sh
  12K   │ ├── sync_sni-ip-ranges_ghcr.sh
