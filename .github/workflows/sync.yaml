@@ -201,7 +201,7 @@ jobs:
             source: "bb"
             dest: "ghcr-hf"
             script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/bb_ghcr_hf.sh"
-            merge-script: "N/A"
+            post-script: "https://raw.githubusercontent.com/pkgforge-security/domains/refs/heads/main/scripts/bb-crt_ghcr_hf.sh"
 
     steps:
       - name: Install Addons
@@ -243,7 +243,7 @@ jobs:
           echo "USER_AGENT=${USER_AGENT}" >> "${GITHUB_ENV}"
         continue-on-error: true
 
-      - name: Sync Mirror [${{ matrix.source }} ==> ${{ matrix.dest }}]
+      - name: Sync [${{ matrix.source }} ==> ${{ matrix.dest }}]
         env:
           GHCR_TOKEN: "${{ github.token }}"
           GITHUB_TOKEN: "${{ github.token }}"
@@ -295,8 +295,8 @@ jobs:
           show-summary: true
         continue-on-error: true
         
-      - name: Merge [${{ matrix.source }} ==> ${{ matrix.dest }}]
-        if: env.MERGE_DATA == 'YES'
+      - name: CRT [${{ matrix.source }} ==> ${{ matrix.dest }}]
+        if: env.GEN_CRT == 'YES'
         env:
           GHCR_TOKEN: "${{ github.token }}"
           GITHUB_TOKEN: "${{ github.token }}"
@@ -306,13 +306,14 @@ jobs:
           #Presets
           set +x ; set +e
           #--------------#
-          if echo "${{ matrix.merge-script }}" | grep -qi "http"; then
+          if echo "${{ matrix.post-script }}" | grep -qi "http"; then
              find "${SYSTMP}" -type f -size +10M -exec rm -rf "{}" \; 2>/dev/null
              find "${SYSTMP}" -type d -exec bash -c 'test $(du -sb "{}" | cut -f1 | tr -d "[:space:]") -gt 10485760 && rm -rf "{}"' \; 2>/dev/null
-             curl -qfsSL "${{ matrix.merge-script }}" -o "./sync.sh"
+             curl -qfsSL "${{ matrix.post-script }}" -o "./sync.sh"
              dos2unix --quiet "./sync.sh"
              chmod +x "./sync.sh"
-             PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+             #PARALLEL_LIMIT="$(($(nproc)+1))" bash "./sync.sh"
+             PARALLEL_LIMIT="100" DELAY_LIMIT="200" RESULT_LIMIT="4" bash "./sync.sh"
              wait ; echo
           fi
         continue-on-error: true
