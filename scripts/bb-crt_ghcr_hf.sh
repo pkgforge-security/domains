@@ -309,7 +309,7 @@ pushd "${TMPDIR}" &>/dev/null
      DST_FILE_R="${DST_DIR}/latest.ct.raw.jsonl"
      rm -rf "${DST_DIR}" 2>/dev/null
      mkdir -p "${DST_DIR}"
-     timeout -k 1m 69m crt -i "${TMPDIR}/ct-input.txt" -c "${PARALLEL_LIMIT:-100}" -d "${DELAY_LIMIT:-500}" -l "${RESULT_LIMIT:-4}" -jsonl -o "${TMPDIR}/latest.ct.raw.jsonl"
+     timeout -k 1m 69m crt -i "${TMPDIR}/ct-input.txt" -c "${PARALLEL_LIMIT:-100}" -d "${DELAY_LIMIT:-500}" -l "${RESULT_LIMIT:-4}" -jsonl -o "${TMPDIR}/latest.ct.raw.jsonl" &>/dev/null
        echo -e "\n[+] Processing Generated ${DST_FILE_R}\n"
        #L_N="0"
        #T_N="$(wc -l < "${DST_FILE_R}" | tr -cd '0-9')"
