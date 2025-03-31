@@ -74,11 +74,14 @@ fi
  PKG_WEBPAGE="$(echo "https://github.com/pkgforge-security/domains" | sed 's|^/*||; s|/*$||' | tr -d '[:space:]')"
  export GHCRPKG_URL PKG_WEBPAGE
 ##Repo
-pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge-security/domains" && cd "./domains"
- export HF_BRANCH="bb"
+export HF_BRANCH="bb"
+pushd "$(mktemp -d)" &>/dev/null &&\
+ git clone --branch "${HF_BRANCH}" --depth="1" --filter="blob:none" --no-checkout --single-branch "https://huggingface.co/datasets/pkgforge-security/domains" ||\
+ git clone --filter="blob:none" --depth="1" --no-checkout "https://huggingface.co/datasets/pkgforge-security/domains" 
+ cd "./domains" || exit 1
  git sparse-checkout set ""
  git sparse-checkout set --no-cone --sparse-index "/README.md"
- git checkout -b "${HF_BRANCH}" || git checkout "${HF_BRANCH}"
+ git checkout "${HF_BRANCH}" || git checkout -b "${HF_BRANCH}"
  git checkout ; unset HF_REPO_LOCAL ; HF_REPO_LOCAL="$(realpath .)" && export HF_REPO_LOCAL="${HF_REPO_LOCAL}"
  if [ ! -d "${HF_REPO_LOCAL}" ] || [ "$(du -s "${HF_REPO_LOCAL}" | cut -f1 | tr -d '[:space:]')" -le 100 ]; then
    echo -e "\n[X] FATAL: Failed to clone HF Repo\n"
@@ -92,7 +95,7 @@ pushd "$(mktemp -d)" &>/dev/null && git clone --filter="blob:none" --depth="1" -
      HF_BRANCH_URI="$(echo "${HF_BRANCH}" | tr -d '[:space:]' | jq -sRr '@uri' | tr -d '[:space:]')"
      echo -e "[+] Remote (Branch): ${HF_BRANCH}"
      echo -e "[+] Remote (URL): https://huggingface.co/datasets/pkgforge-security/domains/${HF_BRANCH_URI}"
-     git -C "${HF_REPO_LOCAL}" checkout -b "${HF_BRANCH}" || git checkout "${HF_BRANCH}"
+     git -C "${HF_REPO_LOCAL}" checkout "${HF_BRANCH}" || git -C "${HF_REPO_LOCAL}" checkout -b "${HF_BRANCH}"
      if [[ "$(git -C "${HF_REPO_LOCAL}" rev-parse --abbrev-ref HEAD | sed -e '/^[[:space:]]*$/d;1q' | tr -d '[:space:]')" != "${HF_BRANCH}" ]]; then
         echo -e "\n[-] FATAL: Failed to switch to ${HF_BRANCH}\n"
        return 1
