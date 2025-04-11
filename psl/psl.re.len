@@ -2914,6 +2914,7 @@
 .*\.science
 .*\.se\.net
 .*\.sec\.ps
+.*\.seg\.ar
 .*\.seg\.br
 .*\.sel\.no
 .*\.sex\.hu
@@ -3119,6 +3120,7 @@
 .*\.discount
 .*\.discover
 .*\.download
+.*\.e2b\.app
 .*\.ebiz\.tw
 .*\.edu\.krd
 .*\.eng\.pro
@@ -4512,6 +4514,7 @@
 .*\.cog\.mi\.us
 .*\.commune\.am
 .*\.contractors
+.*\.convex\.app
 .*\.cosenza\.it
 .*\.creditunion
 .*\.cremona\.it
@@ -5655,6 +5658,7 @@
 .*\.codespot\.com
 .*\.consulado\.st
 .*\.control\.aero
+.*\.convex\.cloud
 .*\.council\.aero
 .*\.cpserver\.com
 .*\.ctfcloud\.net
@@ -8774,7 +8778,6 @@
 .*\.shiranuka\.hokkaido\.jp
 .*\.shirataka\.yamagata\.jp
 .*\.shiriuchi\.hokkaido\.jp
-.*\.staging\.devinapps\.com
 .*\.sub\.wc\.psl\.hrsn\.dev
 .*\.sukagawa\.fukushima\.jp
 .*\.tabayama\.yamanashi\.jp

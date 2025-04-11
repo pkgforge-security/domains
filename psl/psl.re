@@ -1629,6 +1629,8 @@
 .*\.contagem\.br
 .*\.contractors
 .*\.control\.aero
+.*\.convex\.app
+.*\.convex\.cloud
 .*\.convex\.site
 .*\.cooking
 .*\.cool
@@ -1996,6 +1998,7 @@
 .*\.dønna\.no
 .*\.e12\.ve
 .*\.e164\.arpa
+.*\.e2b\.app
 .*\.e4\.cz
 .*\.e\.bg
 .*\.e\.se
@@ -7619,6 +7622,7 @@
 .*\.security
 .*\.securitytactics\.com
 .*\.seek
+.*\.seg\.ar
 .*\.seg\.br
 .*\.seidat\.net
 .*\.seihi\.nagasaki\.jp
@@ -8013,7 +8017,6 @@
 .*\.stackit\.zone
 .*\.stada
 .*\.stage\.nodeart\.io
-.*\.staging\.devinapps\.com
 .*\.staging\.expo\.app
 .*\.staging\.replit\.dev
 .*\.stalowa-wola\.pl
