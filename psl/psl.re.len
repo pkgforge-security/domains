@@ -4568,6 +4568,7 @@
 .*\.ferrara\.it
 .*\.fetsund\.no
 .*\.fi\.eu\.org
+.*\.figma\.site
 .*\.finnøy\.no
 .*\.firenet\.ch
 .*\.firenze\.it
@@ -9319,6 +9320,7 @@
 .*\.auth\.ap-southeast-2\.amazoncognito\.com
 .*\.auth\.ap-southeast-3\.amazoncognito\.com
 .*\.auth\.ap-southeast-4\.amazoncognito\.com
+.*\.auth\.ap-southeast-5\.amazoncognito\.com
 .*\.emrappui-prod\.ap-east-1\.amazonaws\.com
 .*\.emrappui-prod\.ca-west-1\.amazonaws\.com
 .*\.emrappui-prod\.eu-west-1\.amazonaws\.com
@@ -9484,6 +9486,7 @@
 .*\.analytics-gateway\.us-east-1\.amazonaws\.com
 .*\.analytics-gateway\.us-east-2\.amazonaws\.com
 .*\.analytics-gateway\.us-west-2\.amazonaws\.com
+.*\.auth-fips\.us-gov-east-1\.amazoncognito\.com
 .*\.auth-fips\.us-gov-west-1\.amazoncognito\.com
 .*\.emrappui-prod\.us-gov-east-1\.amazonaws\.com
 .*\.emrappui-prod\.us-gov-west-1\.amazonaws\.com
