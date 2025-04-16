@@ -3630,7 +3630,6 @@ idv.hk
 idv.tw
 ie
 ie.eu.org
-ie.ua
 ieee
 if.ua
 ifm
