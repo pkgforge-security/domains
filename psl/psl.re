@@ -2454,6 +2454,7 @@
 .*\.exposed
 .*\.express
 .*\.express\.aero
+.*\.express\.val\.run
 .*\.extraspace
 .*\.ezproxy\.kuleuven\.be
 .*\.f5\.si
@@ -4846,7 +4847,6 @@
 .*\.lovesick\.jp
 .*\.lowicz\.pl
 .*\.lpages\.co
-.*\.lpg\.objectstorage\.ch
 .*\.lpl
 .*\.lplfinancial
 .*\.lpusercontent\.com
@@ -7032,7 +7032,6 @@
 .*\.rj\.leg\.br
 .*\.rl\.no
 .*\.rm\.it
-.*\.rma\.objectstorage\.ch
 .*\.rn\.gov\.br
 .*\.rn\.it
 .*\.rn\.leg\.br
@@ -8887,7 +8886,6 @@
 .*\.vaksdal\.no
 .*\.val-d-aosta\.it
 .*\.val-daosta\.it
-.*\.val\.run
 .*\.vald-aosta\.it
 .*\.valdaosta\.it
 .*\.valer\.hedmark\.no
