@@ -3378,6 +3378,7 @@
 .*\.univ\.sn
 .*\.user\.fm
 .*\.vaga\.no
+.*\.val\.run
 .*\.vang\.no
 .*\.vanguard
 .*\.vega\.no
@@ -6962,7 +6963,6 @@
 .*\.emiliaromagna\.it
 .*\.ent\.platform\.sh
 .*\.ex\.futurecms\.at
-.*\.express\.val\.run
 .*\.fantasyleague\.cc
 .*\.fedorapeople\.org
 .*\.forgot\.her\.name
@@ -8553,6 +8553,7 @@
 .*\.kunneppu\.hokkaido\.jp
 .*\.kurashiki\.okayama\.jp
 .*\.kuriyama\.hokkaido\.jp
+.*\.lpg\.objectstorage\.ch
 .*\.matsumae\.hokkaido\.jp
 .*\.matsushima\.miyagi\.jp
 .*\.matsuura\.nagasaki\.jp
@@ -8597,6 +8598,7 @@
 .*\.pages\.torproject\.net
 .*\.playstation-cloud\.com
 .*\.rankoshi\.hokkaido\.jp
+.*\.rma\.objectstorage\.ch
 .*\.rsc\.contentproxy9\.cz
 .*\.runs\.onstackit\.cloud
 .*\.ryugasaki\.ibaraki\.jp
