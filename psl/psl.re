@@ -769,6 +769,7 @@
 .*\.belem\.br
 .*\.belluno\.it
 .*\.benevento\.it
+.*\.bentley
 .*\.bentre\.vn
 .*\.beppu\.oita\.jp
 .*\.berg\.no
