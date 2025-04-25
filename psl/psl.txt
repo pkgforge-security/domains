@@ -1828,6 +1828,7 @@ dev-builder.code.com
 dev-myqnapcloud.com
 dev.adobeaemcloud.com
 dev.br
+dev.project-study.com
 developer.app
 development.run
 devices.resinstaging.io
@@ -5283,6 +5284,7 @@ mls
 mm
 mma
 mmafan.biz
+mmv.kr
 mn
 mn.it
 mn.us
@@ -6766,6 +6768,7 @@ press.se
 presse.km
 presse.ml
 preview.csb.app
+preview.site
 pri.ee
 prime
 primetel.cloud
@@ -9025,6 +9028,7 @@ viva
 vivian.jp
 vivo
 vix.br
+vki.kr
 vlaanderen
 vladikavkaz.ru
 vladikavkaz.su

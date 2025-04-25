@@ -2469,6 +2469,7 @@
 .*\.mil\.za
 .*\.mil\.zm
 .*\.mil\.zw
+.*\.mmv\.kr
 .*\.mod\.gi
 .*\.mol\.it
 .*\.monster
@@ -2979,6 +2980,7 @@
 .*\.vic\.au
 .*\.vik\.no
 .*\.vix\.br
+.*\.vki\.kr
 .*\.vp4\.me
 .*\.walmart
 .*\.wanggou
@@ -5850,6 +5852,7 @@
 .*\.pordenone\.it
 .*\.porsanger\.no
 .*\.porsgrunn\.no
+.*\.preview\.site
 .*\.przeworsk\.pl
 .*\.psse\.gov\.pl
 .*\.quangbinh\.vn
@@ -8697,6 +8700,7 @@
 .*\.custom\.metacentrum\.cz
 .*\.de\.trendhosting\.cloud
 .*\.dev\.adobeaemcloud\.com
+.*\.dev\.project-study\.com
 .*\.digitaloceanspaces\.com
 .*\.dyn\.home-webserver\.de
 .*\.elb\.amazonaws\.com\.cn
