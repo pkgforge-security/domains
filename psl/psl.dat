@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-04-24_07-06-33_UTC
-// COMMIT: c322c834229184ff0161394dfeb8a5d16381228f
+// VERSION: 2025-04-24_08-03-48_UTC
+// COMMIT: 8605b91ddd176ffa4333adc3a6b4b6eece59f3b5
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -13088,10 +13088,11 @@ en-root.fr
 mytuleap.com
 tuleap-partners.com
 
-// Encoretivity AB : https://encore.dev
-// Submitted by André Eriksson <andre@encore.dev>
+// Encoretivity AB : https://encore.cloud
+// Submitted by André Eriksson <security@encore.cloud>
 encr.app
 encoreapi.com
+lp.dev
 
 // encoway GmbH : https://www.encoway.de
 // Submitted by Marcel Daus <cloudops@encoway.de>
