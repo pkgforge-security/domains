@@ -1048,6 +1048,7 @@
 .*\.shiranuka\.hokkaido\.jp
 .*\.shirataka\.yamagata\.jp
 .*\.shiriuchi\.hokkaido\.jp
+.*\.sub\.wc\.psl\.hrsn\.dev
 .*\.sukagawa\.fukushima\.jp
 .*\.tabayama\.yamanashi\.jp
 .*\.takanezawa\.tochigi\.jp
@@ -2066,6 +2067,7 @@
 .*\.simplesite\.com\.br
 .*\.soma\.fukushima\.jp
 .*\.stjordalshalsen\.no
+.*\.sub\.psl\.hrsn\.dev
 .*\.suginami\.tokyo\.jp
 .*\.sugito\.saitama\.jp
 .*\.tadotsu\.kagawa\.jp
@@ -2299,6 +2301,7 @@
 .*\.kusatsu\.shiga\.jp
 .*\.linkyard-cloud\.ch
 .*\.linodeobjects\.com
+.*\.localhostcert\.net
 .*\.lpusercontent\.com
 .*\.machida\.tokyo\.jp
 .*\.magentosite\.cloud
@@ -2469,6 +2472,7 @@
 .*\.wakuya\.miyagi\.jp
 .*\.wanouchi\.gifu\.jp
 .*\.watari\.miyagi\.jp
+.*\.wc\.psl\.hrsn\.dev
 .*\.webspaceconfig\.de
 .*\.workinggroup\.aero
 .*\.yachiyo\.chiba\.jp
