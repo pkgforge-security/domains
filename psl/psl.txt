@@ -6875,6 +6875,7 @@ quest
 quicksytes.com
 quipelements.com
 quizzes.cx
+qzz.io
 r.appspot.com
 r.bg
 r.cdn77.net
@@ -9303,6 +9304,7 @@ xmit.co
 xmit.dev
 xnbay.com
 xs4all.space
+xx.kg
 xxx
 xyz
 xz.cn

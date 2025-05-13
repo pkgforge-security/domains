@@ -6875,6 +6875,7 @@
 .*\.quicksytes\.com
 .*\.quipelements\.com
 .*\.quizzes\.cx
+.*\.qzz\.io
 .*\.r2\.dev
 .*\.r\.appspot\.com
 .*\.r\.bg
@@ -9303,6 +9304,7 @@
 .*\.xmit\.dev
 .*\.xnbay\.com
 .*\.xs4all\.space
+.*\.xx\.kg
 .*\.xxx
 .*\.xyz
 .*\.xz\.cn
