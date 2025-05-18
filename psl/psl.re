@@ -6751,7 +6751,6 @@
 .*\.pr\.leg\.br
 .*\.pr\.ml
 .*\.pr\.us
-.*\.pramerica
 .*\.prato\.it
 .*\.praxi
 .*\.prd\.fr
