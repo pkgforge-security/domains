@@ -1435,10 +1435,12 @@ zt.ua
 abbott
 abbvie
 abc.br
+abg.ec
 abo.pa
 abr.it
 act.au
 adm.br
+adm.ec
 adv.br
 adv.mz
 ae.org
@@ -1463,6 +1465,7 @@ arq.br
 art.br
 art.do
 art.dz
+art.ec
 art.ht
 art.ml
 art.pl
@@ -1474,6 +1477,7 @@ ath.cx
 atm.pl
 ato.br
 author
+bar.ec
 bas.it
 bayern
 bbs.tr
@@ -1495,6 +1499,7 @@ biz.cy
 biz.dk
 biz.et
 biz.fj
+biz.gh
 biz.gl
 biz.id
 biz.in
@@ -1698,12 +1703,14 @@ comsec
 condos
 coupon
 coz.br
+cpa.ec
 crd.co
 credit
 cri.br
 cri.nz
 cruise
 csx.cc
+cue.ec
 daa.jp
 dating
 datsun
@@ -1717,8 +1724,10 @@ des.br
 design
 det.br
 dev.br
+dgn.ec
 direct
 dni.us
+doc.ec
 doctor
 drr.ac
 dunlop
@@ -1868,8 +1877,10 @@ emr.it
 energy
 enf.br
 eng.br
+eng.ec
 eng.jo
 ens.tn
+esm.ec
 esp.br
 est.pr
 estate
@@ -1895,11 +1906,13 @@ fla.no
 flickr
 fnd.br
 fot.br
+fot.ec
 foz.br
 fst.br
 futbol
 fvg.it
 g12.br
+gal.ec
 gallup
 garden
 gb.net
@@ -2074,6 +2087,7 @@ gru.br
 gsj.bz
 gsm.pl
 gub.uy
+gye.ec
 health
 her.jp
 hermes
@@ -2088,6 +2102,7 @@ hu.net
 hughes
 hzc.io
 hå.no
+ibr.ec
 id.pub
 idf.il
 idv.hk
@@ -2146,6 +2161,7 @@ kaufen
 kep.tr
 kindle
 kosher
+lat.ec
 latino
 law.za
 lawyer
@@ -2159,6 +2175,7 @@ living
 lk3.ru
 locker
 log.br
+loj.ec
 lom.it
 lom.no
 london
@@ -2256,6 +2273,7 @@ mmv.kr
 mobile
 mod.gi
 mol.it
+mon.ec
 monash
 moo.jp
 mormon
@@ -2307,6 +2325,7 @@ net.fj
 net.fm
 net.ge
 net.gg
+net.gh
 net.gl
 net.gn
 net.gp
@@ -2443,6 +2462,7 @@ nowruz
 nsn.us
 nsw.au
 ntr.br
+ntr.ec
 nyc.mn
 obj.ag
 odo.br
@@ -2649,6 +2669,7 @@ pro.tt
 pro.vn
 psc.br
 psi.br
+pub.ec
 pub.sa
 pug.it
 pvh.br
@@ -2682,6 +2703,7 @@ res.in
 review
 rgr.jp
 rio.br
+rio.ec
 rogers
 ru.com
 ru.net
@@ -2690,6 +2712,7 @@ ryukyu
 sa.com
 safety
 sakura
+sal.ec
 sanofi
 sar.it
 sch.ae
@@ -2768,9 +2791,12 @@ travel
 trd.br
 ts.net
 tsk.tr
+tul.ec
 tur.ar
 tur.br
+tur.ec
 udi.br
+uio.ec
 uk.com
 uk.net
 umb.it
@@ -2783,6 +2809,7 @@ vao.it
 vda.it
 ven.it
 vet.br
+vet.ec
 vgs.no
 viajes
 vic.au
@@ -2817,6 +2844,7 @@ www.ro
 x0.com
 xihuan
 xii.jp
+xxx.ec
 yachts
 yandex
 ynh.fr
@@ -2922,6 +2950,7 @@ amli.no
 amot.no
 android
 arna.no
+arqt.ec
 arte.bo
 arts.nf
 arts.ro
@@ -2965,6 +2994,7 @@ caravan
 careers
 channel
 charity
+chef.ec
 chintai
 ciao.jp
 citadel
@@ -2979,6 +3009,7 @@ compare
 conf.au
 conf.lv
 conn.uk
+cont.ec
 contact
 cooking
 coop.ar
@@ -3004,6 +3035,7 @@ ddns.me
 de.cool
 deca.jp
 deci.jp
+dent.ec
 dentist
 desa.id
 digital
@@ -3162,6 +3194,7 @@ markets
 med.pro
 mex.com
 mine.nu
+mktg.ec
 mobi.gp
 mobi.ke
 mobi.ng
@@ -3231,7 +3264,10 @@ priv.hu
 priv.me
 priv.no
 priv.pl
+prof.ec
 prof.pr
+psic.ec
+psiq.ec
 publ.cv
 publ.pt
 pupu.jp
@@ -3250,6 +3286,7 @@ roan.no
 roma.it
 rome.it
 rost.no
+rrpp.ec
 run.app
 saga.jp
 samsung
@@ -3282,6 +3319,7 @@ tana.no
 tank.jp
 taxi.br
 tcp4.me
+tech.ec
 temasek
 test.tj
 theater
@@ -3337,6 +3375,7 @@ aem.live
 aem.page
 agrar.hu
 agric.za
+agron.ec
 aichi.jp
 airforce
 akita.jp
@@ -3489,6 +3528,7 @@ deno.net
 deta.app
 deta.dev
 diamonds
+disco.ec
 discount
 discover
 dix.asia
@@ -3663,6 +3703,7 @@ nuoro.it
 nyat.app
 observer
 odesa.ua
+odont.ec
 olawa.pl
 opole.pl
 orsta.no

@@ -5930,6 +5930,7 @@
 .aem.page
 .agrar.hu
 .agric.za
+.agron.ec
 .aichi.jp
 .airforce
 .akita.jp
@@ -6082,6 +6083,7 @@
 .deta.app
 .deta.dev
 .diamonds
+.disco.ec
 .discount
 .discover
 .dix.asia
@@ -6256,6 +6258,7 @@
 .nyat.app
 .observer
 .odesa.ua
+.odont.ec
 .olawa.pl
 .opole.pl
 .orsta.no
@@ -6448,6 +6451,7 @@
 .amot.no
 .android
 .arna.no
+.arqt.ec
 .arte.bo
 .arts.nf
 .arts.ro
@@ -6491,6 +6495,7 @@
 .careers
 .channel
 .charity
+.chef.ec
 .chintai
 .ciao.jp
 .citadel
@@ -6505,6 +6510,7 @@
 .conf.au
 .conf.lv
 .conn.uk
+.cont.ec
 .contact
 .cooking
 .coop.ar
@@ -6530,6 +6536,7 @@
 .de.cool
 .deca.jp
 .deci.jp
+.dent.ec
 .dentist
 .desa.id
 .digital
@@ -6688,6 +6695,7 @@
 .med.pro
 .mex.com
 .mine.nu
+.mktg.ec
 .mobi.gp
 .mobi.ke
 .mobi.ng
@@ -6757,7 +6765,10 @@
 .priv.me
 .priv.no
 .priv.pl
+.prof.ec
 .prof.pr
+.psic.ec
+.psiq.ec
 .publ.cv
 .publ.pt
 .pupu.jp
@@ -6776,6 +6787,7 @@
 .roma.it
 .rome.it
 .rost.no
+.rrpp.ec
 .run.app
 .saga.jp
 .samsung
@@ -6808,6 +6820,7 @@
 .tank.jp
 .taxi.br
 .tcp4.me
+.tech.ec
 .temasek
 .test.tj
 .theater
@@ -6864,10 +6877,12 @@
 .abbott
 .abbvie
 .abc.br
+.abg.ec
 .abo.pa
 .abr.it
 .act.au
 .adm.br
+.adm.ec
 .adv.br
 .adv.mz
 .ae.org
@@ -6892,6 +6907,7 @@
 .art.br
 .art.do
 .art.dz
+.art.ec
 .art.ht
 .art.ml
 .art.pl
@@ -6903,6 +6919,7 @@
 .atm.pl
 .ato.br
 .author
+.bar.ec
 .bas.it
 .bayern
 .bbs.tr
@@ -6924,6 +6941,7 @@
 .biz.dk
 .biz.et
 .biz.fj
+.biz.gh
 .biz.gl
 .biz.id
 .biz.in
@@ -7127,12 +7145,14 @@
 .condos
 .coupon
 .coz.br
+.cpa.ec
 .crd.co
 .credit
 .cri.br
 .cri.nz
 .cruise
 .csx.cc
+.cue.ec
 .daa.jp
 .dating
 .datsun
@@ -7146,8 +7166,10 @@
 .design
 .det.br
 .dev.br
+.dgn.ec
 .direct
 .dni.us
+.doc.ec
 .doctor
 .drr.ac
 .dunlop
@@ -7297,8 +7319,10 @@
 .energy
 .enf.br
 .eng.br
+.eng.ec
 .eng.jo
 .ens.tn
+.esm.ec
 .esp.br
 .est.pr
 .estate
@@ -7324,11 +7348,13 @@
 .flickr
 .fnd.br
 .fot.br
+.fot.ec
 .foz.br
 .fst.br
 .futbol
 .fvg.it
 .g12.br
+.gal.ec
 .gallup
 .garden
 .gb.net
@@ -7503,6 +7529,7 @@
 .gsj.bz
 .gsm.pl
 .gub.uy
+.gye.ec
 .health
 .her.jp
 .hermes
@@ -7517,6 +7544,7 @@
 .hughes
 .hzc.io
 .hå.no
+.ibr.ec
 .id.pub
 .idf.il
 .idv.hk
@@ -7575,6 +7603,7 @@
 .kep.tr
 .kindle
 .kosher
+.lat.ec
 .latino
 .law.za
 .lawyer
@@ -7588,6 +7617,7 @@
 .lk3.ru
 .locker
 .log.br
+.loj.ec
 .lom.it
 .lom.no
 .london
@@ -7685,6 +7715,7 @@
 .mobile
 .mod.gi
 .mol.it
+.mon.ec
 .monash
 .moo.jp
 .mormon
@@ -7736,6 +7767,7 @@
 .net.fm
 .net.ge
 .net.gg
+.net.gh
 .net.gl
 .net.gn
 .net.gp
@@ -7872,6 +7904,7 @@
 .nsn.us
 .nsw.au
 .ntr.br
+.ntr.ec
 .nyc.mn
 .obj.ag
 .odo.br
@@ -8078,6 +8111,7 @@
 .pro.vn
 .psc.br
 .psi.br
+.pub.ec
 .pub.sa
 .pug.it
 .pvh.br
@@ -8111,6 +8145,7 @@
 .review
 .rgr.jp
 .rio.br
+.rio.ec
 .rogers
 .ru.com
 .ru.net
@@ -8119,6 +8154,7 @@
 .sa.com
 .safety
 .sakura
+.sal.ec
 .sanofi
 .sar.it
 .sch.ae
@@ -8197,9 +8233,12 @@
 .trd.br
 .ts.net
 .tsk.tr
+.tul.ec
 .tur.ar
 .tur.br
+.tur.ec
 .udi.br
+.uio.ec
 .uk.com
 .uk.net
 .umb.it
@@ -8212,6 +8251,7 @@
 .vda.it
 .ven.it
 .vet.br
+.vet.ec
 .vgs.no
 .viajes
 .vic.au
@@ -8246,6 +8286,7 @@
 .x0.com
 .xihuan
 .xii.jp
+.xxx.ec
 .yachts
 .yandex
 .ynh.fr

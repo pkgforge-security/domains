@@ -81,6 +81,7 @@
 .*\.abc
 .*\.abc\.br
 .*\.abeno\.osaka\.jp
+.*\.abg\.ec
 .*\.abiko\.chiba\.jp
 .*\.abira\.hokkaido\.jp
 .*\.abkhazia\.su
@@ -162,6 +163,7 @@
 .*\.adaptable\.app
 .*\.adimo\.co\.uk
 .*\.adm\.br
+.*\.adm\.ec
 .*\.adobeaemcloud\.com
 .*\.adobeaemcloud\.net
 .*\.adobeio-static\.net
@@ -213,6 +215,7 @@
 .*\.agro\.bj
 .*\.agro\.bo
 .*\.agro\.pl
+.*\.agron\.ec
 .*\.aguni\.okinawa\.jp
 .*\.ah\.cn
 .*\.ah\.no
@@ -458,10 +461,12 @@
 .*\.arna\.no
 .*\.arpa
 .*\.arq\.br
+.*\.arqt\.ec
 .*\.art
 .*\.art\.br
 .*\.art\.do
 .*\.art\.dz
+.*\.art\.ec
 .*\.art\.ht
 .*\.art\.ml
 .*\.art\.pl
@@ -683,6 +688,7 @@
 .*\.bando\.ibaraki\.jp
 .*\.bank
 .*\.bar
+.*\.bar\.ec
 .*\.bar\.pro
 .*\.barcelona
 .*\.barclaycard
@@ -833,6 +839,7 @@
 .*\.biz\.dk
 .*\.biz\.et
 .*\.biz\.fj
+.*\.biz\.gh
 .*\.biz\.gl
 .*\.biz\.id
 .*\.biz\.in
@@ -1215,6 +1222,7 @@
 .*\.chat
 .*\.cheap
 .*\.cheap\.jp
+.*\.chef\.ec
 .*\.cherkassy\.ua
 .*\.cherkasy\.ua
 .*\.chernigov\.ua
@@ -1624,6 +1632,7 @@
 .*\.consultant\.aero
 .*\.consulting
 .*\.consulting\.aero
+.*\.cont\.ec
 .*\.contact
 .*\.contagem\.br
 .*\.contractors
@@ -1656,6 +1665,7 @@
 .*\.courses
 .*\.coz\.br
 .*\.cpa
+.*\.cpa\.ec
 .*\.cpa\.pro
 .*\.cpanel\.site
 .*\.cprapid\.com
@@ -1692,6 +1702,7 @@
 .*\.ct\.us
 .*\.ctfcloud\.net
 .*\.cu
+.*\.cue\.ec
 .*\.cuiaba\.br
 .*\.cuisinella
 .*\.cuneo\.it
@@ -1809,6 +1820,7 @@
 .*\.deno-staging\.dev
 .*\.deno\.dev
 .*\.deno\.net
+.*\.dent\.ec
 .*\.dental
 .*\.dentist
 .*\.dep\.no
@@ -1836,6 +1848,7 @@
 .*\.df\.leg\.br
 .*\.dfirma\.pl
 .*\.dgca\.aero
+.*\.dgn\.ec
 .*\.dh\.bytemark\.co\.uk
 .*\.dhl
 .*\.diadem\.cloud
@@ -1850,6 +1863,7 @@
 .*\.direct\.quickconnect\.cn
 .*\.direct\.quickconnect\.to
 .*\.directory
+.*\.disco\.ec
 .*\.discordsays\.com
 .*\.discordsez\.com
 .*\.discount
@@ -1895,6 +1909,7 @@
 .*\.dnsupdate\.info
 .*\.dnsupdater\.de
 .*\.do
+.*\.doc\.ec
 .*\.docs
 .*\.doctor
 .*\.does-it\.net
@@ -2324,6 +2339,7 @@
 .*\.energy
 .*\.enf\.br
 .*\.eng\.br
+.*\.eng\.ec
 .*\.eng\.jo
 .*\.eng\.pro
 .*\.engerdal\.no
@@ -2357,6 +2373,7 @@
 .*\.es\.leg\.br
 .*\.esan\.hokkaido\.jp
 .*\.esashi\.hokkaido\.jp
+.*\.esm\.ec
 .*\.esp\.br
 .*\.esq
 .*\.est-a-la-maison\.com
@@ -2626,6 +2643,7 @@
 .*\.forumz\.info
 .*\.fosnes\.no
 .*\.fot\.br
+.*\.fot\.ec
 .*\.foundation
 .*\.fox
 .*\.foz\.br
@@ -2815,6 +2833,7 @@
 .*\.ga\.us
 .*\.gaivuotna\.no
 .*\.gal
+.*\.gal\.ec
 .*\.gallery
 .*\.gallo
 .*\.gallup
@@ -3233,6 +3252,7 @@
 .*\.gwangju\.kr
 .*\.gx\.cn
 .*\.gy
+.*\.gye\.ec
 .*\.gyeongbuk\.kr
 .*\.gyeonggi\.kr
 .*\.gyeongnam\.kr
@@ -3592,6 +3612,7 @@
 .*\.ibestad\.no
 .*\.ibigawa\.gifu\.jp
 .*\.ibm
+.*\.ibr\.ec
 .*\.ibxos\.it
 .*\.ic\.gov\.pl
 .*\.icbc
@@ -4633,6 +4654,7 @@
 .*\.lasalle
 .*\.laspezia\.it
 .*\.lat
+.*\.lat\.ec
 .*\.latina\.it
 .*\.latino
 .*\.latrobe
@@ -4815,6 +4837,7 @@
 .*\.logoip\.de
 .*\.lohmus\.me
 .*\.loisirs\.bj
+.*\.loj\.ec
 .*\.lol
 .*\.lolipop\.io
 .*\.lolipopmc\.jp
@@ -5275,6 +5298,7 @@
 .*\.mk
 .*\.mk\.eu\.org
 .*\.mk\.ua
+.*\.mktg\.ec
 .*\.ml
 .*\.mlb
 .*\.mlbfan\.org
@@ -5320,6 +5344,7 @@
 .*\.molise\.it
 .*\.mom
 .*\.mombetsu\.hokkaido\.jp
+.*\.mon\.ec
 .*\.monash
 .*\.mond\.jp
 .*\.money
@@ -5710,6 +5735,7 @@
 .*\.net\.fm
 .*\.net\.ge
 .*\.net\.gg
+.*\.net\.gh
 .*\.net\.gl
 .*\.net\.gn
 .*\.net\.gp
@@ -6060,6 +6086,7 @@
 .*\.nt\.ro
 .*\.ntdll\.top
 .*\.ntr\.br
+.*\.ntr\.ec
 .*\.ntt
 .*\.nu
 .*\.nu\.ca
@@ -6120,6 +6147,7 @@
 .*\.odessa\.ua
 .*\.odo\.br
 .*\.odo\.replit\.dev
+.*\.odont\.ec
 .*\.oe\.yamagata\.jp
 .*\.of\.by
 .*\.of\.je
@@ -6799,6 +6827,7 @@
 .*\.production\.aero
 .*\.productions
 .*\.prof
+.*\.prof\.ec
 .*\.prof\.pr
 .*\.profesional\.bo
 .*\.progressive
@@ -6816,6 +6845,8 @@
 .*\.ps
 .*\.psc\.br
 .*\.psi\.br
+.*\.psic\.ec
+.*\.psiq\.ec
 .*\.psp\.gov\.pl
 .*\.psse\.gov\.pl
 .*\.pstmn\.io
@@ -6824,6 +6855,7 @@
 .*\.pt\.it
 .*\.pu\.it
 .*\.pub
+.*\.pub\.ec
 .*\.pub\.instances\.scw\.cloud
 .*\.pub\.sa
 .*\.publ\.cv
@@ -7022,6 +7054,7 @@
 .*\.ringsaker\.no
 .*\.rio
 .*\.rio\.br
+.*\.rio\.ec
 .*\.riobranco\.br
 .*\.riopreto\.br
 .*\.rip
@@ -7071,6 +7104,7 @@
 .*\.royrvik\.no
 .*\.rr\.gov\.br
 .*\.rr\.leg\.br
+.*\.rrpp\.ec
 .*\.rs
 .*\.rs\.ba
 .*\.rs\.gov\.br
@@ -7487,6 +7521,7 @@
 .*\.sakuratan\.com
 .*\.sakuraweb\.com
 .*\.sakyo\.kyoto\.jp
+.*\.sal\.ec
 .*\.salangen\.no
 .*\.salat\.no
 .*\.sale
@@ -8342,6 +8377,7 @@
 .*\.tec\.mi\.us
 .*\.tec\.ve
 .*\.tech
+.*\.tech\.ec
 .*\.tech\.orange
 .*\.technology
 .*\.tecnologia\.bo
@@ -8675,12 +8711,14 @@
 .*\.tube
 .*\.tucker\.replit\.dev
 .*\.tui
+.*\.tul\.ec
 .*\.tula\.su
 .*\.tuleap-partners\.com
 .*\.tunes
 .*\.tunk\.org
 .*\.tur\.ar
 .*\.tur\.br
+.*\.tur\.ec
 .*\.turek\.pl
 .*\.turin\.it
 .*\.turystyka\.pl
@@ -8749,6 +8787,7 @@
 .*\.ugim\.gov\.pl
 .*\.uh-oh\.jp
 .*\.ui\.nabu\.casa
+.*\.uio\.ec
 .*\.uji\.kyoto\.jp
 .*\.ujiie\.tochigi\.jp
 .*\.ujitawara\.kyoto\.jp
@@ -8960,6 +8999,7 @@
 .*\.vestvågøy\.no
 .*\.vet
 .*\.vet\.br
+.*\.vet\.ec
 .*\.veterinaire\.fr
 .*\.veterinaire\.km
 .*\.vevelstad\.no
@@ -9305,6 +9345,7 @@
 .*\.xs4all\.space
 .*\.xx\.kg
 .*\.xxx
+.*\.xxx\.ec
 .*\.xyz
 .*\.xz\.cn
 .*\.y\.bg

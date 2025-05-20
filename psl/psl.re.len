@@ -1663,12 +1663,14 @@
 .*\.4u\.com
 .*\.611\.to
 .*\.abc\.br
+.*\.abg\.ec
 .*\.abo\.pa
 .*\.abogado
 .*\.abr\.it
 .*\.academy
 .*\.act\.au
 .*\.adm\.br
+.*\.adm\.ec
 .*\.adv\.br
 .*\.adv\.mz
 .*\.ae\.org
@@ -1686,6 +1688,7 @@
 .*\.art\.br
 .*\.art\.do
 .*\.art\.dz
+.*\.art\.ec
 .*\.art\.ht
 .*\.art\.ml
 .*\.art\.pl
@@ -1701,6 +1704,7 @@
 .*\.audible
 .*\.auspost
 .*\.banamex
+.*\.bar\.ec
 .*\.bas\.it
 .*\.bauhaus
 .*\.bbs\.tr
@@ -1720,6 +1724,7 @@
 .*\.biz\.dk
 .*\.biz\.et
 .*\.biz\.fj
+.*\.biz\.gh
 .*\.biz\.gl
 .*\.biz\.id
 .*\.biz\.in
@@ -1926,12 +1931,14 @@
 .*\.coupons
 .*\.courses
 .*\.coz\.br
+.*\.cpa\.ec
 .*\.crd\.co
 .*\.cri\.br
 .*\.cri\.nz
 .*\.cricket
 .*\.cruises
 .*\.csx\.cc
+.*\.cue\.ec
 .*\.daa\.jp
 .*\.de\.com
 .*\.def\.br
@@ -1940,8 +1947,10 @@
 .*\.des\.br
 .*\.det\.br
 .*\.dev\.br
+.*\.dgn\.ec
 .*\.digital
 .*\.dni\.us
+.*\.doc\.ec
 .*\.domains
 .*\.drr\.ac
 .*\.e12\.ve
@@ -2086,8 +2095,10 @@
 .*\.emr\.it
 .*\.enf\.br
 .*\.eng\.br
+.*\.eng\.ec
 .*\.eng\.jo
 .*\.ens\.tn
+.*\.esm\.ec
 .*\.esp\.br
 .*\.est\.pr
 .*\.etc\.br
@@ -2121,12 +2132,14 @@
 .*\.fnd\.br
 .*\.forsale
 .*\.fot\.br
+.*\.fot\.ec
 .*\.foz\.br
 .*\.frogans
 .*\.fst\.br
 .*\.fujitsu
 .*\.fvg\.it
 .*\.g12\.br
+.*\.gal\.ec
 .*\.gallery
 .*\.gb\.net
 .*\.gda\.pl
@@ -2299,6 +2312,7 @@
 .*\.gsm\.pl
 .*\.gub\.uy
 .*\.guitars
+.*\.gye\.ec
 .*\.hamburg
 .*\.hangout
 .*\.her\.jp
@@ -2314,6 +2328,7 @@
 .*\.hyundai
 .*\.hzc\.io
 .*\.hå\.no
+.*\.ibr\.ec
 .*\.id\.pub
 .*\.idf\.il
 .*\.idv\.hk
@@ -2371,6 +2386,7 @@
 .*\.lacaixa
 .*\.lanxess
 .*\.lasalle
+.*\.lat\.ec
 .*\.latrobe
 .*\.law\.za
 .*\.laz\.it
@@ -2383,6 +2399,7 @@
 .*\.lincoln
 .*\.lk3\.ru
 .*\.log\.br
+.*\.loj\.ec
 .*\.lom\.it
 .*\.lom\.no
 .*\.lp\.dev
@@ -2473,6 +2490,7 @@
 .*\.mmv\.kr
 .*\.mod\.gi
 .*\.mol\.it
+.*\.mon\.ec
 .*\.monster
 .*\.moo\.jp
 .*\.msk\.ru
@@ -2520,6 +2538,7 @@
 .*\.net\.fm
 .*\.net\.ge
 .*\.net\.gg
+.*\.net\.gh
 .*\.net\.gl
 .*\.net\.gn
 .*\.net\.gp
@@ -2656,6 +2675,7 @@
 .*\.nsn\.us
 .*\.nsw\.au
 .*\.ntr\.br
+.*\.ntr\.ec
 .*\.nyc\.mn
 .*\.obj\.ag
 .*\.odo\.br
@@ -2858,6 +2878,7 @@
 .*\.pro\.vn
 .*\.psc\.br
 .*\.psi\.br
+.*\.pub\.ec
 .*\.pub\.sa
 .*\.pug\.it
 .*\.pvh\.br
@@ -2889,10 +2910,12 @@
 .*\.rexroth
 .*\.rgr\.jp
 .*\.rio\.br
+.*\.rio\.ec
 .*\.ru\.com
 .*\.ru\.net
 .*\.rub\.de
 .*\.sa\.com
+.*\.sal\.ec
 .*\.samsung
 .*\.sandvik
 .*\.sar\.it
@@ -2964,9 +2987,12 @@
 .*\.trd\.br
 .*\.ts\.net
 .*\.tsk\.tr
+.*\.tul\.ec
 .*\.tur\.ar
 .*\.tur\.br
+.*\.tur\.ec
 .*\.udi\.br
+.*\.uio\.ec
 .*\.uk\.com
 .*\.uk\.net
 .*\.umb\.it
@@ -2978,6 +3004,7 @@
 .*\.vda\.it
 .*\.ven\.it
 .*\.vet\.br
+.*\.vet\.ec
 .*\.vgs\.no
 .*\.vic\.au
 .*\.vik\.no
@@ -3011,6 +3038,7 @@
 .*\.www\.ro
 .*\.x0\.com
 .*\.xii\.jp
+.*\.xxx\.ec
 .*\.yamaxun
 .*\.ynh\.fr
 .*\.youtube
@@ -3043,6 +3071,7 @@
 .*\.amli\.no
 .*\.amot\.no
 .*\.arna\.no
+.*\.arqt\.ec
 .*\.arte\.bo
 .*\.arts\.nf
 .*\.arts\.ro
@@ -3086,6 +3115,7 @@
 .*\.capetown
 .*\.catering
 .*\.catholic
+.*\.chef\.ec
 .*\.ciao\.jp
 .*\.cipriani
 .*\.city\.hu
@@ -3099,6 +3129,7 @@
 .*\.conf\.au
 .*\.conf\.lv
 .*\.conn\.uk
+.*\.cont\.ec
 .*\.coop\.ar
 .*\.coop\.br
 .*\.coop\.ht
@@ -3118,6 +3149,7 @@
 .*\.delivery
 .*\.deloitte
 .*\.democrat
+.*\.dent\.ec
 .*\.desa\.id
 .*\.diamonds
 .*\.discount
@@ -3262,6 +3294,7 @@
 .*\.merckmsd
 .*\.mex\.com
 .*\.mine\.nu
+.*\.mktg\.ec
 .*\.mobi\.gp
 .*\.mobi\.ke
 .*\.mobi\.ng
@@ -3326,8 +3359,11 @@
 .*\.priv\.me
 .*\.priv\.no
 .*\.priv\.pl
+.*\.prof\.ec
 .*\.prof\.pr
 .*\.property
+.*\.psic\.ec
+.*\.psiq\.ec
 .*\.publ\.cv
 .*\.publ\.pt
 .*\.pupu\.jp
@@ -3343,6 +3379,7 @@
 .*\.roma\.it
 .*\.rome\.it
 .*\.rost\.no
+.*\.rrpp\.ec
 .*\.run\.app
 .*\.saarland
 .*\.saga\.jp
@@ -3372,6 +3409,7 @@
 .*\.tank\.jp
 .*\.taxi\.br
 .*\.tcp4\.me
+.*\.tech\.ec
 .*\.test\.tj
 .*\.time\.no
 .*\.tinn\.no
@@ -3425,6 +3463,7 @@
 .*\.aem\.page
 .*\.agrar\.hu
 .*\.agric\.za
+.*\.agron\.ec
 .*\.aichi\.jp
 .*\.akita\.jp
 .*\.aland\.fi
@@ -3504,6 +3543,7 @@
 .*\.deta\.app
 .*\.deta\.dev
 .*\.directory
+.*\.disco\.ec
 .*\.dix\.asia
 .*\.donna\.no
 .*\.dovre\.no
@@ -3651,6 +3691,7 @@
 .*\.nuoro\.it
 .*\.nyat\.app
 .*\.odesa\.ua
+.*\.odont\.ec
 .*\.olawa\.pl
 .*\.opole\.pl
 .*\.orsta\.no
