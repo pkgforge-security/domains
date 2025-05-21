@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-05-21_09-24-28_UTC
-// COMMIT: 871165a43743f2944cf1065b4e9869a286d333d8
+// VERSION: 2025-05-20_07-29-15_UTC
+// COMMIT: 029ca40de5b71cffc3446495335e7d81825ddb6e
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12497,6 +12497,7 @@ cloudns.us
 // Submitted by Khash Sajadi <khash@cloud66.com>
 c66.me
 cloud66.ws
+cloud66.zone
 
 // CloudAccess.net : https://www.cloudaccess.net/
 // Submitted by Pawel Panek <noc@cloudaccess.net>
