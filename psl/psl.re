@@ -1314,7 +1314,6 @@
 .*\.cloud
 .*\.cloud-ip\.biz
 .*\.cloud66\.ws
-.*\.cloud66\.zone
 .*\.cloud\.fedoraproject\.org
 .*\.cloud\.goog
 .*\.cloud\.interhostsolutions\.be
