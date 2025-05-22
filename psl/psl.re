@@ -3952,7 +3952,6 @@
 .*\.isen\.kagoshima\.jp
 .*\.isernia\.it
 .*\.iserv\.dev
-.*\.iserv\.host
 .*\.iservschule\.de
 .*\.isesaki\.gunma\.jp
 .*\.ishigaki\.okinawa\.jp
