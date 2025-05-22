@@ -4634,6 +4634,7 @@
 .*\.gen\.mi\.us
 .*\.georgia\.su
 .*\.gh\.srv\.us
+.*\.github\.app
 .*\.gitpage\.si
 .*\.gjemnes\.no
 .*\.gjesdal\.no
@@ -4696,6 +4697,7 @@
 .*\.is\.eu\.org
 .*\.is\.gov\.pl
 .*\.isernia\.it
+.*\.iserv\.host
 .*\.istmein\.de
 .*\.it\.eu\.org
 .*\.ivanovo\.su
@@ -5137,6 +5139,7 @@
 .*\.agents\.aero
 .*\.akrehamn\.no
 .*\.api\.gov\.uk
+.*\.api\.lp\.dev
 .*\.appspot\.com
 .*\.ashgabad\.su
 .*\.augustow\.pl
@@ -5235,6 +5238,7 @@
 .*\.eidfjord\.no
 .*\.eidsberg\.no
 .*\.eidsvoll\.no
+.*\.eliv-cdn\.kr
 .*\.eliv-dns\.kr
 .*\.emprende\.ve
 .*\.engerdal\.no
@@ -5694,7 +5698,6 @@
 .*\.chernigov\.ua
 .*\.chernihiv\.ua
 .*\.cloud-ip\.biz
-.*\.cloud66\.zone
 .*\.cloudapp\.net
 .*\.cloudns\.asia
 .*\.cloudns\.club
@@ -6838,6 +6841,7 @@
 .*\.nishi\.osaka\.jp
 .*\.noticeable\.news
 .*\.obama\.fukui\.jp
+.*\.objects\.lp\.dev
 .*\.odate\.akita\.jp
 .*\.odo\.replit\.dev
 .*\.oe\.yamagata\.jp
@@ -7698,6 +7702,7 @@
 .*\.friuli-v-giulia\.it
 .*\.friuli-vegiulia\.it
 .*\.friulive-giulia\.it
+.*\.frontend\.encr\.app
 .*\.fuettertdasnetz\.de
 .*\.fujimi\.saitama\.jp
 .*\.fujisato\.akita\.jp

@@ -409,6 +409,7 @@
 .*\.aparecida\.br
 .*\.apartments
 .*\.api\.gov\.uk
+.*\.api\.lp\.dev
 .*\.api\.stdlib\.com
 .*\.apigee\.io
 .*\.app
@@ -1314,7 +1315,6 @@
 .*\.cloud
 .*\.cloud-ip\.biz
 .*\.cloud66\.ws
-.*\.cloud66\.zone
 .*\.cloud\.fedoraproject\.org
 .*\.cloud\.goog
 .*\.cloud\.interhostsolutions\.be
@@ -2213,6 +2213,7 @@
 .*\.elblag\.pl
 .*\.elementor\.cloud
 .*\.elementor\.cool
+.*\.eliv-cdn\.kr
 .*\.eliv-dns\.kr
 .*\.elk\.pl
 .*\.elverum\.no
@@ -2748,6 +2749,7 @@
 .*\.from-wy\.com
 .*\.from\.hr
 .*\.from\.tv
+.*\.frontend\.encr\.app
 .*\.frontier
 .*\.frosinone\.it
 .*\.frosta\.no
@@ -2915,6 +2917,7 @@
 .*\.git-pages\.rit\.edu
 .*\.git-repos\.de
 .*\.gitapp\.si
+.*\.github\.app
 .*\.github\.io
 .*\.githubpreview\.dev
 .*\.githubusercontent\.com
@@ -3949,6 +3952,7 @@
 .*\.isen\.kagoshima\.jp
 .*\.isernia\.it
 .*\.iserv\.dev
+.*\.iserv\.host
 .*\.iservschule\.de
 .*\.isesaki\.gunma\.jp
 .*\.ishigaki\.okinawa\.jp
@@ -6126,6 +6130,7 @@
 .*\.obihiro\.hokkaido\.jp
 .*\.obira\.hokkaido\.jp
 .*\.obj\.ag
+.*\.objects\.lp\.dev
 .*\.objects\.lpg\.cloudscale\.ch
 .*\.objects\.rma\.cloudscale\.ch
 .*\.obl\.ong
