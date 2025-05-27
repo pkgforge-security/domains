@@ -4484,6 +4484,7 @@
 .*\.konyvelo\.hu
 .*\.koobin\.events
 .*\.koori\.fukushima\.jp
+.*\.kop\.id
 .*\.kopervik\.no
 .*\.koriyama\.fukushima\.jp
 .*\.koryo\.nara\.jp

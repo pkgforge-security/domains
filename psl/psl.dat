@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-05-26_11-00-45_UTC
-// COMMIT: 89800dc76a00a48f7b8ad0603e8da8548b6ca97a
+// VERSION: 2025-05-27_08-58-37_UTC
+// COMMIT: f011d9d9fb6e3a625575440a223ee3167125992d
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -1385,6 +1385,7 @@ biz.id
 co.id
 desa.id
 go.id
+kop.id
 mil.id
 my.id
 net.id
