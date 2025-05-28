@@ -7645,6 +7645,7 @@
 .*\.school\.za
 .*\.schoolbus\.jp
 .*\.schools\.nsw\.edu\.au
+.*\.schuldock\.de
 .*\.schule
 .*\.schulplattform\.de
 .*\.schulserver\.de

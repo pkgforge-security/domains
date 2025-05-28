@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-05-27_08-58-37_UTC
-// COMMIT: f011d9d9fb6e3a625575440a223ee3167125992d
+// VERSION: 2025-05-27_18-04-32_UTC
+// COMMIT: ae6d7152aac42d2ad577f980af6ef4317d5828fe
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -13938,6 +13938,7 @@ is-a.dev
 // Submitted by Kim Brodowski <info@iserv.de>
 iservschule.de
 mein-iserv.de
+schuldock.de
 schulplattform.de
 schulserver.de
 test-iserv.de
