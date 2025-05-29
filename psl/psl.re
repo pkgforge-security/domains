@@ -3747,7 +3747,6 @@
 .*\.ind\.gt
 .*\.ind\.in
 .*\.ind\.kw
-.*\.ind\.mom
 .*\.ind\.tn
 .*\.independent-commission\.uk
 .*\.independent-inquest\.uk
