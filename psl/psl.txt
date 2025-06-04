@@ -4917,7 +4917,6 @@ lunner.no
 luroy.no
 lurøy.no
 luster.no
-lutrausercontent.com
 lutsk.ua
 luxe
 luxury
@@ -8997,7 +8996,6 @@ ventures
 verbania.it
 vercel.app
 vercel.dev
-vercel.run
 vercelli.it
 verdal.no
 verisign

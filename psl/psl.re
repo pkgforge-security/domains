@@ -4917,7 +4917,6 @@
 .*\.luroy\.no
 .*\.lurøy\.no
 .*\.luster\.no
-.*\.lutrausercontent\.com
 .*\.lutsk\.ua
 .*\.luxe
 .*\.luxury
@@ -8997,7 +8996,6 @@
 .*\.verbania\.it
 .*\.vercel\.app
 .*\.vercel\.dev
-.*\.vercel\.run
 .*\.vercelli\.it
 .*\.verdal\.no
 .*\.verisign
