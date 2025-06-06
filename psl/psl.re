@@ -5423,6 +5423,7 @@
 .*\.mt\.it
 .*\.mt\.leg\.br
 .*\.mt\.us
+.*\.mtls\.run\.app
 .*\.mtn
 .*\.mtr
 .*\.mu
