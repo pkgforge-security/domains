@@ -9212,6 +9212,7 @@
 .*\.website\.yandexcloud\.net
 .*\.websitebuilder\.online
 .*\.websozai\.jp
+.*\.webspace-host\.com
 .*\.webspace\.rocks
 .*\.webspaceconfig\.de
 .*\.webthings\.io
