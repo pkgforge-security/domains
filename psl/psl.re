@@ -3559,6 +3559,7 @@
 .*\.hosting\.ovh\.net
 .*\.hostyhosting\.io
 .*\.hot
+.*\.hotel
 .*\.hotel\.hu
 .*\.hotel\.lk
 .*\.hotel\.tz
