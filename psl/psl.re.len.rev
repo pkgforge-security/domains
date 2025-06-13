@@ -4167,6 +4167,8 @@
 .*\.abkhazia\.su
 .*\.academia\.bo
 .*\.act\.edu\.au
+.*\.aem\.network
+.*\.aem\.reviews
 .*\.aeroport\.fr
 .*\.agents\.aero
 .*\.akrehamn\.no
@@ -5585,7 +5587,6 @@
 .*\.healthcare
 .*\.hemnes\.no
 .*\.hicam\.net
-.*\.hlx3\.page
 .*\.hobøl\.no
 .*\.home\.arpa
 .*\.hopto\.org

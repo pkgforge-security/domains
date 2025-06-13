@@ -182,7 +182,9 @@
 .*\.aeg
 .*\.aejrie\.no
 .*\.aem\.live
+.*\.aem\.network
 .*\.aem\.page
+.*\.aem\.reviews
 .*\.aero
 .*\.aero\.mv
 .*\.aerobatic\.aero
@@ -3484,7 +3486,6 @@
 .*\.hkt
 .*\.hl\.cn
 .*\.hl\.no
-.*\.hlx3\.page
 .*\.hlx\.live
 .*\.hlx\.page
 .*\.hm
