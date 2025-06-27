@@ -8764,6 +8764,9 @@
 .*\.compute\.amazonaws\.com
 .*\.cust\.retrosnub\.co\.uk
 .*\.custom\.metacentrum\.cz
+.*\.ddl\.fr-par\.scw\.cloud
+.*\.ddl\.nl-ams\.scw\.cloud
+.*\.ddl\.pl-waw\.scw\.cloud
 .*\.de\.trendhosting\.cloud
 .*\.dev\.adobeaemcloud\.com
 .*\.dev\.project-study\.com
@@ -8786,6 +8789,9 @@
 .*\.hiratsuka\.kanagawa\.jp
 .*\.hitachiota\.ibaraki\.jp
 .*\.horokanai\.hokkaido\.jp
+.*\.ifr\.fr-par\.scw\.cloud
+.*\.ifr\.nl-ams\.scw\.cloud
+.*\.ifr\.pl-waw\.scw\.cloud
 .*\.independent-inquest\.uk
 .*\.independent-inquiry\.uk
 .*\.is-a-cubicle-slave\.com
@@ -8834,6 +8840,9 @@
 .*\.pagespeedmobilizer\.com
 .*\.prerelease\.replit\.dev
 .*\.rag-cloud\.hosteur\.com
+.*\.rdb\.fr-par\.scw\.cloud
+.*\.rdb\.nl-ams\.scw\.cloud
+.*\.rdb\.pl-waw\.scw\.cloud
 .*\.readthedocs-hosted\.com
 .*\.rikubetsu\.hokkaido\.jp
 .*\.sakuragawa\.ibaraki\.jp
@@ -8887,6 +8896,9 @@
 .*\.cust\.dev\.thingdust\.io
 .*\.direct\.quickconnect\.cn
 .*\.direct\.quickconnect\.to
+.*\.dtwh\.fr-par\.scw\.cloud
+.*\.dtwh\.nl-ams\.scw\.cloud
+.*\.dtwh\.pl-waw\.scw\.cloud
 .*\.fra1-de\.cloudjiffy\.net
 .*\.friuli-veneziagiulia\.it
 .*\.friulivenezia-giulia\.it
@@ -8902,6 +8914,9 @@
 .*\.id\.firewalledreplit\.co
 .*\.izumizaki\.fukushima\.jp
 .*\.js\.wpenginepowered\.com
+.*\.kafk\.fr-par\.scw\.cloud
+.*\.kafk\.nl-ams\.scw\.cloud
+.*\.kafk\.pl-waw\.scw\.cloud
 .*\.kagoshima\.kagoshima\.jp
 .*\.kamifurano\.hokkaido\.jp
 .*\.kaminoyama\.yamagata\.jp
@@ -8915,6 +8930,9 @@
 .*\.makinohara\.shizuoka\.jp
 .*\.mamurogawa\.yamagata\.jp
 .*\.matsumoto\.kagoshima\.jp
+.*\.mgdb\.fr-par\.scw\.cloud
+.*\.mgdb\.nl-ams\.scw\.cloud
+.*\.mgdb\.pl-waw\.scw\.cloud
 .*\.minamidaito\.okinawa\.jp
 .*\.minamiechizen\.fukui\.jp
 .*\.minamiminowa\.nagano\.jp
@@ -8927,6 +8945,9 @@
 .*\.sagamihara\.kanagawa\.jp
 .*\.sakaiminato\.tottori\.jp
 .*\.sanagochi\.tokushima\.jp
+.*\.scbl\.fr-par\.scw\.cloud
+.*\.scbl\.nl-ams\.scw\.cloud
+.*\.scbl\.pl-waw\.scw\.cloud
 .*\.seranishi\.hiroshima\.jp
 .*\.servicebus\.windows\.net
 .*\.shinanomachi\.nagano\.jp
