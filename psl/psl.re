@@ -4922,8 +4922,6 @@
 .*\.lotte
 .*\.lotto
 .*\.lovable\.app
-.*\.lovable\.run
-.*\.lovable\.sh
 .*\.lovableproject\.com
 .*\.love
 .*\.lovepop\.jp
