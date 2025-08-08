@@ -880,7 +880,6 @@
 .*\.biz\.et
 .*\.biz\.fj
 .*\.biz\.gh
-.*\.biz\.gl
 .*\.biz\.id
 .*\.biz\.in
 .*\.biz\.ki
@@ -1089,7 +1088,6 @@
 .*\.cab
 .*\.cable-modem\.org
 .*\.cafe
-.*\.caffeine\.ai
 .*\.caffeine\.site
 .*\.cafjs\.com
 .*\.cagliari\.it
@@ -3451,6 +3449,8 @@
 .*\.hidaka\.kochi\.jp
 .*\.hidaka\.saitama\.jp
 .*\.hidaka\.wakayama\.jp
+.*\.hidns\.co
+.*\.hidns\.vip
 .*\.higashi\.fukuoka\.jp
 .*\.higashi\.fukushima\.jp
 .*\.higashi\.okinawa\.jp
@@ -3678,13 +3678,11 @@
 .*\.ichinomiya\.aichi\.jp
 .*\.ichinomiya\.chiba\.jp
 .*\.ichinoseki\.iwate\.jp
-.*\.icp-api\.io
 .*\.icp0\.io
 .*\.icp1\.io
 .*\.icu
 .*\.icurus\.jp
 .*\.id
-.*\.id\.ai
 .*\.id\.au
 .*\.id\.cv
 .*\.id\.firewalledreplit\.co

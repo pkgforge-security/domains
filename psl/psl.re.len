@@ -1212,7 +1212,6 @@
 .*\.hs\.kr
 .*\.hughes
 .*\.ia\.us
-.*\.id\.ai
 .*\.id\.au
 .*\.id\.cv
 .*\.id\.ir
@@ -1732,7 +1731,6 @@
 .*\.biz\.et
 .*\.biz\.fj
 .*\.biz\.gh
-.*\.biz\.gl
 .*\.biz\.id
 .*\.biz\.in
 .*\.biz\.ki
@@ -3613,6 +3611,7 @@
 .*\.hemne\.no
 .*\.herad\.no
 .*\.hf\.space
+.*\.hidns\.co
 .*\.hippy\.jp
 .*\.hisamitsu
 .*\.hitra\.no
@@ -4089,6 +4088,7 @@
 .*\.healthcare
 .*\.hemnes\.no
 .*\.hicam\.net
+.*\.hidns\.vip
 .*\.hobøl\.no
 .*\.home\.arpa
 .*\.hopto\.org
@@ -4693,7 +4693,6 @@
 .*\.ibaraki\.jp
 .*\.ibestad\.no
 .*\.ic\.gov\.pl
-.*\.icp-api\.io
 .*\.ie\.eu\.org
 .*\.il\.eu\.org
 .*\.imperia\.it
@@ -5190,7 +5189,6 @@
 .*\.business\.in
 .*\.báidár\.no
 .*\.bájddar\.no
-.*\.caffeine\.ai
 .*\.cagliari\.it
 .*\.calabria\.it
 .*\.campania\.it
