@@ -5895,6 +5895,8 @@
 .*\.oirm\.gov\.pl
 .*\.oji\.nara\.jp
 .*\.on-fleek\.app
+.*\.on-forge\.com
+.*\.on-vapor\.com
 .*\.onporter\.run
 .*\.onrender\.com
 .*\.oppegård\.no
@@ -6947,6 +6949,7 @@
 .*\.umaji\.kochi\.jp
 .*\.umi\.fukuoka\.jp
 .*\.uozu\.toyama\.jp
+.*\.up\.railway\.app
 .*\.urbinopesaro\.it
 .*\.us\.platform\.sh
 .*\.user\.party\.eus
