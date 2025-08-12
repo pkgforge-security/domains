@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-08-11_04-14-14_UTC
-// COMMIT: d3a7d52e6b5204ab2dd2b17db1553cd4cb538b82
+// VERSION: 2025-08-11_08-16-30_UTC
+// COMMIT: 568a834e835595f125e115cda197ab2ee66cc3db
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -14160,8 +14160,10 @@ oya.to
 co.de
 
 // Laravel Holdings, Inc. : https://laravel.com
-// Submitted by André Valentin <security@laravel.com>
+// Submitted by André Valentin & James Brooks <security@laravel.com>
 laravel.cloud
+on-forge.com
+on-vapor.com
 
 // LCube - Professional hosting e.K. : https://www.lcube-webhosting.de
 // Submitted by Lars Laehn <info@lcube.de>

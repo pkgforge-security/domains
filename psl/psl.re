@@ -6321,10 +6321,12 @@
 .*\.on-acorn\.io
 .*\.on-aptible\.com
 .*\.on-fleek\.app
+.*\.on-forge\.com
 .*\.on-k3s\.io
 .*\.on-rancher\.cloud
 .*\.on-rio\.io
 .*\.on-the-web\.tv
+.*\.on-vapor\.com
 .*\.on-web\.fr
 .*\.on\.biz\.ng
 .*\.on\.ca
