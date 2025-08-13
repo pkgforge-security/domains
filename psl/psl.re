@@ -6972,6 +6972,8 @@
 .*\.qpon
 .*\.qsl\.br
 .*\.qualifioapp\.com
+.*\.qualyhqpartner\.com
+.*\.qualyhqportal\.com
 .*\.quangbinh\.vn
 .*\.quangnam\.vn
 .*\.quangngai\.vn
