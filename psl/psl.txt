@@ -3679,6 +3679,7 @@ ichinohe.iwate.jp
 ichinomiya.aichi.jp
 ichinomiya.chiba.jp
 ichinoseki.iwate.jp
+icp.net
 icp0.io
 icp1.io
 icu
@@ -9593,6 +9594,7 @@ za.bz
 za.com
 za.net
 za.org
+zabc.net
 zachpomor.pl
 zagan.pl
 zakarpattia.ua

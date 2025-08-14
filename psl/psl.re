@@ -3681,6 +3681,7 @@
 .*\.ichinoseki\.iwate\.jp
 .*\.icp0\.io
 .*\.icp1\.io
+.*\.icp\.net
 .*\.icu
 .*\.icurus\.jp
 .*\.id
@@ -9593,6 +9594,7 @@
 .*\.za\.com
 .*\.za\.net
 .*\.za\.org
+.*\.zabc\.net
 .*\.zachpomor\.pl
 .*\.zagan\.pl
 .*\.zakarpattia\.ua

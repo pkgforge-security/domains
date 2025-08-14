@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2025-08-12_20-26-21_UTC
-// COMMIT: 6a3664b3f552dc784849af7f12d3a248bbae2647
+// VERSION: 2025-08-13_09-07-09_UTC
+// COMMIT: 2d435aebd8a70c0c77891e48516dc97cd7d28b1f
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12777,6 +12777,7 @@ icp0.io
 *.raw.icp0.io
 icp1.io
 *.raw.icp1.io
+*.icp.net
 caffeine.site
 
 // dhosting.pl Sp. z o.o. : https://dhosting.pl/
@@ -15966,5 +15967,9 @@ enterprisecloud.nu
 // Zone.ID: https://zone.id
 // Submitted by Gx1.org <security@gx1.org>
 zone.id
+
+// ZoneABC : https://zoneabc.net
+// Submitted by ZoneABC Team <support@zoneabc.net>
+zabc.net
 
 // ===END PRIVATE DOMAINS===
