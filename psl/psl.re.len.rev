@@ -2838,6 +2838,7 @@
 .*\.sakawa\.kochi\.jp
 .*\.sakura\.chiba\.jp
 .*\.sakurai\.nara\.jp
+.*\.same-preview\.com
 .*\.sandnessjøen\.no
 .*\.sannan\.hyogo\.jp
 .*\.sano\.tochigi\.jp
@@ -4143,6 +4144,7 @@
 .*\.rælingen\.no
 .*\.s\.brave\.app
 .*\.sa\.ngrok\.io
+.*\.same-app\.com
 .*\.samnanger\.no
 .*\.sarpsborg\.no
 .*\.schoolbus\.jp
@@ -5641,7 +5643,6 @@
 .*\.github\.io
 .*\.gitlab\.io
 .*\.gjovik\.no
-.*\.glitch\.me
 .*\.glogow\.pl
 .*\.gloomy\.jp
 .*\.gotdns\.ch
