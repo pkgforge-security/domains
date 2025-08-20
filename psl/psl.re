@@ -8100,7 +8100,6 @@
 .*\.sosa\.chiba\.jp
 .*\.sosnowiec\.pl
 .*\.soundcast\.me
-.*\.sourcecraft\.site
 .*\.sowa\.ibaraki\.jp
 .*\.soy
 .*\.sp\.gov\.br
