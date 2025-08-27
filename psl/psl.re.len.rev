@@ -5124,7 +5124,6 @@
 .*\.lib\.co\.us
 .*\.lib\.ct\.us
 .*\.lib\.dc\.us
-.*\.lib\.de\.us
 .*\.lib\.fl\.us
 .*\.lib\.ga\.us
 .*\.lib\.gu\.us
@@ -5901,6 +5900,7 @@
 .*\.snaase\.no
 .*\.snoasa\.no
 .*\.snåsa\.no
+.*\.social\.br
 .*\.solund\.no
 .*\.spdns\.org
 .*\.srht\.site
@@ -6889,6 +6889,7 @@
 .*\.alt\.na
 .*\.alt\.za
 .*\.android
+.*\.api\.br
 .*\.app\.br
 .*\.arq\.br
 .*\.art\.br
@@ -8247,6 +8248,7 @@
 .*\.x0\.com
 .*\.xii\.jp
 .*\.xxx\.ec
+.*\.xyz\.br
 .*\.yamaxun
 .*\.ynh\.fr
 .*\.youtube
@@ -8576,6 +8578,7 @@
 .*\.hotels
 .*\.hs\.kr
 .*\.hughes
+.*\.ia\.br
 .*\.ia\.us
 .*\.id\.au
 .*\.id\.cv

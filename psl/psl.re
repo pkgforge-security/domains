@@ -444,6 +444,7 @@
 .*\.ap\.ngrok\.io
 .*\.aparecida\.br
 .*\.apartments
+.*\.api\.br
 .*\.api\.gov\.uk
 .*\.api\.lp\.dev
 .*\.api\.stdlib\.com
@@ -3656,6 +3657,7 @@
 .*\.i\.ng
 .*\.i\.ph
 .*\.i\.se
+.*\.ia\.br
 .*\.ia\.us
 .*\.iamallama\.com
 .*\.ibara\.okayama\.jp
@@ -4785,7 +4787,6 @@
 .*\.lib\.co\.us
 .*\.lib\.ct\.us
 .*\.lib\.dc\.us
-.*\.lib\.de\.us
 .*\.lib\.ee
 .*\.lib\.fl\.us
 .*\.lib\.ga\.us
@@ -8059,6 +8060,7 @@
 .*\.soccer
 .*\.sochi\.su
 .*\.social
+.*\.social\.br
 .*\.soctrang\.vn
 .*\.sodegaura\.chiba\.jp
 .*\.soeda\.fukuoka\.jp
@@ -9471,6 +9473,7 @@
 .*\.xxx
 .*\.xxx\.ec
 .*\.xyz
+.*\.xyz\.br
 .*\.xz\.cn
 .*\.y\.bg
 .*\.y\.se
