@@ -7047,6 +7047,7 @@
 .*\.realestate
 .*\.realestate\.pl
 .*\.realm\.cz
+.*\.realtime\.supabase\.co
 .*\.realtor
 .*\.realty
 .*\.rebun\.hokkaido\.jp
@@ -7061,7 +7062,6 @@
 .*\.red
 .*\.red\.sv
 .*\.redirectme\.net
-.*\.redstone
 .*\.redumbrella
 .*\.reed\.replit\.dev
 .*\.reg\.dk
@@ -8185,6 +8185,7 @@
 .*\.stolos\.io
 .*\.stor-elvdal\.no
 .*\.storage
+.*\.storage\.supabase\.co
 .*\.storage\.yandexcloud\.net
 .*\.stord\.no
 .*\.stordal\.no
@@ -9257,6 +9258,7 @@
 .*\.wake\.okayama\.jp
 .*\.wakkanai\.hokkaido\.jp
 .*\.wakuya\.miyagi\.jp
+.*\.wal\.app
 .*\.walbrzych\.pl
 .*\.wales
 .*\.walmart

@@ -3386,7 +3386,6 @@
 .*\.qoto\.io
 .*\.rade\.no
 .*\.rana\.no
-.*\.redstone
 .*\.reliance
 .*\.repl\.co
 .*\.riik\.ee
@@ -3445,6 +3444,7 @@
 .*\.verisign
 .*\.vlog\.br
 .*\.voss\.no
+.*\.wal\.app
 .*\.wdh\.app
 .*\.web\.app
 .*\.wiki\.bo
@@ -8522,6 +8522,7 @@
 .*\.shunan\.yamaguchi\.jp
 .*\.site\.tb-hosting\.com
 .*\.sobetsu\.hokkaido\.jp
+.*\.storage\.supabase\.co
 .*\.tabuse\.yamaguchi\.jp
 .*\.takahagi\.ibaraki\.jp
 .*\.takamatsu\.kagawa\.jp
@@ -8687,6 +8688,7 @@
 .*\.pages\.torproject\.net
 .*\.playstation-cloud\.com
 .*\.rankoshi\.hokkaido\.jp
+.*\.realtime\.supabase\.co
 .*\.rma\.objectstorage\.ch
 .*\.rsc\.contentproxy9\.cz
 .*\.runs\.onstackit\.cloud
