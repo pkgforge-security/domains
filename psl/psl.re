@@ -4145,6 +4145,7 @@
 .*\.jorpeland\.no
 .*\.joso\.ibaraki\.jp
 .*\.jot
+.*\.jote\.cloud
 .*\.jotelulu\.cloud
 .*\.journal\.aero
 .*\.journalist\.aero
