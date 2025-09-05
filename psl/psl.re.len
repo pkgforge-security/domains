@@ -4834,7 +4834,6 @@
 .*\.lib\.mi\.us
 .*\.lib\.mn\.us
 .*\.lib\.mo\.us
-.*\.lib\.ms\.us
 .*\.lib\.mt\.us
 .*\.lib\.nc\.us
 .*\.lib\.nd\.us
@@ -5789,6 +5788,7 @@
 .*\.griw\.gov\.pl
 .*\.gyeongbuk\.kr
 .*\.gyeongnam\.kr
+.*\.hackclub\.app
 .*\.haugesund\.no
 .*\.heliohost\.us
 .*\.hepforge\.org
@@ -7260,6 +7260,7 @@
 .*\.shiroi\.chiba\.jp
 .*\.shisui\.chiba\.jp
 .*\.shoo\.okayama\.jp
+.*\.shop\.brendly\.ba
 .*\.shop\.brendly\.hr
 .*\.shop\.brendly\.rs
 .*\.site\.transip\.me
