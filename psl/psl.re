@@ -5551,7 +5551,6 @@
 .*\.mydns\.tw
 .*\.mydns\.vc
 .*\.mydobiss\.com
-.*\.mydrobo\.com
 .*\.myds\.me
 .*\.myeffect\.net
 .*\.myfast\.host
@@ -7815,7 +7814,6 @@
 .*\.servequake\.com
 .*\.server-on\.net
 .*\.servername\.us
-.*\.servers\.run
 .*\.servesarcasm\.com
 .*\.service\.gov\.scot
 .*\.service\.gov\.uk
