@@ -4146,6 +4146,8 @@
 .*\.jorpeland\.no
 .*\.joso\.ibaraki\.jp
 .*\.jot
+.*\.jote-dr-lt1\.com
+.*\.jote-rd-lt1\.com
 .*\.jote\.cloud
 .*\.jotelulu\.cloud
 .*\.journal\.aero
@@ -8284,6 +8286,7 @@
 .*\.supplies
 .*\.supply
 .*\.support
+.*\.support\.site
 .*\.surf
 .*\.surgery
 .*\.surnadal\.no
