@@ -727,6 +727,7 @@
 .*\.drive
 .*\.dubai
 .*\.e\.bg
+.*\.e\.id
 .*\.e\.se
 .*\.earth
 .*\.edeka
@@ -6066,7 +6067,6 @@
 .*\.adaptable\.app
 .*\.aeroclub\.aero
 .*\.aircraft\.aero
-.*\.airkitapps\.eu
 .*\.akamaized\.net
 .*\.aki\.kochi\.jp
 .*\.aknoluokta\.no
@@ -6385,7 +6385,6 @@
 .*\.aerobatic\.aero
 .*\.aerodrome\.aero
 .*\.aioi\.hyogo\.jp
-.*\.airkitapps\.com
 .*\.aivencloud\.com
 .*\.akamaiedge\.net
 .*\.alessandria\.it
@@ -7346,7 +7345,6 @@
 .*\.adobeaemcloud\.net
 .*\.agano\.niigata\.jp
 .*\.aguni\.okinawa\.jp
-.*\.airkitapps-au\.com
 .*\.akagi\.shimane\.jp
 .*\.akiruno\.tokyo\.jp
 .*\.alp1\.ae\.flow\.ch

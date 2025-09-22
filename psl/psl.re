@@ -272,9 +272,6 @@
 .*\.airflow\.us-west-1\.on\.aws
 .*\.airflow\.us-west-2\.on\.aws
 .*\.airforce
-.*\.airkitapps-au\.com
-.*\.airkitapps\.com
-.*\.airkitapps\.eu
 .*\.airline\.aero
 .*\.airport\.aero
 .*\.airtel
@@ -2063,6 +2060,7 @@
 .*\.e2b\.app
 .*\.e4\.cz
 .*\.e\.bg
+.*\.e\.id
 .*\.e\.se
 .*\.earth
 .*\.east-kazakhstan\.su

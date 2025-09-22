@@ -272,9 +272,6 @@
 .airflow.us-west-1.on.aws
 .airflow.us-west-2.on.aws
 .airforce
-.airkitapps-au.com
-.airkitapps.com
-.airkitapps.eu
 .airline.aero
 .airport.aero
 .airtel
@@ -2059,6 +2056,7 @@
 .dz
 .dønna.no
 .e.bg
+.e.id
 .e.se
 .e12.ve
 .e164.arpa
