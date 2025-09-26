@@ -1117,7 +1117,6 @@
 .*\.cantho\.vn
 .*\.canva-apps\.cn
 .*\.canva-apps\.com
-.*\.canva\.run
 .*\.caobang\.vn
 .*\.capetown
 .*\.capital
@@ -7124,7 +7123,6 @@
 .*\.ri\.us
 .*\.ribeirao\.br
 .*\.ric\.jelastic\.vps-host\.net
-.*\.rice-labs\.com
 .*\.rich
 .*\.richardli
 .*\.ricoh
