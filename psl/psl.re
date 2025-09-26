@@ -9464,6 +9464,7 @@
 .*\.x\.se
 .*\.xbox
 .*\.xen\.prgmr\.com
+.*\.xenonconnect\.de
 .*\.xerox
 .*\.xihuan
 .*\.xii\.jp
