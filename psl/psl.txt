@@ -90,7 +90,6 @@ able
 abo.pa
 abogado
 abr.it
-abrdns.com
 abruzzo.it
 abu.yamaguchi.jp
 abudhabi
@@ -1354,7 +1353,6 @@ clinique
 clothing
 cloud
 cloud-ip.biz
-cloud-ip.cc
 cloud.fedoraproject.org
 cloud.goog
 cloud.interhostsolutions.be

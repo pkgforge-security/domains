@@ -90,7 +90,6 @@
 .*\.abo\.pa
 .*\.abogado
 .*\.abr\.it
-.*\.abrdns\.com
 .*\.abruzzo\.it
 .*\.abu\.yamaguchi\.jp
 .*\.abudhabi
@@ -1354,7 +1353,6 @@
 .*\.clothing
 .*\.cloud
 .*\.cloud-ip\.biz
-.*\.cloud-ip\.cc
 .*\.cloud66\.ws
 .*\.cloud\.fedoraproject\.org
 .*\.cloud\.goog
