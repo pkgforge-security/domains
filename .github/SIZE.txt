@@ -1,6 +1,6 @@
 1.9M └─┬ main
 1.7M   ├─┬ psl
-320K   │ ├── psl.dat
+316K   │ ├── psl.dat
 184K   │ ├── psl.re.len.rev
 184K   │ ├── psl.re.len
 184K   │ ├── psl.re
