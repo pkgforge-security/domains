@@ -2461,6 +2461,7 @@
 .*\.eu-west-2\.elasticbeanstalk\.com
 .*\.eu-west-3\.airflow\.amazonaws\.com
 .*\.eu-west-3\.elasticbeanstalk\.com
+.*\.eu1-plenit\.com
 .*\.eu\.com
 .*\.eu\.encoway\.cloud
 .*\.eu\.int
@@ -4151,8 +4152,6 @@
 .*\.jorpeland\.no
 .*\.joso\.ibaraki\.jp
 .*\.jot
-.*\.jote-dr-lt1\.com
-.*\.jote-rd-lt1\.com
 .*\.jote\.cloud
 .*\.jotelulu\.cloud
 .*\.journal\.aero
@@ -4688,6 +4687,7 @@
 .*\.l\.se
 .*\.la
 .*\.la-spezia\.it
+.*\.la1-plenit\.com
 .*\.la\.us
 .*\.laakesvuemie\.no
 .*\.labeling\.ap-northeast-1\.sagemaker\.aws
@@ -9004,6 +9004,7 @@
 .*\.us-west-1\.elasticbeanstalk\.com
 .*\.us-west-2\.airflow\.amazonaws\.com
 .*\.us-west-2\.elasticbeanstalk\.com
+.*\.us1-plenit\.com
 .*\.us\.com
 .*\.us\.eu\.org
 .*\.us\.gov\.pl
