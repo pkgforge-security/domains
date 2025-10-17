@@ -9332,6 +9332,7 @@
 .*\.webpaas\.ovh\.net
 .*\.webredirect\.org
 .*\.website
+.*\.website\.one
 .*\.website\.yandexcloud\.net
 .*\.websitebuilder\.online
 .*\.websozai\.jp
