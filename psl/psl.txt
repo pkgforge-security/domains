@@ -801,6 +801,7 @@ be.eu.org
 beagleboard.io
 bearalvahki.no
 bearalváhki.no
+bearblog.dev
 beardu.no
 beats
 beauty
