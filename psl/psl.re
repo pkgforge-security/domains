@@ -2008,7 +2008,6 @@
 .*\.dtwh\.pl-waw\.scw\.cloud
 .*\.dubai
 .*\.duckdns\.org
-.*\.dunlop
 .*\.dupont
 .*\.durban
 .*\.durumis\.com
