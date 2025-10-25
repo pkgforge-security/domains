@@ -5765,6 +5765,7 @@
 .*\.neat-url\.com
 .*\.nec
 .*\.nedre-eiker\.no
+.*\.needle\.run
 .*\.nemuro\.hokkaido\.jp
 .*\.nerdpol\.ovh
 .*\.nerima\.tokyo\.jp
