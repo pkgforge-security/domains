@@ -97,6 +97,7 @@
 .*\.ac
 .*\.ac\.ae
 .*\.ac\.at
+.*\.ac\.bd
 .*\.ac\.be
 .*\.ac\.bw
 .*\.ac\.ci
@@ -224,6 +225,7 @@
 .*\.ah\.cn
 .*\.ah\.no
 .*\.ai
+.*\.ai\.bd
 .*\.ai\.in
 .*\.ai\.jo
 .*\.ai\.kr
@@ -1422,6 +1424,7 @@
 .*\.co\.at
 .*\.co\.az
 .*\.co\.bb
+.*\.co\.bd
 .*\.co\.bi
 .*\.co\.biz\.ng
 .*\.co\.bj
@@ -1526,6 +1529,7 @@
 .*\.com\.az
 .*\.com\.ba
 .*\.com\.bb
+.*\.com\.bd
 .*\.com\.bh
 .*\.com\.bi
 .*\.com\.bj
@@ -2116,6 +2120,7 @@
 .*\.edu\.az
 .*\.edu\.ba
 .*\.edu\.bb
+.*\.edu\.bd
 .*\.edu\.bh
 .*\.edu\.bi
 .*\.edu\.bj
@@ -3098,6 +3103,7 @@
 .*\.gov\.az
 .*\.gov\.ba
 .*\.gov\.bb
+.*\.gov\.bd
 .*\.gov\.bf
 .*\.gov\.bh
 .*\.gov\.bm
@@ -3696,6 +3702,7 @@
 .*\.icurus\.jp
 .*\.id
 .*\.id\.au
+.*\.id\.bd
 .*\.id\.cv
 .*\.id\.firewalledreplit\.co
 .*\.id\.forgerock\.io
@@ -3827,6 +3834,7 @@
 .*\.info\.at
 .*\.info\.az
 .*\.info\.bb
+.*\.info\.bd
 .*\.info\.bj
 .*\.info\.bo
 .*\.info\.cx
@@ -4038,6 +4046,7 @@
 .*\.it1\.eur\.aruba\.jenv-aruba\.cloud
 .*\.it1\.jenv-aruba\.cloud
 .*\.it\.ao
+.*\.it\.bd
 .*\.it\.com
 .*\.it\.eu\.org
 .*\.it\.kr
@@ -5224,6 +5233,7 @@
 .*\.mil\.ar
 .*\.mil\.az
 .*\.mil\.ba
+.*\.mil\.bd
 .*\.mil\.bo
 .*\.mil\.br
 .*\.mil\.by
@@ -5790,6 +5800,7 @@
 .*\.net\.az
 .*\.net\.ba
 .*\.net\.bb
+.*\.net\.bd
 .*\.net\.bh
 .*\.net\.bj
 .*\.net\.bm
@@ -6423,6 +6434,7 @@
 .*\.org\.az
 .*\.org\.ba
 .*\.org\.bb
+.*\.org\.bd
 .*\.org\.bh
 .*\.org\.bi
 .*\.org\.bj
@@ -7711,6 +7723,7 @@
 .*\.scbl\.nl-ams\.scw\.cloud
 .*\.scbl\.pl-waw\.scw\.cloud
 .*\.sch\.ae
+.*\.sch\.bd
 .*\.sch\.id
 .*\.sch\.ir
 .*\.sch\.jo
@@ -8865,6 +8878,7 @@
 .*\.tuyenquang\.vn
 .*\.tv
 .*\.tv\.bb
+.*\.tv\.bd
 .*\.tv\.bo
 .*\.tv\.br
 .*\.tv\.eg
