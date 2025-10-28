@@ -1216,6 +1216,7 @@
 .*\.hughes
 .*\.ia\.br
 .*\.ia\.us
+.*\.ia\.ve
 .*\.id\.au
 .*\.id\.bd
 .*\.id\.cv
@@ -4669,6 +4670,7 @@
 .*\.gen\.mi\.us
 .*\.georgia\.su
 .*\.gh\.srv\.us
+.*\.gitbook\.io
 .*\.github\.app
 .*\.gitpage\.si
 .*\.gjemnes\.no
@@ -5250,6 +5252,7 @@
 .*\.definima\.io
 .*\.design\.aero
 .*\.dienbien\.vn
+.*\.directwp\.eu
 .*\.dnsdojo\.com
 .*\.dnsdojo\.net
 .*\.dnsdojo\.org
@@ -6960,6 +6963,7 @@
 .*\.sor-varanger\.no
 .*\.stalowa-wola\.pl
 .*\.starachowice\.pl
+.*\.statichost\.page
 .*\.storebase\.store
 .*\.streak-link\.com
 .*\.streaklinks\.com
