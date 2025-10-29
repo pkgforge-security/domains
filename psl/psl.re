@@ -1374,6 +1374,7 @@
 .*\.cloudbeesusercontent\.io
 .*\.cloudera\.site
 .*\.cloudflare-ipfs\.com
+.*\.cloudflare\.app
 .*\.cloudflare\.net
 .*\.cloudfront\.net
 .*\.cloudfunctions\.net
