@@ -5459,6 +5459,7 @@
 .*\.w\.crm\.dev
 .*\.wa\.edu\.au
 .*\.wa\.gov\.au
+.*\.wasmer\.app
 .*\.webflow\.io
 .*\.webhop\.biz
 .*\.webhop\.net

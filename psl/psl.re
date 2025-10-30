@@ -9304,6 +9304,7 @@
 .*\.warmia\.pl
 .*\.warszawa\.pl
 .*\.washtenaw\.mi\.us
+.*\.wasmer\.app
 .*\.wassamu\.hokkaido\.jp
 .*\.watarai\.mie\.jp
 .*\.watari\.miyagi\.jp
