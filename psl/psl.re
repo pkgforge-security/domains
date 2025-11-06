@@ -727,6 +727,7 @@
 .*\.bandai\.fukushima\.jp
 .*\.bando\.ibaraki\.jp
 .*\.bank
+.*\.bank\.in
 .*\.bar
 .*\.bar\.ec
 .*\.bar\.pro
@@ -2606,6 +2607,7 @@
 .*\.film
 .*\.film\.hu
 .*\.fin\.ec
+.*\.fin\.in
 .*\.fin\.tn
 .*\.final
 .*\.finance
