@@ -8936,7 +8936,6 @@
 .*\.tuleap-partners\.com
 .*\.tunes
 .*\.tunk\.org
-.*\.tunnelmole\.net
 .*\.tur\.ar
 .*\.tur\.br
 .*\.tur\.ec
