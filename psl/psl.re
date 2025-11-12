@@ -1862,6 +1862,7 @@
 .*\.ddnss\.org
 .*\.dds
 .*\.de
+.*\.de5\.net
 .*\.de\.com
 .*\.de\.cool
 .*\.de\.eu\.org
@@ -8936,6 +8937,7 @@
 .*\.tuleap-partners\.com
 .*\.tunes
 .*\.tunk\.org
+.*\.tunnelmole\.net
 .*\.tur\.ar
 .*\.tur\.br
 .*\.tur\.ec
