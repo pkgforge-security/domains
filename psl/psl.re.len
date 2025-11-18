@@ -3244,7 +3244,6 @@
 .*\.holy\.jp
 .*\.hosp\.uk
 .*\.hospital
-.*\.hrsn\.au
 .*\.i234\.me
 .*\.icp0\.io
 .*\.icp1\.io
@@ -3398,6 +3397,7 @@
 .*\.prof\.ec
 .*\.prof\.pr
 .*\.property
+.*\.prvw\.eu
 .*\.psic\.ec
 .*\.psiq\.ec
 .*\.publ\.cv
@@ -3467,7 +3467,6 @@
 .*\.vlog\.br
 .*\.voss\.no
 .*\.wal\.app
-.*\.wdh\.app
 .*\.web\.app
 .*\.wiki\.bo
 .*\.wiki\.br
