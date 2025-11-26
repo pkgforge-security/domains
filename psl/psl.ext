@@ -698,12 +698,14 @@
 .azumino.nagano.jp
 .azure
 .azure-api.net
+.azure-api.us
 .azure-mobile.net
 .azurecontainer.io
 .azureedge.net
 .azurefd.net
 .azurestaticapps.net
 .azurewebsites.net
+.azurewebsites.us
 .aéroport.ci
 .b-data.io
 .b.bg
@@ -1019,6 +1021,7 @@
 .brand.se
 .brasilia.me
 .brave.app
+.brave.dev
 .brave.io
 .bremanger.no
 .brescia.it
@@ -2929,6 +2932,8 @@
 .g12.br
 .ga
 .ga.us
+.gadget.app
+.gadget.host
 .gaivuotna.no
 .gal
 .gal.ec
@@ -6297,7 +6302,6 @@
 .objects.lp.dev
 .objects.lpg.cloudscale.ch
 .objects.rma.cloudscale.ch
-.obl.ong
 .obninsk.su
 .observablehq.cloud
 .observer
@@ -7337,6 +7341,7 @@
 .røyrvik.no
 .s.bg
 .s.brave.app
+.s.brave.dev
 .s.brave.io
 .s.se
 .s3-1.amazonaws.com
@@ -7918,6 +7923,7 @@
 .service.gov.scot
 .service.gov.uk
 .service.one
+.servicebus.usgovcloudapi.net
 .servicebus.windows.net
 .services
 .services.aero
@@ -9124,6 +9130,7 @@
 .user.webaccel.jp
 .usercontent.goog
 .usercontent.jp
+.usgovcloudapp.net
 .ushiku.ibaraki.jp
 .usr.cloud.muni.cz
 .ustka.pl

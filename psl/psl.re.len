@@ -3368,7 +3368,6 @@
 .*\.noor\.jp
 .*\.nysa\.pl
 .*\.o0o0\.jp
-.*\.obl\.ong
 .*\.observer
 .*\.odda\.no
 .*\.oita\.jp
@@ -3942,6 +3941,7 @@
 .*\.boehringer
 .*\.bolt\.host
 .*\.brave\.app
+.*\.brave\.dev
 .*\.build\.run
 .*\.bulsan\.it
 .*\.byen\.site
@@ -4671,6 +4671,7 @@
 .*\.funnels\.cx
 .*\.fuoisku\.no
 .*\.fuossko\.no
+.*\.gadget\.app
 .*\.gangwon\.kr
 .*\.gausdal\.no
 .*\.gen\.mi\.us
@@ -5357,6 +5358,7 @@
 .*\.from-wv\.com
 .*\.from-wy\.com
 .*\.fyresdal\.no
+.*\.gadget\.host
 .*\.gateway\.dev
 .*\.getmyip\.com
 .*\.gets-it\.net
@@ -5717,6 +5719,7 @@
 .*\.audnedaln\.no
 .*\.austevoll\.no
 .*\.austrheim\.no
+.*\.azure-api\.us
 .*\.aéroport\.ci
 .*\.ballangen\.no
 .*\.balsfjord\.no
@@ -5980,6 +5983,7 @@
 .*\.rzgw\.gov\.pl
 .*\.rælingen\.no
 .*\.s\.brave\.app
+.*\.s\.brave\.dev
 .*\.sa\.ngrok\.io
 .*\.same-app\.com
 .*\.samnanger\.no
@@ -7061,6 +7065,7 @@
 .*\.awsapprunner\.com
 .*\.aya\.miyazaki\.jp
 .*\.azure-mobile\.net
+.*\.azurewebsites\.us
 .*\.baria-vungtau\.vn
 .*\.barsyonline\.menu
 .*\.barsyonline\.shop
@@ -7700,6 +7705,7 @@
 .*\.uryu\.hokkaido\.jp
 .*\.us\.reclaim\.cloud
 .*\.user\.webaccel\.jp
+.*\.usgovcloudapp\.net
 .*\.uwajima\.ehime\.jp
 .*\.valer\.hedmark\.no
 .*\.valer\.ostfold\.no
@@ -9268,6 +9274,7 @@
 .*\.s3\.eu-south-2\.amazonaws\.com
 .*\.s3\.me-south-1\.amazonaws\.com
 .*\.sa-east-1\.rds\.amazonaws\.com
+.*\.servicebus\.usgovcloudapi\.net
 .*\.ssl\.origin\.cdn77-secure\.org
 .*\.us-east-1\.rds\.amazonaws\.com
 .*\.us-east-2\.rds\.amazonaws\.com
