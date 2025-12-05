@@ -2419,7 +2419,6 @@
 .*\.lig\.it
 .*\.limited
 .*\.lincoln
-.*\.lk3\.ru
 .*\.log\.br
 .*\.loj\.ec
 .*\.lom\.it
@@ -7432,6 +7431,7 @@
 .*\.chizu\.tottori\.jp
 .*\.cloudapps\.digital
 .*\.cloudycluster\.net
+.*\.clusters\.rdpa\.co
 .*\.community-pro\.net
 .*\.cs\.keliweb\.cloud
 .*\.daigo\.ibaraki\.jp
@@ -7659,6 +7659,7 @@
 .*\.soo\.kagoshima\.jp
 .*\.space-to-rent\.com
 .*\.spock\.replit\.dev
+.*\.srvrless\.rdpa\.co
 .*\.stage\.nodeart\.io
 .*\.staging\.expo\.app
 .*\.starostwo\.gov\.pl
@@ -9165,6 +9166,7 @@
 .*\.oncilla\.mythic-beasts\.com
 .*\.pages\.it\.hs-heilbronn\.de
 .*\.passenger-association\.aero
+.*\.preview\.emergentagent\.com
 .*\.priv\.instances\.scw\.cloud
 .*\.privatelink\.snowflake\.app
 .*\.reservd\.dev\.thingdust\.io
