@@ -1509,6 +1509,7 @@
 .*\.co\.ro
 .*\.co\.rs
 .*\.co\.rw
+.*\.co\.scot
 .*\.co\.site
 .*\.co\.ss
 .*\.co\.st
@@ -5203,6 +5204,7 @@
 .*\.me\.it
 .*\.me\.ke
 .*\.me\.kr
+.*\.me\.scot
 .*\.me\.so
 .*\.me\.ss
 .*\.me\.tz
@@ -6617,6 +6619,7 @@
 .*\.org\.sa
 .*\.org\.sb
 .*\.org\.sc
+.*\.org\.scot
 .*\.org\.sd
 .*\.org\.se
 .*\.org\.sg
