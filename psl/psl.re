@@ -7780,6 +7780,7 @@
 .*\.satte\.saitama\.jp
 .*\.sauda\.no
 .*\.sauherad\.no
+.*\.sav\.case
 .*\.save
 .*\.saves-the-whales\.com
 .*\.savona\.it
