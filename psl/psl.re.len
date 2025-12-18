@@ -1012,7 +1012,6 @@
 .*\.career
 .*\.casino
 .*\.cb\.it
-.*\.cc\.cd
 .*\.cc\.ua
 .*\.ce\.it
 .*\.center
@@ -1548,7 +1547,6 @@
 .*\.uk\.in
 .*\.unicom
 .*\.up\.in
-.*\.us\.ci
 .*\.us\.in
 .*\.us\.kg
 .*\.us\.ug
@@ -3145,7 +3143,6 @@
 .*\.capetown
 .*\.catering
 .*\.catholic
-.*\.ccwu\.cc
 .*\.chef\.ec
 .*\.ciao\.jp
 .*\.cipriani
@@ -4647,6 +4644,7 @@
 .*\.ekloges\.cy
 .*\.elverum\.no
 .*\.empresa\.bo
+.*\.en-root\.fr
 .*\.enebakk\.no
 .*\.engineering
 .*\.enterprises
@@ -5519,6 +5517,7 @@
 .*\.piedmont\.it
 .*\.piemonte\.it
 .*\.piw\.gov\.pl
+.*\.platterp\.us
 .*\.playit\.plus
 .*\.pleskns\.com
 .*\.podlasie\.pl
@@ -6614,7 +6613,6 @@
 .*\.olbiatempio\.it
 .*\.omi\.nagano\.jp
 .*\.on-aptible\.com
-.*\.onhercules\.app
 .*\.operaunite\.com
 .*\.orangecloud\.tn
 .*\.os\.hedmark\.no
@@ -6658,6 +6656,7 @@
 .*\.sondre-land\.no
 .*\.sosa\.chiba\.jp
 .*\.stor-elvdal\.no
+.*\.storipress\.app
 .*\.suzuka\.mie\.jp
 .*\.swinoujscie\.pl
 .*\.synology-ds\.de
@@ -7133,8 +7132,6 @@
 .*\.happou\.akita\.jp
 .*\.harima\.hyogo\.jp
 .*\.hashima\.gifu\.jp
-.*\.hercules-app\.com
-.*\.hercules-dev\.com
 .*\.hichiso\.gifu\.jp
 .*\.hidaka\.kochi\.jp
 .*\.hikone\.shiga\.jp
