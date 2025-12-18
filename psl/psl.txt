@@ -1198,6 +1198,7 @@ cc.ar.us
 cc.as.us
 cc.az.us
 cc.ca.us
+cc.cd
 cc.co.us
 cc.ct.us
 cc.dc.us
@@ -1249,6 +1250,7 @@ cc.wi.us
 cc.wv.us
 cc.wy.us
 cci.fr
+ccwu.cc
 cd
 cd.eu.org
 cdn-edges.net
@@ -2420,7 +2422,6 @@ emrstudio-prod.us-gov-east-1.amazonaws.com
 emrstudio-prod.us-gov-west-1.amazonaws.com
 emrstudio-prod.us-west-1.amazonaws.com
 emrstudio-prod.us-west-2.amazonaws.com
-en-root.fr
 en.it
 ena.gifu.jp
 encoreapi.com
@@ -3490,6 +3491,8 @@ hemsedal.no
 hepforge.org
 her.jp
 herad.no
+hercules-app.com
+hercules-dev.com
 here
 here-for-more.info
 hermes
@@ -6443,6 +6446,7 @@ onfabrica.com
 ong
 ong.br
 onga.fukuoka.jp
+onhercules.app
 onid.ca
 oninferno.net
 onion
@@ -6886,7 +6890,6 @@ pl.ua
 place
 platformsh.site
 platter-app.dev
-platterp.us
 play
 playit.plus
 playstation
@@ -8312,7 +8315,6 @@ store.st
 store.ve
 storebase.store
 storfjord.no
-storipress.app
 storj.farm
 strand.no
 stranda.no
@@ -9117,6 +9119,7 @@ us-west-1.rds.amazonaws.com
 us-west-2.airflow.amazonaws.com
 us-west-2.elasticbeanstalk.com
 us-west-2.rds.amazonaws.com
+us.ci
 us.com
 us.eu.org
 us.gov.pl
