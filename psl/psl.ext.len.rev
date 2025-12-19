@@ -703,7 +703,6 @@
 .ap-east-1.elasticbeanstalk.com
 .ca-central-1.rds.amazonaws.com
 .cn-north-1.eb.amazonaws.com.cn
-.eu-central-1.r.cloud.int.apple
 .eu-central-1.rds.amazonaws.com
 .eu-central-2.rds.amazonaws.com
 .eu-west-1.elasticbeanstalk.com
@@ -731,8 +730,6 @@
 .studio.us-east-2.sagemaker.aws
 .studio.us-west-1.sagemaker.aws
 .studio.us-west-2.sagemaker.aws
-.us-central-1.r.cloud.int.apple
-.us-central-2.r.cloud.int.apple
 .us-east-1.elasticbeanstalk.com
 .us-east-2.elasticbeanstalk.com
 .us-west-1.elasticbeanstalk.com
@@ -756,14 +753,10 @@
 .s3.il-central-1.amazonaws.com
 .s3.me-central-1.amazonaws.com
 .af-south-1.rds.amazonaws.com
-.ap-north-1.r.cloud.int.apple
-.ap-south-1.r.cloud.int.apple
 .ap-south-1.rds.amazonaws.com
-.ap-south-2.r.cloud.int.apple
 .ap-south-2.rds.amazonaws.com
 .app.os.stg.fedoraproject.org
 .eastasia.azurestaticapps.net
-.eu-north-1.r.cloud.int.apple
 .fr-par-1.baremetal.scw.cloud
 .fr-par-2.baremetal.scw.cloud
 .fujikawaguchiko.yamanashi.jp
@@ -826,15 +819,10 @@
 .s3.me-south-1.amazonaws.com
 .sa-east-1.rds.amazonaws.com
 .ssl.origin.cdn77-secure.org
-.us-east-1.r.cloud.int.apple
 .us-east-1.rds.amazonaws.com
-.us-east-2.r.cloud.int.apple
 .us-east-2.rds.amazonaws.com
-.us-west-1.r.cloud.int.apple
 .us-west-1.rds.amazonaws.com
-.us-west-2.r.cloud.int.apple
 .us-west-2.rds.amazonaws.com
-.us-west-3.r.cloud.int.apple
 .westus2.azurestaticapps.net
 .aizuwakamatsu.fukushima.jp
 .cdn.prod.atlassian-dev.net
@@ -2270,7 +2258,6 @@
 .pippu.hokkaido.jp
 .public-inquiry.uk
 .qualyhqportal.com
-.r.cloud.int.apple
 .ranzan.saitama.jp
 .ravendb.community
 .rebun.hokkaido.jp
@@ -2417,7 +2404,6 @@
 .akamaiorigin.net
 .akiruno.tokyo.jp
 .aomori.aomori.jp
-.appwrite.network
 .arai.shizuoka.jp
 .arakawa.tokyo.jp
 .arao.kumamoto.jp
@@ -2828,7 +2814,6 @@
 .chuo.fukuoka.jp
 .cleverapps.tech
 .clickrising.net
-.cloud.int.apple
 .cloudaccess.net
 .conference.aero
 .consultant.aero
@@ -5607,10 +5592,8 @@
 .in-dsl.de
 .in-vpn.de
 .in.eu.org
-.indevs.in
 .institute
 .insurance
-.int.apple
 .iopsys.se
 .iris.arpa
 .is.eu.org
