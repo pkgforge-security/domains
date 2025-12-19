@@ -423,6 +423,7 @@
 .*\.ap-east-1\.elasticbeanstalk\.com
 .*\.ap-east-1\.rds\.amazonaws\.com
 .*\.ap-east-2\.rds\.amazonaws\.com
+.*\.ap-north-1\.r\.cloud\.int\.apple
 .*\.ap-northeast-1\.airflow\.amazonaws\.com
 .*\.ap-northeast-1\.elasticbeanstalk\.com
 .*\.ap-northeast-1\.rds\.amazonaws\.com
@@ -434,8 +435,10 @@
 .*\.ap-northeast-3\.rds\.amazonaws\.com
 .*\.ap-south-1\.airflow\.amazonaws\.com
 .*\.ap-south-1\.elasticbeanstalk\.com
+.*\.ap-south-1\.r\.cloud\.int\.apple
 .*\.ap-south-1\.rds\.amazonaws\.com
 .*\.ap-south-2\.airflow\.amazonaws\.com
+.*\.ap-south-2\.r\.cloud\.int\.apple
 .*\.ap-south-2\.rds\.amazonaws\.com
 .*\.ap-southeast-1\.airflow\.amazonaws\.com
 .*\.ap-southeast-1\.elasticbeanstalk\.com
@@ -486,6 +489,7 @@
 .*\.appspot\.com
 .*\.appudo\.net
 .*\.appwrite\.global
+.*\.appwrite\.network
 .*\.appwrite\.run
 .*\.aq
 .*\.aq\.it
@@ -1391,6 +1395,7 @@
 .*\.cloud66\.ws
 .*\.cloud\.fedoraproject\.org
 .*\.cloud\.goog
+.*\.cloud\.int\.apple
 .*\.cloud\.interhostsolutions\.be
 .*\.cloud\.metacentrum\.cz
 .*\.cloud\.nospamproxy\.com
@@ -2135,7 +2140,6 @@
 .*\.ed\.cr
 .*\.ed\.jp
 .*\.edeka
-.*\.edgeapp\.net
 .*\.edgecompute\.app
 .*\.edgekey-staging\.net
 .*\.edgekey\.net
@@ -2490,11 +2494,13 @@
 .*\.eu-4\.evennode\.com
 .*\.eu-central-1\.airflow\.amazonaws\.com
 .*\.eu-central-1\.elasticbeanstalk\.com
+.*\.eu-central-1\.r\.cloud\.int\.apple
 .*\.eu-central-1\.rds\.amazonaws\.com
 .*\.eu-central-2\.airflow\.amazonaws\.com
 .*\.eu-central-2\.rds\.amazonaws\.com
 .*\.eu-north-1\.airflow\.amazonaws\.com
 .*\.eu-north-1\.elasticbeanstalk\.com
+.*\.eu-north-1\.r\.cloud\.int\.apple
 .*\.eu-south-1\.airflow\.amazonaws\.com
 .*\.eu-south-1\.elasticbeanstalk\.com
 .*\.eu-south-2\.airflow\.amazonaws\.com
@@ -3873,6 +3879,7 @@
 .*\.independent-review\.uk
 .*\.inderoy\.no
 .*\.inderøy\.no
+.*\.indevs\.in
 .*\.indigena\.bo
 .*\.industria\.bo
 .*\.industries
@@ -3931,6 +3938,7 @@
 .*\.insurance\.aero
 .*\.insure
 .*\.int
+.*\.int\.apple
 .*\.int\.ar
 .*\.int\.az
 .*\.int\.bo
@@ -5103,6 +5111,8 @@
 .*\.mafelo\.net
 .*\.magazine\.aero
 .*\.magentosite\.cloud
+.*\.magicpatterns\.app
+.*\.magicpatternsapp\.com
 .*\.maibara\.shiga\.jp
 .*\.maif
 .*\.mail-box\.ne\.jp
@@ -7099,6 +7109,7 @@
 .*\.r\.appspot\.com
 .*\.r\.bg
 .*\.r\.cdn77\.net
+.*\.r\.cloud\.int\.apple
 .*\.r\.se
 .*\.ra\.it
 .*\.racing
@@ -8073,7 +8084,6 @@
 .*\.showa\.gunma\.jp
 .*\.showa\.yamanashi\.jp
 .*\.shunan\.yamaguchi\.jp
-.*\.shw\.io
 .*\.si
 .*\.si\.eu\.org
 .*\.si\.it
@@ -8238,6 +8248,7 @@
 .*\.sport\.eg
 .*\.sport\.hu
 .*\.spot
+.*\.sprites\.app
 .*\.spydeberg\.no
 .*\.square7\.ch
 .*\.square7\.de
@@ -9101,12 +9112,16 @@
 .*\.us-2\.evennode\.com
 .*\.us-3\.evennode\.com
 .*\.us-4\.evennode\.com
+.*\.us-central-1\.r\.cloud\.int\.apple
+.*\.us-central-2\.r\.cloud\.int\.apple
 .*\.us-east-1\.airflow\.amazonaws\.com
 .*\.us-east-1\.amazonaws\.com
 .*\.us-east-1\.elasticbeanstalk\.com
+.*\.us-east-1\.r\.cloud\.int\.apple
 .*\.us-east-1\.rds\.amazonaws\.com
 .*\.us-east-2\.airflow\.amazonaws\.com
 .*\.us-east-2\.elasticbeanstalk\.com
+.*\.us-east-2\.r\.cloud\.int\.apple
 .*\.us-east-2\.rds\.amazonaws\.com
 .*\.us-gov-east-1\.elasticbeanstalk\.com
 .*\.us-gov-east-1\.rds\.amazonaws\.com
@@ -9115,10 +9130,13 @@
 .*\.us-northeast-1\.rds\.amazonaws\.com
 .*\.us-west-1\.airflow\.amazonaws\.com
 .*\.us-west-1\.elasticbeanstalk\.com
+.*\.us-west-1\.r\.cloud\.int\.apple
 .*\.us-west-1\.rds\.amazonaws\.com
 .*\.us-west-2\.airflow\.amazonaws\.com
 .*\.us-west-2\.elasticbeanstalk\.com
+.*\.us-west-2\.r\.cloud\.int\.apple
 .*\.us-west-2\.rds\.amazonaws\.com
+.*\.us-west-3\.r\.cloud\.int\.apple
 .*\.us1-plenit\.com
 .*\.us\.ci
 .*\.us\.com

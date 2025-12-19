@@ -2973,7 +2973,6 @@
 .*\.sex\.hu
 .*\.sex\.pl
 .*\.shiksha
-.*\.shw\.io
 .*\.sic\.it
 .*\.singles
 .*\.sjc\.br
@@ -4138,7 +4137,9 @@
 .*\.in-brb\.de
 .*\.in-dsl\.de
 .*\.in-vpn\.de
+.*\.indevs\.in
 .*\.industries
+.*\.int\.apple
 .*\.iopsys\.se
 .*\.iris\.arpa
 .*\.iserv\.dev
@@ -5285,7 +5286,6 @@
 .*\.dynserv\.org
 .*\.ecologia\.bo
 .*\.economia\.bo
-.*\.edgeapp\.net
 .*\.edgekey\.net
 .*\.edu\.eu\.org
 .*\.eero\.online
@@ -5582,6 +5582,7 @@
 .*\.sorocaba\.br
 .*\.sorreisa\.no
 .*\.sortland\.no
+.*\.sprites\.app
 .*\.square7\.net
 .*\.square\.site
 .*\.squares\.net
@@ -7058,6 +7059,7 @@
 .*\.annaka\.gunma\.jp
 .*\.anpachi\.gifu\.jp
 .*\.aogaki\.hyogo\.jp
+.*\.appwrite\.network
 .*\.asahi\.nagano\.jp
 .*\.asahi\.toyama\.jp
 .*\.ascoli-piceno\.it
@@ -7093,6 +7095,7 @@
 .*\.choshi\.chiba\.jp
 .*\.chtr\.k12\.ma\.us
 .*\.chuo\.fukuoka\.jp
+.*\.cloud\.int\.apple
 .*\.cloudaccess\.host
 .*\.community-pro\.de
 .*\.customer-oci\.com
@@ -7552,6 +7555,7 @@
 .*\.lpusercontent\.com
 .*\.machida\.tokyo\.jp
 .*\.magentosite\.cloud
+.*\.magicpatterns\.app
 .*\.maibara\.shiga\.jp
 .*\.maizuru\.kyoto\.jp
 .*\.map\.fastlylb\.net
@@ -8297,6 +8301,7 @@
 .*\.paas\.datacenter\.fi
 .*\.pages\.wiardweb\.com
 .*\.private\.repost\.aws
+.*\.r\.cloud\.int\.apple
 .*\.raffleentry\.org\.uk
 .*\.rokunohe\.aomori\.jp
 .*\.routingthecloud\.com
@@ -8522,6 +8527,7 @@
 .*\.kushiro\.hokkaido\.jp
 .*\.kutchan\.hokkaido\.jp
 .*\.lutrausercontent\.com
+.*\.magicpatternsapp\.com
 .*\.mashike\.hokkaido\.jp
 .*\.mashiki\.kumamoto\.jp
 .*\.matsuda\.kanagawa\.jp
@@ -9307,6 +9313,11 @@
 .*\.reservd\.testing\.thingdust\.io
 .*\.s3-ca-central-1\.amazonaws\.com
 .*\.s3-eu-central-1\.amazonaws\.com
+.*\.us-east-1\.r\.cloud\.int\.apple
+.*\.us-east-2\.r\.cloud\.int\.apple
+.*\.us-west-1\.r\.cloud\.int\.apple
+.*\.us-west-2\.r\.cloud\.int\.apple
+.*\.us-west-3\.r\.cloud\.int\.apple
 .*\.airflow\.ap-northeast-1\.on\.aws
 .*\.airflow\.ap-northeast-2\.on\.aws
 .*\.airflow\.ap-northeast-3\.on\.aws
@@ -9316,7 +9327,11 @@
 .*\.airflow\.ap-southeast-4\.on\.aws
 .*\.airflow\.ap-southeast-5\.on\.aws
 .*\.ap-east-1\.elasticbeanstalk\.com
+.*\.ap-north-1\.r\.cloud\.int\.apple
+.*\.ap-south-1\.r\.cloud\.int\.apple
+.*\.ap-south-2\.r\.cloud\.int\.apple
 .*\.app\.os\.stg\.fedoraproject\.org
+.*\.eu-north-1\.r\.cloud\.int\.apple
 .*\.eu-west-1\.elasticbeanstalk\.com
 .*\.eu-west-2\.elasticbeanstalk\.com
 .*\.eu-west-3\.elasticbeanstalk\.com
@@ -9368,6 +9383,7 @@
 .*\.ap-east-1\.airflow\.amazonaws\.com
 .*\.ca-west-1\.airflow\.amazonaws\.com
 .*\.cn-north-1\.eb\.amazonaws\.com\.cn
+.*\.eu-central-1\.r\.cloud\.int\.apple
 .*\.eu-west-1\.airflow\.amazonaws\.com
 .*\.eu-west-2\.airflow\.amazonaws\.com
 .*\.eu-west-3\.airflow\.amazonaws\.com
@@ -9395,6 +9411,8 @@
 .*\.studio\.eu-south-1\.sagemaker\.aws
 .*\.studio\.eu-south-2\.sagemaker\.aws
 .*\.studio\.me-south-1\.sagemaker\.aws
+.*\.us-central-1\.r\.cloud\.int\.apple
+.*\.us-central-2\.r\.cloud\.int\.apple
 .*\.us-east-1\.airflow\.amazonaws\.com
 .*\.us-east-2\.airflow\.amazonaws\.com
 .*\.us-gov-east-1\.rds\.amazonaws\.com
