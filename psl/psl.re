@@ -406,7 +406,6 @@
 .*\.annaka\.gunma\.jp
 .*\.anpachi\.gifu\.jp
 .*\.anquan
-.*\.antagonist\.cloud
 .*\.anz
 .*\.ao
 .*\.ao\.it
