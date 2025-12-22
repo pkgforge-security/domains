@@ -1028,6 +1028,7 @@
 .*\.clinic
 .*\.cn\.in
 .*\.cn\.it
+.*\.cn\.st
 .*\.cn\.ua
 .*\.co\.ae
 .*\.co\.ag
@@ -7860,6 +7861,7 @@
 .*\.iizuka\.fukuoka\.jp
 .*\.ikeda\.hokkaido\.jp
 .*\.ikusaka\.nagano\.jp
+.*\.imagine-proxy\.work
 .*\.inami\.wakayama\.jp
 .*\.is-a-anarchist\.com
 .*\.is-a-bruinsfan\.org
