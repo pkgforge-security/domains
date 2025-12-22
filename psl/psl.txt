@@ -180,6 +180,7 @@ advisor.ws
 adygeya.ru
 adygeya.su
 ae
+ae.kg
 ae.org
 aeg
 aejrie.no
@@ -6029,6 +6030,7 @@ netflix
 netgamers.jp
 netlib.re
 netlify.app
+nett.to
 network
 neustar
 new
@@ -6641,6 +6643,7 @@ org.sd
 org.se
 org.sg
 org.sh
+org.sk
 org.sl
 org.sn
 org.so
