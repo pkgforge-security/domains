@@ -2129,6 +2129,7 @@ ebina.kanagawa.jp
 ebino.miyazaki.jp
 ebiz.tw
 ec
+ec.cc
 echizen.fukui.jp
 ecn.br
 eco
@@ -2517,6 +2518,7 @@ eu-west-2.rds.amazonaws.com
 eu-west-3.airflow.amazonaws.com
 eu-west-3.elasticbeanstalk.com
 eu-west-3.rds.amazonaws.com
+eu.cc
 eu.com
 eu.encoway.cloud
 eu.int
@@ -3351,6 +3353,7 @@ gsj.bz
 gsm.pl
 gt
 gu
+gu.cc
 gu.us
 guam.gu
 gub.uy
@@ -3367,6 +3370,7 @@ guru
 gushikami.okinawa.jp
 gv.ao
 gv.at
+gv.uy
 gv.vc
 gw
 gwangju.kr
@@ -9050,6 +9054,7 @@ uji.kyoto.jp
 ujiie.tochigi.jp
 ujitawara.kyoto.jp
 uk
+uk.cc
 uk.com
 uk.eu.org
 uk.in
@@ -9143,6 +9148,7 @@ us-west-2.elasticbeanstalk.com
 us-west-2.r.cloud.int.apple
 us-west-2.rds.amazonaws.com
 us-west-3.r.cloud.int.apple
+us.cc
 us.ci
 us.com
 us.eu.org

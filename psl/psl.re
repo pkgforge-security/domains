@@ -2129,6 +2129,7 @@
 .*\.ebino\.miyazaki\.jp
 .*\.ebiz\.tw
 .*\.ec
+.*\.ec\.cc
 .*\.echizen\.fukui\.jp
 .*\.ecn\.br
 .*\.eco
@@ -2518,6 +2519,7 @@
 .*\.eu-west-3\.elasticbeanstalk\.com
 .*\.eu-west-3\.rds\.amazonaws\.com
 .*\.eu1-plenit\.com
+.*\.eu\.cc
 .*\.eu\.com
 .*\.eu\.encoway\.cloud
 .*\.eu\.int
@@ -3351,6 +3353,7 @@
 .*\.gsm\.pl
 .*\.gt
 .*\.gu
+.*\.gu\.cc
 .*\.gu\.us
 .*\.guam\.gu
 .*\.gub\.uy
@@ -3367,6 +3370,7 @@
 .*\.gushikami\.okinawa\.jp
 .*\.gv\.ao
 .*\.gv\.at
+.*\.gv\.uy
 .*\.gv\.vc
 .*\.gw
 .*\.gwangju\.kr
@@ -9051,6 +9055,7 @@
 .*\.ujitawara\.kyoto\.jp
 .*\.uk
 .*\.uk0\.bigv\.io
+.*\.uk\.cc
 .*\.uk\.com
 .*\.uk\.eu\.org
 .*\.uk\.in
@@ -9144,6 +9149,7 @@
 .*\.us-west-2\.rds\.amazonaws\.com
 .*\.us-west-3\.r\.cloud\.int\.apple
 .*\.us1-plenit\.com
+.*\.us\.cc
 .*\.us\.ci
 .*\.us\.com
 .*\.us\.eu\.org

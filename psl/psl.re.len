@@ -1139,6 +1139,7 @@
 .*\.durban
 .*\.dy\.fi
 .*\.e4\.cz
+.*\.ec\.cc
 .*\.ed\.ao
 .*\.ed\.ci
 .*\.ed\.cr
@@ -1149,6 +1150,7 @@
 .*\.er\.in
 .*\.es\.kr
 .*\.estate
+.*\.eu\.cc
 .*\.events
 .*\.expert
 .*\.f5\.si
@@ -1193,9 +1195,11 @@
 .*\.gr\.jp
 .*\.gratis
 .*\.gs\.cn
+.*\.gu\.cc
 .*\.gu\.us
 .*\.gv\.ao
 .*\.gv\.at
+.*\.gv\.uy
 .*\.gv\.vc
 .*\.gx\.cn
 .*\.gz\.cn
@@ -1547,9 +1551,11 @@
 .*\.tw\.cn
 .*\.tx\.us
 .*\.ud\.it
+.*\.uk\.cc
 .*\.uk\.in
 .*\.unicom
 .*\.up\.in
+.*\.us\.cc
 .*\.us\.ci
 .*\.us\.in
 .*\.us\.kg
