@@ -3758,7 +3758,6 @@
 .*\.penza\.su
 .*\.perma\.jp
 .*\.perso\.ht
-.*\.perso\.sn
 .*\.perso\.tn
 .*\.plock\.pl
 .*\.prato\.it
@@ -4040,7 +4039,6 @@
 .*\.cyon\.site
 .*\.daklak\.vn
 .*\.danang\.vn
-.*\.dd-dns\.de
 .*\.ddnss\.org
 .*\.deatnu\.no
 .*\.dfirma\.pl
@@ -4057,7 +4055,6 @@
 .*\.dyndns\.ws
 .*\.dynns\.com
 .*\.dynv6\.net
-.*\.dynvpn\.de
 .*\.dyrøy\.no
 .*\.dønna\.no
 .*\.e164\.arpa
@@ -4234,7 +4231,6 @@
 .*\.musica\.ar
 .*\.musica\.bo
 .*\.mutual\.ar
-.*\.my-wan\.de
 .*\.myaddr\.io
 .*\.myftp\.biz
 .*\.myftp\.org
@@ -4643,12 +4639,10 @@
 .*\.dongnai\.vn
 .*\.dopaas\.com
 .*\.drammen\.no
-.*\.draydns\.de
 .*\.drøbak\.no
 .*\.dscloud\.me
 .*\.dst\.mi\.us
 .*\.dvrdns\.org
-.*\.dyn-vpn\.de
 .*\.dyndns1\.de
 .*\.dyndns\.biz
 .*\.dyndns\.org
@@ -5115,7 +5109,6 @@
 .*\.suwalki\.pl
 .*\.svelvik\.no
 .*\.swidnik\.pl
-.*\.syno-ds\.de
 .*\.sálát\.no
 .*\.taranto\.it
 .*\.tayninh\.vn
@@ -5283,7 +5276,6 @@
 .*\.dongthap\.vn
 .*\.doomdns\.com
 .*\.doomdns\.org
-.*\.dray-dns\.de
 .*\.dscloud\.biz
 .*\.dsmynas\.com
 .*\.dsmynas\.net
@@ -5474,7 +5466,6 @@
 .*\.mup\.gov\.pl
 .*\.murmansk\.su
 .*\.musician\.io
-.*\.my-vigor\.de
 .*\.myamaze\.net
 .*\.mydatto\.com
 .*\.mydatto\.net
@@ -6273,7 +6264,6 @@
 .*\.mayfirst\.info
 .*\.mediatech\.dev
 .*\.mein-iserv\.de
-.*\.mein-vigor\.de
 .*\.meinforum\.net
 .*\.meiwa\.mie\.jp
 .*\.meteorapp\.com
@@ -6306,7 +6296,6 @@
 .*\.omasvuotna\.no
 .*\.ome\.tokyo\.jp
 .*\.on-the-web\.tv
-.*\.onavstack\.net
 .*\.onfabrica\.com
 .*\.oninferno\.net
 .*\.ono\.fukui\.jp
@@ -6496,7 +6485,6 @@
 .*\.davvenjarga\.no
 .*\.discordsez\.com
 .*\.discourse\.team
-.*\.diskstation\.eu
 .*\.diskstation\.me
 .*\.dnsiskinky\.com
 .*\.dnsupdate\.info
@@ -6665,13 +6653,11 @@
 .*\.simple-url\.com
 .*\.simplesite\.com
 .*\.skydiving\.aero
-.*\.skygearapp\.com
 .*\.sondre-land\.no
 .*\.sosa\.chiba\.jp
 .*\.stor-elvdal\.no
 .*\.suzuka\.mie\.jp
 .*\.swinoujscie\.pl
-.*\.synology-ds\.de
 .*\.sør-aurdal\.no
 .*\.taka\.hyogo\.jp
 .*\.tako\.chiba\.jp
@@ -6792,7 +6778,6 @@
 .*\.development\.run
 .*\.discordsays\.com
 .*\.discourse\.group
-.*\.diskstation\.org
 .*\.ditchyourip\.com
 .*\.divtasvuodna\.no
 .*\.dns-dynamic\.net
@@ -7022,7 +7007,6 @@
 .*\.tome\.miyagi\.jp
 .*\.tomi\.nagano\.jp
 .*\.tomika\.gifu\.jp
-.*\.translated\.page
 .*\.tsuno\.kochi\.jp
 .*\.ueda\.nagano\.jp
 .*\.umaji\.kochi\.jp
@@ -9062,7 +9046,6 @@
 .*\.shinanomachi\.nagano\.jp
 .*\.shirakawa\.fukushima\.jp
 .*\.shishikui\.tokushima\.jp
-.*\.synology-diskstation\.de
 .*\.tamatsukuri\.ibaraki\.jp
 .*\.tokushima\.tokushima\.jp
 .*\.yali\.mythic-beasts\.com

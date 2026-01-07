@@ -1865,7 +1865,6 @@
 .*\.dazaifu\.fukuoka\.jp
 .*\.dc\.us
 .*\.dclk
-.*\.dd-dns\.de
 .*\.ddl\.fr-par\.scw\.cloud
 .*\.ddl\.nl-ams\.scw\.cloud
 .*\.ddl\.pl-waw\.scw\.cloud
@@ -1966,9 +1965,7 @@
 .*\.discourse\.team
 .*\.discover
 .*\.dish
-.*\.diskstation\.eu
 .*\.diskstation\.me
-.*\.diskstation\.org
 .*\.diskussionsbereich\.de
 .*\.ditchyourip\.com
 .*\.divtasvuodna\.no
@@ -2033,9 +2030,7 @@
 .*\.dr\.tr
 .*\.drammen\.no
 .*\.drangedal\.no
-.*\.dray-dns\.de
 .*\.drayddns\.com
-.*\.draydns\.de
 .*\.dreamhosters\.com
 .*\.drive
 .*\.drobak\.no
@@ -2066,7 +2061,6 @@
 .*\.dyn-berlin\.de
 .*\.dyn-ip24\.de
 .*\.dyn-o-saur\.com
-.*\.dyn-vpn\.de
 .*\.dyn\.addr\.tools
 .*\.dyn\.cosidns\.de
 .*\.dyn\.ddnss\.de
@@ -2103,7 +2097,6 @@
 .*\.dynserv\.org
 .*\.dynu\.net
 .*\.dynv6\.net
-.*\.dynvpn\.de
 .*\.dyroy\.no
 .*\.dyrøy\.no
 .*\.dz
@@ -5259,7 +5252,6 @@
 .*\.meet
 .*\.meguro\.tokyo\.jp
 .*\.mein-iserv\.de
-.*\.mein-vigor\.de
 .*\.meinforum\.net
 .*\.meiwa\.gunma\.jp
 .*\.meiwa\.mie\.jp
@@ -5646,8 +5638,6 @@
 .*\.my-firewall\.org
 .*\.my-gateway\.de
 .*\.my-router\.de
-.*\.my-vigor\.de
-.*\.my-wan\.de
 .*\.my\.at
 .*\.my\.canva\.site
 .*\.my\.canvasite\.cn
@@ -6457,7 +6447,6 @@
 .*\.on\.ca
 .*\.on\.crisp\.email
 .*\.onagawa\.miyagi\.jp
-.*\.onavstack\.net
 .*\.oncilla\.mythic-beasts\.com
 .*\.ondigitalocean\.app
 .*\.one
@@ -6843,7 +6832,6 @@
 .*\.per\.nf
 .*\.perma\.jp
 .*\.perso\.ht
-.*\.perso\.sn
 .*\.perso\.tn
 .*\.perspecta\.cloud
 .*\.perugia\.it
@@ -8152,7 +8140,6 @@
 .*\.skr\.jp
 .*\.sky
 .*\.skydiving\.aero
-.*\.skygearapp\.com
 .*\.skype
 .*\.skánit\.no
 .*\.skånland\.no
@@ -8454,9 +8441,6 @@
 .*\.sydney
 .*\.sykkylven\.no
 .*\.syncloud\.it
-.*\.syno-ds\.de
-.*\.synology-diskstation\.de
-.*\.synology-ds\.de
 .*\.synology\.me
 .*\.sys\.qcx\.io
 .*\.systems
@@ -8866,7 +8850,6 @@
 .*\.transfer-webapp\.us-west-1\.on\.aws
 .*\.transfer-webapp\.us-west-2\.on\.aws
 .*\.translate\.goog
-.*\.translated\.page
 .*\.transporte\.bo
 .*\.transurl\.be
 .*\.transurl\.eu
