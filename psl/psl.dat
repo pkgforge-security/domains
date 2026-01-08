@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-01-07_09-25-09_UTC
-// COMMIT: 6aad681b718fff8d10285e8e12460ef0aa49ddd2
+// VERSION: 2026-01-07_12-06-21_UTC
+// COMMIT: c31f9acf86ab34199f11634fea42b1ff6346f4a6
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12882,6 +12882,11 @@ dedyn.io
 // Submitted by Aavash Shrestha <aavash@deta.sh>
 deta.app
 deta.dev
+
+// Deuxfleurs : https://deuxfleurs.fr
+// Submitted by Aeddis Desauw <ca@deuxfleurs.fr>
+deuxfleurs.eu
+deuxfleurs.page
 
 // Developed Methods LLC : https://methods.dev
 // Submitted by Patrick Lorio <security@playit.gg>
