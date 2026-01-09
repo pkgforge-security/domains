@@ -1081,6 +1081,7 @@
 .*\.buzz
 .*\.bv
 .*\.bw
+.*\.bwcloud-os-instance\.de
 .*\.by
 .*\.bydgoszcz\.pl
 .*\.byen\.site
