@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-01-07_12-06-21_UTC
-// COMMIT: c31f9acf86ab34199f11634fea42b1ff6346f4a6
+// VERSION: 2026-01-08_23-48-27_UTC
+// COMMIT: 6b35badef402235289e85f09b29b07c651159b68
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -6817,7 +6817,7 @@ org.zw
 
 // newGTLDs
 
-// List of new gTLDs imported from https://www.icann.org/resources/registries/gtlds/v2/gtlds.json on 2025-12-06T15:17:27Z
+// List of new gTLDs imported from https://www.icann.org/resources/registries/gtlds/v2/gtlds.json on 2026-01-08T15:25:34Z
 // This list is auto-generated, don't edit it manually.
 // aaa : American Automobile Association, Inc.
 // https://www.iana.org/domains/root/db/aaa.html
@@ -10459,7 +10459,7 @@ tokyo
 // https://www.iana.org/domains/root/db/tools.html
 tools
 
-// top : .TOP Registry
+// top : Hong Kong Zhongze International Limited
 // https://www.iana.org/domains/root/db/top.html
 top
 
@@ -12546,6 +12546,10 @@ radio.fm
 // Submitted by Merlin Zhao <devops@bubble.io>
 cdn.bubble.io
 bubbleapps.io
+
+// bwCloud-OS : https://bwcloud-os.de/
+// Submitted by Klara Mall <dns@bwcloud-os.de>
+*.bwcloud-os-instance.de
 
 // Bytemark Hosting : https://www.bytemark.co.uk
 // Submitted by Paul Cammish <paul.cammish@bytemark.co.uk>
