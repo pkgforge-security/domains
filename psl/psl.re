@@ -2309,6 +2309,7 @@
 .*\.elblag\.pl
 .*\.elementor\.cloud
 .*\.elementor\.cool
+.*\.eliv-api\.kr
 .*\.eliv-cdn\.kr
 .*\.eliv-dns\.kr
 .*\.elk\.pl
