@@ -806,6 +806,8 @@
 .*\.barueri\.br
 .*\.barum\.no
 .*\.bas\.it
+.*\.base44-sandbox\.com
+.*\.base44\.app
 .*\.base\.ec
 .*\.base\.shop
 .*\.baseball
