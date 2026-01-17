@@ -4518,6 +4518,8 @@ kikuchi.kumamoto.jp
 kikugawa.shizuoka.jp
 kill.jp
 kilo.jp
+kiloapps.ai
+kiloapps.io
 kim
 kim.replit.dev
 kimino.wakayama.jp
