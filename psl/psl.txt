@@ -8240,6 +8240,7 @@ sp.leg.br
 spa
 space
 space-to-rent.com
+spawnbase.app
 spb.ru
 spb.su
 spdns.de
