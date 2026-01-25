@@ -2,6 +2,7 @@
 .*\.s3-accesspoint-fips\.dualstack\.us-gov-east-1\.amazonaws\.com
 .*\.s3-accesspoint-fips\.dualstack\.us-gov-west-1\.amazonaws\.com
 .*\.s3-accesspoint\.dualstack\.cn-northwest-1\.amazonaws\.com\.cn
+.*\.auth\.cognito-idp\.eusc-de-east-1\.on\.amazonwebservices\.eu
 .*\.s3-accesspoint-fips\.dualstack\.ca-central-1\.amazonaws\.com
 .*\.transfer-webapp\.cn-north-1\.on\.amazonwebservices\.com\.cn
 .*\.webview-assets\.aws-cloud9\.ap-northeast-1\.amazonaws\.com
@@ -82,6 +83,8 @@
 .*\.s3-accesspoint\.dualstack\.us-west-1\.amazonaws\.com
 .*\.s3-accesspoint\.dualstack\.us-west-2\.amazonaws\.com
 .*\.s3-object-lambda\.cn-northwest-1\.amazonaws\.com\.cn
+.*\.s3-website\.dualstack\.us-gov-east-1\.amazonaws\.com
+.*\.s3-website\.dualstack\.us-gov-west-1\.amazonaws\.com
 .*\.webview-assets\.cloud9\.ca-central-1\.amazonaws\.com
 .*\.webview-assets\.cloud9\.eu-central-1\.amazonaws\.com
 .*\.airflow\.cn-north-1\.on\.amazonwebservices\.com\.cn
@@ -445,6 +448,7 @@
 .*\.transfer-webapp\.ap-southeast-3\.on\.aws
 .*\.transfer-webapp\.ap-southeast-4\.on\.aws
 .*\.transfer-webapp\.ap-southeast-5\.on\.aws
+.*\.transfer-webapp\.ap-southeast-7\.on\.aws
 .*\.ap-northeast-1\.airflow\.amazonaws\.com
 .*\.ap-northeast-2\.airflow\.amazonaws\.com
 .*\.ap-northeast-3\.airflow\.amazonaws\.com
@@ -518,6 +522,7 @@
 .*\.transfer-webapp\.eu-central-2\.on\.aws
 .*\.transfer-webapp\.il-central-1\.on\.aws
 .*\.transfer-webapp\.me-central-1\.on\.aws
+.*\.transfer-webapp\.mx-central-1\.on\.aws
 .*\.vfs\.cloud9\.ap-east-1\.amazonaws\.com
 .*\.vfs\.cloud9\.eu-west-1\.amazonaws\.com
 .*\.vfs\.cloud9\.eu-west-2\.amazonaws\.com
