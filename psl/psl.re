@@ -69,12 +69,14 @@
 .*\.a\.prod\.fastly\.net
 .*\.a\.se
 .*\.a\.ssl\.fastly\.net
+.*\.aa\.crm\.dev
 .*\.aa\.no
 .*\.aaa
 .*\.aaa\.pro
 .*\.aarborte\.no
 .*\.aarp
 .*\.ab\.ca
+.*\.ab\.crm\.dev
 .*\.abashiri\.hokkaido\.jp
 .*\.abb
 .*\.abbott
@@ -103,6 +105,7 @@
 .*\.ac\.ci
 .*\.ac\.cn
 .*\.ac\.cr
+.*\.ac\.crm\.dev
 .*\.ac\.cy
 .*\.ac\.eg
 .*\.ac\.fj
@@ -161,6 +164,7 @@
 .*\.activetrail\.biz
 .*\.actor
 .*\.ad
+.*\.ad\.crm\.dev
 .*\.ad\.jp
 .*\.adachi\.tokyo\.jp
 .*\.adaptable\.app
@@ -180,6 +184,7 @@
 .*\.adygeya\.ru
 .*\.adygeya\.su
 .*\.ae
+.*\.ae\.crm\.dev
 .*\.ae\.kg
 .*\.ae\.org
 .*\.aeg
@@ -199,6 +204,7 @@
 .*\.af-south-1\.airflow\.amazonaws\.com
 .*\.af-south-1\.elasticbeanstalk\.com
 .*\.af-south-1\.rds\.amazonaws\.com
+.*\.af\.crm\.dev
 .*\.affinitylottery\.org\.uk
 .*\.afjord\.no
 .*\.afl
@@ -1361,6 +1367,7 @@
 .*\.chuo\.yamanashi\.jp
 .*\.church
 .*\.ci
+.*\.ci\.crm\.dev
 .*\.ci\.it
 .*\.ciao\.jp
 .*\.ciencia\.bo
@@ -4481,6 +4488,10 @@
 .*\.kazuno\.akita\.jp
 .*\.kddi
 .*\.ke
+.*\.keenetic\.io
+.*\.keenetic\.link
+.*\.keenetic\.name
+.*\.keenetic\.pro
 .*\.keisen\.fukuoka\.jp
 .*\.keliweb\.cloud
 .*\.kembuchi\.hokkaido\.jp
@@ -6774,6 +6785,7 @@
 .*\.p\.tawk\.email
 .*\.p\.tawkto\.email
 .*\.pa
+.*\.pa\.crm\.dev
 .*\.pa\.gov\.br
 .*\.pa\.gov\.pl
 .*\.pa\.it
@@ -6822,15 +6834,19 @@
 .*\.paynow\.cx
 .*\.paywhirl\.com
 .*\.pb\.ao
+.*\.pb\.crm\.dev
 .*\.pb\.gov\.br
 .*\.pb\.leg\.br
+.*\.pc\.crm\.dev
 .*\.pc\.it
 .*\.pc\.pl
 .*\.pccw
+.*\.pd\.crm\.dev
 .*\.pd\.it
 .*\.pdns\.page
 .*\.pe
 .*\.pe\.ca
+.*\.pe\.crm\.dev
 .*\.pe\.gov\.br
 .*\.pe\.it
 .*\.pe\.kr
@@ -6853,6 +6869,7 @@
 .*\.pescara\.it
 .*\.pet
 .*\.pf
+.*\.pf\.crm\.dev
 .*\.pfizer
 .*\.pg
 .*\.pg\.in
@@ -8212,6 +8229,7 @@
 .*\.soja\.okayama\.jp
 .*\.soka\.saitama\.jp
 .*\.sokndal\.no
+.*\.sol\.site
 .*\.sola\.no
 .*\.solar
 .*\.solund\.no
