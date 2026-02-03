@@ -4703,7 +4703,6 @@
 .香川.jp
 .高知.jp
 .鳥取.jp
-.12chars.it
 .aa.crm.dev
 .ab.crm.dev
 .abrdns.com
@@ -5224,8 +5223,6 @@
 .سورية
 .همراه
 .123miweb.es
-.12chars.dev
-.12chars.pro
 .aarborte.no
 .abkhazia.su
 .academia.bo
@@ -8840,6 +8837,7 @@
 .vs.mythic-beasts.com
 .wakayama.wakayama.jp
 .wakkanai.hokkaido.jp
+.web.core.windows.net
 .weeklylottery.org.uk
 .whm.fr-par.scw.cloud
 .whm.nl-ams.scw.cloud
@@ -8886,6 +8884,7 @@
 .edgesuite-staging.net
 .eu.pythonanywhere.com
 .experts-comptables.fr
+.file.core.windows.net
 .fujikawa.yamanashi.jp
 .fukushima.hokkaido.jp
 .fukuyama.hiroshima.jp
@@ -9123,6 +9122,7 @@
 .storage.yandexcloud.net
 .tsurugashima.saitama.jp
 .us-east-1.amazonaws.com
+.usgovtrafficmanager.net
 .website.yandexcloud.net
 .west1-us.cloudjiffy.net
 .yamanakako.yamanashi.jp
@@ -9266,6 +9266,7 @@
 .s3.us-west-1.amazonaws.com
 .s3.us-west-2.amazonaws.com
 .satsumasendai.kagoshima.jp
+.web.core.usgovcloudapi.net
 .accident-investigation.aero
 .airflow.ca-central-1.on.aws
 .airflow.eu-central-1.on.aws
@@ -9274,12 +9275,14 @@
 .airflow.me-central-1.on.aws
 .ap-east-1.rds.amazonaws.com
 .ap-east-2.rds.amazonaws.com
+.blob.core.usgovcloudapi.net
 .ca-west-1.rds.amazonaws.com
 .cloud.interhostsolutions.be
 .eastus2.azurestaticapps.net
 .eu-west-1.rds.amazonaws.com
 .eu-west-2.rds.amazonaws.com
 .eu-west-3.rds.amazonaws.com
+.file.core.usgovcloudapi.net
 .higashimatsushima.miyagi.jp
 .higashimatsuyama.saitama.jp
 .ichikawamisato.yamanashi.jp
