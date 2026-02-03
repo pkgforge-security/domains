@@ -4500,6 +4500,7 @@
 .*\.香川\.jp
 .*\.高知\.jp
 .*\.鳥取\.jp
+.*\.12chars\.it
 .*\.abrdns\.com
 .*\.abruzzo\.it
 .*\.ac\.gov\.br
@@ -5187,6 +5188,8 @@
 .*\.ørland\.no
 .*\.ørskog\.no
 .*\.123miweb\.es
+.*\.12chars\.dev
+.*\.12chars\.pro
 .*\.aa\.crm\.dev
 .*\.aarborte\.no
 .*\.ab\.crm\.dev
@@ -9006,7 +9009,6 @@
 .*\.utashinai\.hokkaido\.jp
 .*\.utsunomiya\.tochigi\.jp
 .*\.w-corp-staticblitz\.com
-.*\.web\.core\.windows\.net
 .*\.whm\.fr-par\.scw\.cloud
 .*\.whm\.nl-ams\.scw\.cloud
 .*\.ทหาร\.ไทย
@@ -9023,7 +9025,6 @@
 .*\.dtwh\.fr-par\.scw\.cloud
 .*\.dtwh\.nl-ams\.scw\.cloud
 .*\.dtwh\.pl-waw\.scw\.cloud
-.*\.file\.core\.windows\.net
 .*\.fra1-de\.cloudjiffy\.net
 .*\.friuli-veneziagiulia\.it
 .*\.friulivenezia-giulia\.it
@@ -9080,7 +9081,6 @@
 .*\.shishikui\.tokushima\.jp
 .*\.tamatsukuri\.ibaraki\.jp
 .*\.tokushima\.tokushima\.jp
-.*\.usgovtrafficmanager\.net
 .*\.yali\.mythic-beasts\.com
 .*\.yamanashi\.yamanashi\.jp
 .*\.yamatokoriyama\.nara\.jp
@@ -9275,7 +9275,6 @@
 .*\.s3\.us-east-2\.amazonaws\.com
 .*\.s3\.us-west-1\.amazonaws\.com
 .*\.s3\.us-west-2\.amazonaws\.com
-.*\.web\.core\.usgovcloudapi\.net
 .*\.westus2\.azurestaticapps\.net
 .*\.ธุรกิจ\.ไทย
 .*\.รัฐบาล\.ไทย
@@ -9287,13 +9286,11 @@
 .*\.airflow\.me-central-1\.on\.aws
 .*\.ap-east-1\.rds\.amazonaws\.com
 .*\.ap-east-2\.rds\.amazonaws\.com
-.*\.blob\.core\.usgovcloudapi\.net
 .*\.ca-west-1\.rds\.amazonaws\.com
 .*\.eastasia\.azurestaticapps\.net
 .*\.eu-west-1\.rds\.amazonaws\.com
 .*\.eu-west-2\.rds\.amazonaws\.com
 .*\.eu-west-3\.rds\.amazonaws\.com
-.*\.file\.core\.usgovcloudapi\.net
 .*\.fujikawaguchiko\.yamanashi\.jp
 .*\.jcloud-ver-jpc\.ik-server\.com
 .*\.lambda-url\.ap-east-1\.on\.aws

@@ -20,6 +20,9 @@
 .*\.123website\.ch
 .*\.123website\.lu
 .*\.123website\.nl
+.*\.12chars\.dev
+.*\.12chars\.it
+.*\.12chars\.pro
 .*\.12hp\.at
 .*\.12hp\.ch
 .*\.12hp\.de
@@ -948,7 +951,6 @@
 .*\.black
 .*\.blackbaudcdn\.net
 .*\.blackfriday
-.*\.blob\.core\.usgovcloudapi\.net
 .*\.blob\.core\.windows\.net
 .*\.blockbuster
 .*\.blog
@@ -2660,8 +2662,6 @@
 .*\.fie\.ee
 .*\.figma-gov\.site
 .*\.figma\.site
-.*\.file\.core\.usgovcloudapi\.net
-.*\.file\.core\.windows\.net
 .*\.filegear-sg\.me
 .*\.filegear\.me
 .*\.film
@@ -9192,7 +9192,6 @@
 .*\.usercontent\.goog
 .*\.usercontent\.jp
 .*\.usgovcloudapp\.net
-.*\.usgovtrafficmanager\.net
 .*\.ushiku\.ibaraki\.jp
 .*\.usr\.cloud\.muni\.cz
 .*\.ustka\.pl
@@ -9471,8 +9470,6 @@
 .*\.weatherchannel
 .*\.web\.app
 .*\.web\.bo
-.*\.web\.core\.usgovcloudapi\.net
-.*\.web\.core\.windows\.net
 .*\.web\.do
 .*\.web\.erp\.dev
 .*\.web\.gu
