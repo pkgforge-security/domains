@@ -1460,7 +1460,6 @@ cn.st
 cn.ua
 cng.br
 cnpy.gdn
-cns.joyent.com
 cnt.br
 co
 co.ae
