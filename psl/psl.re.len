@@ -2355,6 +2355,7 @@
 .*\.hosting
 .*\.hotmail
 .*\.hu\.net
+.*\.hue\.vn
 .*\.hyundai
 .*\.hzc\.io
 .*\.hå\.no
@@ -7679,6 +7680,7 @@
 .*\.sakai\.ibaraki\.jp
 .*\.sakaki\.nagano\.jp
 .*\.sakuho\.nagano\.jp
+.*\.sandbox\.deno\.net
 .*\.sanjo\.niigata\.jp
 .*\.sanuki\.kagawa\.jp
 .*\.satte\.saitama\.jp

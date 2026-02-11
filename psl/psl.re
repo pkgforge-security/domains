@@ -3717,6 +3717,7 @@
 .*\.hu
 .*\.hu\.eu\.org
 .*\.hu\.net
+.*\.hue\.vn
 .*\.hughes
 .*\.huissier-justice\.fr
 .*\.hungry\.jp
@@ -7788,6 +7789,7 @@
 .*\.samukawa\.kanagawa\.jp
 .*\.sanagochi\.tokushima\.jp
 .*\.sanda\.hyogo\.jp
+.*\.sandbox\.deno\.net
 .*\.sandcats\.io
 .*\.sande\.more-og-romsdal\.no
 .*\.sande\.møre-og-romsdal\.no
