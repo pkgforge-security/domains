@@ -1035,6 +1035,7 @@
 .*\.dtwh\.fr-par\.scw\.cloud
 .*\.dtwh\.nl-ams\.scw\.cloud
 .*\.dtwh\.pl-waw\.scw\.cloud
+.*\.eu-west-1\.convex\.cloud
 .*\.file\.core\.windows\.net
 .*\.fra1-de\.cloudjiffy\.net
 .*\.friuli-veneziagiulia\.it
@@ -1092,6 +1093,7 @@
 .*\.shishikui\.tokushima\.jp
 .*\.tamatsukuri\.ibaraki\.jp
 .*\.tokushima\.tokushima\.jp
+.*\.us-east-1\.convex\.cloud
 .*\.usgovtrafficmanager\.net
 .*\.yali\.mythic-beasts\.com
 .*\.yamanashi\.yamanashi\.jp
@@ -1132,6 +1134,7 @@
 .*\.digitaloceanspaces\.com
 .*\.dyn\.home-webserver\.de
 .*\.elb\.amazonaws\.com\.cn
+.*\.eu-west-1\.convex\.site
 .*\.eu\.pythonanywhere\.com
 .*\.fnc\.fr-par\.scw\.cloud
 .*\.friuliveneziagiulia\.it
@@ -1239,6 +1242,7 @@
 .*\.trentino-süd-tirol\.it
 .*\.tsukigata\.hokkaido\.jp
 .*\.uenohara\.yamanashi\.jp
+.*\.us-east-1\.convex\.site
 .*\.utashinai\.hokkaido\.jp
 .*\.utsunomiya\.tochigi\.jp
 .*\.w-corp-staticblitz\.com
@@ -4616,6 +4620,7 @@
 .*\.hoyanger\.no
 .*\.httpbin\.org
 .*\.id\.repl\.co
+.*\.imagine\.diy
 .*\.inderøy\.no
 .*\.indigena\.bo
 .*\.ingatlan\.hu

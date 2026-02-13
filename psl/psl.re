@@ -2522,6 +2522,8 @@
 .*\.eu-south-2\.airflow\.amazonaws\.com
 .*\.eu-south-2\.elasticbeanstalk\.com
 .*\.eu-west-1\.airflow\.amazonaws\.com
+.*\.eu-west-1\.convex\.cloud
+.*\.eu-west-1\.convex\.site
 .*\.eu-west-1\.elasticbeanstalk\.com
 .*\.eu-west-1\.rds\.amazonaws\.com
 .*\.eu-west-2\.airflow\.amazonaws\.com
@@ -3842,6 +3844,7 @@
 .*\.im\.it
 .*\.imabari\.ehime\.jp
 .*\.imagine-proxy\.work
+.*\.imagine\.diy
 .*\.imakane\.hokkaido\.jp
 .*\.imamat
 .*\.imari\.saga\.jp
@@ -9159,6 +9162,8 @@
 .*\.us-central-2\.r\.cloud\.int\.apple
 .*\.us-east-1\.airflow\.amazonaws\.com
 .*\.us-east-1\.amazonaws\.com
+.*\.us-east-1\.convex\.cloud
+.*\.us-east-1\.convex\.site
 .*\.us-east-1\.elasticbeanstalk\.com
 .*\.us-east-1\.r\.cloud\.int\.apple
 .*\.us-east-1\.rds\.amazonaws\.com
