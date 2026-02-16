@@ -9624,7 +9624,6 @@
 .*\.wnext\.app
 .*\.wodzislaw\.pl
 .*\.wolomin\.pl
-.*\.wolterskluwer
 .*\.woltlab-demo\.com
 .*\.woodside
 .*\.worf\.replit\.dev
