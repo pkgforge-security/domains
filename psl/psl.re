@@ -5679,6 +5679,7 @@
 .*\.my-gateway\.de
 .*\.my-router\.de
 .*\.my\.at
+.*\.my\.be
 .*\.my\.canva\.site
 .*\.my\.canvasite\.cn
 .*\.my\.de
