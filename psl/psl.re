@@ -5620,10 +5620,12 @@
 .*\.mragowo\.pl
 .*\.mrap\.accesspoint\.s3-global\.amazonaws\.com
 .*\.ms
+.*\.ms\.fun
 .*\.ms\.gov\.br
 .*\.ms\.it
 .*\.ms\.kr
 .*\.ms\.leg\.br
+.*\.ms\.show
 .*\.ms\.us
 .*\.msd
 .*\.msk\.ru
@@ -5679,6 +5681,7 @@
 .*\.my-gateway\.de
 .*\.my-router\.de
 .*\.my\.at
+.*\.my\.be
 .*\.my\.canva\.site
 .*\.my\.canvasite\.cn
 .*\.my\.de
