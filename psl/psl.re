@@ -5229,6 +5229,7 @@
 .*\.mattel
 .*\.mayfirst\.info
 .*\.mayfirst\.org
+.*\.mazeplay\.com
 .*\.mazowsze\.pl
 .*\.mazury\.pl
 .*\.mb\.ca
