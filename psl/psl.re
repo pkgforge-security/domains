@@ -6859,6 +6859,7 @@
 .*\.patria\.bo
 .*\.pavia\.it
 .*\.pay
+.*\.payload\.dev
 .*\.paynow\.cx
 .*\.paywhirl\.com
 .*\.pb\.ao
@@ -7023,6 +7024,7 @@
 .*\.pp\.se
 .*\.pp\.ua
 .*\.ppg\.br
+.*\.pplx\.app
 .*\.pr
 .*\.pr\.gov\.br
 .*\.pr\.gov\.pl

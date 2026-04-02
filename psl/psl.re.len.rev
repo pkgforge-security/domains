@@ -4752,6 +4752,7 @@
 .*\.pa\.crm\.dev
 .*\.parallel\.jp
 .*\.parasite\.jp
+.*\.payload\.dev
 .*\.pb\.crm\.dev
 .*\.pc\.crm\.dev
 .*\.pd\.crm\.dev
@@ -6487,6 +6488,7 @@
 .*\.perso\.ht
 .*\.perso\.tn
 .*\.plock\.pl
+.*\.pplx\.app
 .*\.prato\.it
 .*\.press\.cy
 .*\.press\.ma
