@@ -6532,7 +6532,6 @@
 .*\.open
 .*\.opencraft\.hosting
 .*\.opensocial\.site
-.*\.opentunnel\.xyz
 .*\.operaunite\.com
 .*\.opik\.net
 .*\.opoczno\.pl
@@ -7977,7 +7976,6 @@
 .*\.sennan\.osaka\.jp
 .*\.senseering\.net
 .*\.seoul\.kr
-.*\.seprox\.hooc\.me
 .*\.sera\.hiroshima\.jp
 .*\.seranishi\.hiroshima\.jp
 .*\.servebbs\.com
@@ -8332,7 +8330,6 @@
 .*\.srv\.br
 .*\.srv\.us
 .*\.srvrless\.rdpa\.co
-.*\.sryze\.cc
 .*\.ss
 .*\.ss\.it
 .*\.ssl\.origin\.cdn77-secure\.org
