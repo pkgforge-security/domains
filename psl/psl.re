@@ -6835,7 +6835,6 @@
 .*\.pages\.torproject\.net
 .*\.pages\.wiardweb\.com
 .*\.pagespeedmobilizer\.com
-.*\.pagexl\.com
 .*\.palermo\.it
 .*\.palmas\.br
 .*\.panasonic
