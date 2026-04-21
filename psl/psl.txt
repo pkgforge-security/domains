@@ -1397,6 +1397,7 @@ cl
 cl.it
 claims
 clan.rip
+claude.app
 cleaning
 clerk.app
 clerkstage.app
@@ -1422,7 +1423,6 @@ cloud66.ws
 cloudaccess.host
 cloudaccess.net
 cloudapp.net
-cloudapps.digital
 cloudbeesusercontent.io
 cloudera.site
 cloudflare-ipfs.com
@@ -5073,7 +5073,6 @@ lomza.pl
 lon-1.paas.massivegrid.net
 lon-2.paas.massivegrid.net
 london
-london.cloudapps.digital
 londrina.br
 longan.vn
 loppa.no

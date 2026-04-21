@@ -952,7 +952,6 @@
 .*\.jelastic\.saveincloud\.net
 .*\.kamisunagawa\.hokkaido\.jp
 .*\.kuromatsunai\.hokkaido\.jp
-.*\.london\.cloudapps\.digital
 .*\.minami-alps\.yamanashi\.jp
 .*\.minamifurano\.hokkaido\.jp
 .*\.minamiyamashiro\.kyoto\.jp
@@ -2389,7 +2388,6 @@
 .*\.chiyoda\.gunma\.jp
 .*\.chiyoda\.tokyo\.jp
 .*\.chizu\.tottori\.jp
-.*\.cloudapps\.digital
 .*\.cloudycluster\.net
 .*\.clusters\.rdpa\.co
 .*\.community-pro\.net
@@ -5076,6 +5074,7 @@
 .*\.ciencia\.bo
 .*\.cieszyn\.pl
 .*\.cistron\.nl
+.*\.claude\.app
 .*\.cloud66\.ws
 .*\.cloud\.goog
 .*\.cloudns\.be
