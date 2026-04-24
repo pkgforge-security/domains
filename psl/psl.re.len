@@ -5390,6 +5390,7 @@
 .*\.from-wi\.com
 .*\.from-wv\.com
 .*\.from-wy\.com
+.*\.fspages\.org
 .*\.fyresdal\.no
 .*\.gadget\.host
 .*\.gateway\.dev
@@ -5554,6 +5555,7 @@
 .*\.pe\.crm\.dev
 .*\.pf\.crm\.dev
 .*\.piacenza\.it
+.*\.piebox\.site
 .*\.piedmont\.it
 .*\.piemonte\.it
 .*\.piw\.gov\.pl
@@ -7138,6 +7140,7 @@
 .*\.aso\.kumamoto\.jp
 .*\.association\.aero
 .*\.at-band-camp\.net
+.*\.atlassian-3p\.com
 .*\.authgearapps\.com
 .*\.awsapprunner\.com
 .*\.aya\.miyazaki\.jp
@@ -7520,6 +7523,7 @@
 .*\.daigo\.ibaraki\.jp
 .*\.date\.hokkaido\.jp
 .*\.dell-ogliastra\.it
+.*\.deployagent\.space
 .*\.dnepropetrovsk\.ua
 .*\.dnipropetrovsk\.ua
 .*\.drive-platform\.io
@@ -8815,6 +8819,7 @@
 .*\.matsumae\.hokkaido\.jp
 .*\.matsushima\.miyagi\.jp
 .*\.matsuura\.nagasaki\.jp
+.*\.metaaiusercontent\.com
 .*\.minamata\.kumamoto\.jp
 .*\.minamiaiki\.nagano\.jp
 .*\.minamiawaji\.hyogo\.jp
@@ -9213,6 +9218,7 @@
 .*\.website\.yandexcloud\.net
 .*\.west1-us\.cloudjiffy\.net
 .*\.yamanakako\.yamanashi\.jp
+.*\.atlassian-isolated-3p\.com
 .*\.barrell-of-knowledge\.info
 .*\.cdn\.cloudflareglobal\.net
 .*\.customer\.speedpartner\.de
@@ -9297,6 +9303,7 @@
 .*\.airflow\.me-south-1\.on\.aws
 .*\.aizuwakamatsu\.fukushima\.jp
 .*\.atl\.jelastic\.vps-host\.net
+.*\.atlassian-3p-us-gov-mod\.com
 .*\.cust\.testing\.thingdust\.io
 .*\.customer\.mythic-beasts\.com
 .*\.fentiger\.mythic-beasts\.com
