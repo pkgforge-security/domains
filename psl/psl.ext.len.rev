@@ -795,7 +795,6 @@
 .airflow.me-central-1.on.aws
 .ap-east-1.rds.amazonaws.com
 .ap-east-2.rds.amazonaws.com
-.atlassian-3p-us-gov-mod.com
 .blob.core.usgovcloudapi.net
 .ca-west-1.rds.amazonaws.com
 .cloud.interhostsolutions.be
@@ -887,7 +886,6 @@
 .airflow.eu-south-2.on.aws
 .airflow.me-south-1.on.aws
 .atl.jelastic.vps-host.net
-.atlassian-isolated-3p.com
 .barrell-of-knowledge.info
 .caracal.mythic-beasts.com
 .cdn.cloudflareanycast.net
@@ -1189,7 +1187,6 @@
 .kushimoto.wakayama.jp
 .matsubushi.saitama.jp
 .matsuzaki.shizuoka.jp
-.metaaiusercontent.com
 .mgdb.fr-par.scw.cloud
 .mgdb.nl-ams.scw.cloud
 .mgdb.pl-waw.scw.cloud
@@ -2109,7 +2106,6 @@
 .date.fukushima.jp
 .dell-ogliastra.it
 .demo.jelastic.com
-.deployagent.space
 .dh.bytemark.co.uk
 .dnepropetrovsk.ua
 .dnipropetrovsk.ua
@@ -2462,7 +2458,6 @@
 .ascoli-piceno.it
 .association.aero
 .at-band-camp.net
-.atlassian-3p.com
 .authgearapps.com
 .awsapprunner.com
 .azure-mobile.net
@@ -4616,7 +4611,6 @@
 .from-wi.com
 .from-wv.com
 .from-wy.com
-.fspages.org
 .fyresdal.no
 .gadget.host
 .gateway.dev
@@ -4779,7 +4773,6 @@
 .payload.dev
 .photography
 .piacenza.it
-.piebox.site
 .piedmont.it
 .piemonte.it
 .pinb.gov.pl

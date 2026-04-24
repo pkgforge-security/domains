@@ -611,9 +611,6 @@
 .*\.ath\.cx
 .*\.athleta
 .*\.atl\.jelastic\.vps-host\.net
-.*\.atlassian-3p-us-gov-mod\.com
-.*\.atlassian-3p\.com
-.*\.atlassian-isolated-3p\.com
 .*\.atm\.pl
 .*\.atmeta\.com
 .*\.ato\.br
@@ -1941,7 +1938,6 @@
 .*\.dentist
 .*\.dep\.no
 .*\.deployagent\.com
-.*\.deployagent\.space
 .*\.deporte\.bo
 .*\.des\.br
 .*\.desa\.id
@@ -2906,7 +2902,6 @@
 .*\.frusky\.de
 .*\.fræna\.no
 .*\.frøya\.no
-.*\.fspages\.org
 .*\.fst\.br
 .*\.ftpaccess\.cc
 .*\.ftr
@@ -5333,7 +5328,6 @@
 .*\.messerli\.app
 .*\.messina\.it
 .*\.messwithdns\.com
-.*\.metaaiusercontent\.com
 .*\.meteorapp\.com
 .*\.mex\.com
 .*\.mg
@@ -6951,7 +6945,6 @@
 .*\.pictet
 .*\.pictures
 .*\.pid
-.*\.piebox\.site
 .*\.piedmont\.it
 .*\.piemonte\.it
 .*\.pigboat\.jp
