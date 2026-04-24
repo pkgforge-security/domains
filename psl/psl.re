@@ -2902,6 +2902,7 @@
 .*\.frusky\.de
 .*\.fræna\.no
 .*\.frøya\.no
+.*\.fspages\.org
 .*\.fst\.br
 .*\.ftpaccess\.cc
 .*\.ftr
@@ -5328,6 +5329,7 @@
 .*\.messerli\.app
 .*\.messina\.it
 .*\.messwithdns\.com
+.*\.metaaiusercontent\.com
 .*\.meteorapp\.com
 .*\.mex\.com
 .*\.mg
