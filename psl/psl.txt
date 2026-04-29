@@ -9419,6 +9419,7 @@ vic.au
 vic.edu.au
 vic.gov.au
 vicenza.it
+vicp.fun
 video
 video.hu
 vig
@@ -9815,6 +9816,7 @@ yawatahama.ehime.jp
 yazu.tottori.jp
 ye
 yenbai.vn
+yicp.fun
 yk.ca
 yn.cn
 ynh.fr
@@ -9897,6 +9899,7 @@ zgora.pl
 zgorzelec.pl
 zhitomir.ua
 zhytomyr.ua
+zicp.fun
 zip
 zj.cn
 zlg.br
