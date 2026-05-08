@@ -7075,6 +7075,7 @@
 .*\.preview\.csb\.app
 .*\.preview\.emergentagent\.com
 .*\.preview\.site
+.*\.prg1-zerops\.zone
 .*\.pri\.ee
 .*\.prime
 .*\.primetel\.cloud
@@ -9893,6 +9894,7 @@
 .*\.zentsuji\.kagawa\.jp
 .*\.zero
 .*\.zerops\.app
+.*\.zerops\.zone
 .*\.zgierz\.pl
 .*\.zgora\.pl
 .*\.zgorzelec\.pl
