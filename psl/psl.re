@@ -3737,6 +3737,7 @@
 .*\.hrsn\.dev
 .*\.hs\.kr
 .*\.hsbc
+.*\.hstgr\.cloud
 .*\.ht
 .*\.httpbin\.org
 .*\.hu
