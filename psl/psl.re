@@ -8571,6 +8571,8 @@
 .*\.sørreisa\.no
 .*\.sørum\.no
 .*\.südtirol\.it
+.*\.t3\.storage\.dev
+.*\.t3\.storageapi\.dev
 .*\.t\.bg
 .*\.t\.se
 .*\.ta\.it
