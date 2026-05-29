@@ -1174,6 +1174,7 @@
 .*\.canva-apps\.cn
 .*\.canva-apps\.com
 .*\.canva-hosted-embed\.com
+.*\.canva\.link
 .*\.canva\.run
 .*\.canvacode\.com
 .*\.caobang\.vn
@@ -4550,6 +4551,7 @@
 .*\.khmelnitskiy\.ua
 .*\.khmelnytskyi\.ua
 .*\.khplay\.nl
+.*\.khsj\.cn
 .*\.ki
 .*\.kia
 .*\.kibichuo\.okayama\.jp
