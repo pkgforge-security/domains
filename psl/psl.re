@@ -1320,7 +1320,6 @@
 .*\.charter\.aero
 .*\.chase
 .*\.chat
-.*\.chatgpt\.site
 .*\.cheap
 .*\.cheap\.jp
 .*\.chef\.ec
