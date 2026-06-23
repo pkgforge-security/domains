@@ -5541,6 +5541,7 @@
 .*\.mk
 .*\.mk\.eu\.org
 .*\.mk\.ua
+.*\.mkm\.fan
 .*\.mktg\.ec
 .*\.ml
 .*\.mlb
