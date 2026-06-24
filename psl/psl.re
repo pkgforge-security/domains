@@ -7156,9 +7156,6 @@
 .*\.pup\.gov\.pl
 .*\.pupu\.jp
 .*\.pussycat\.jp
-.*\.puter\.app
-.*\.puter\.site
-.*\.puter\.work
 .*\.pv\.it
 .*\.pvh\.br
 .*\.pvt\.ge
