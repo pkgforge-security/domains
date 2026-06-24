@@ -3205,6 +3205,7 @@
 .*\.discount
 .*\.discover
 .*\.download
+.*\.dyn\.now
 .*\.e2b\.app
 .*\.ebiz\.tw
 .*\.edu\.krd
@@ -3596,6 +3597,7 @@
 .*\.d\.gv\.vc
 .*\.daegu\.kr
 .*\.ddns\.net
+.*\.ddns\.wtf
 .*\.ddnss\.de
 .*\.dedyn\.io
 .*\.delhi\.in
@@ -4379,6 +4381,7 @@
 .*\.spdns\.org
 .*\.spryt\.net
 .*\.srht\.site
+.*\.srvdns\.de
 .*\.stange\.no
 .*\.stokke\.no
 .*\.stolos\.io
@@ -4650,6 +4653,7 @@
 .*\.d\.crm\.dev
 .*\.daejeon\.kr
 .*\.daknong\.vn
+.*\.ddnssec\.de
 .*\.de\.eu\.org
 .*\.debian\.net
 .*\.dedibox\.fr
@@ -4659,7 +4663,10 @@
 .*\.dk\.eu\.org
 .*\.dl\.biz\.ng
 .*\.dnsabr\.com
+.*\.dnshome\.at
 .*\.dnshome\.de
+.*\.dnshome\.eu
+.*\.dnshome\.it
 .*\.dnsking\.ch
 .*\.donetsk\.ua
 .*\.dongnai\.vn
@@ -4749,6 +4756,7 @@
 .*\.harstad\.no
 .*\.hasura\.app
 .*\.hateblo\.jp
+.*\.heimdns\.de
 .*\.helioho\.st
 .*\.heteml\.net
 .*\.hoabinh\.vn
@@ -5299,6 +5307,7 @@
 .*\.darklang\.io
 .*\.daynight\.jp
 .*\.ddns-ip\.net
+.*\.ddns\.berlin
 .*\.definima\.io
 .*\.design\.aero
 .*\.dienbien\.vn
@@ -5596,6 +5605,7 @@
 .*\.rendalen\.no
 .*\.rennesoy\.no
 .*\.reservd\.com
+.*\.resolve\.bar
 .*\.rhcloud\.com
 .*\.ribeirao\.br
 .*\.riopreto\.br
@@ -5844,6 +5854,7 @@
 .*\.dynalias\.com
 .*\.dynalias\.net
 .*\.dynalias\.org
+.*\.dyndnssec\.de
 .*\.dynuddns\.com
 .*\.dynuddns\.net
 .*\.eaton\.mi\.us
@@ -6218,6 +6229,7 @@
 .*\.devinapps\.com
 .*\.discourse\.diy
 .*\.dns-cloud\.net
+.*\.dnshome\.cloud
 .*\.dnsupdater\.de
 .*\.dontexist\.com
 .*\.dontexist\.net
@@ -6590,6 +6602,7 @@
 .*\.hatenadiary\.jp
 .*\.hazu\.aichi\.jp
 .*\.hb\.cldmail\.ru
+.*\.heimdns\.online
 .*\.hino\.tokyo\.jp
 .*\.hizen\.saga\.jp
 .*\.hobby-site\.com
