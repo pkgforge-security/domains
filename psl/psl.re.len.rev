@@ -6863,6 +6863,7 @@
 .*\.grainger
 .*\.gran\.no
 .*\.graphics
+.*\.grok\.me
 .*\.grue\.no
 .*\.guam\.gu
 .*\.hdfcbank
@@ -6878,7 +6879,6 @@
 .*\.icp1\.io
 .*\.icp\.net
 .*\.infiniti
-.*\.info\.at
 .*\.info\.az
 .*\.info\.bb
 .*\.info\.bd
@@ -7188,7 +7188,6 @@
 .*\.bib\.ve
 .*\.bio\.br
 .*\.bir\.ru
-.*\.biz\.at
 .*\.biz\.az
 .*\.biz\.bb
 .*\.biz\.cy
