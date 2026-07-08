@@ -6710,6 +6710,7 @@
 .stcgroup
 .stord.no
 .store.bb
+.store.cv
 .store.dk
 .store.nf
 .store.ro
@@ -7548,6 +7549,7 @@
 .design
 .det.br
 .dev.br
+.dev.cv
 .dgn.ec
 .direct
 .dni.us
@@ -8554,6 +8556,7 @@
 .sal.ec
 .sanofi
 .sar.it
+.sch.ac
 .sch.ae
 .sch.bd
 .sch.id

@@ -1963,6 +1963,7 @@
 .*\.dev-myqnapcloud\.com
 .*\.dev\.adobeaemcloud\.com
 .*\.dev\.br
+.*\.dev\.cv
 .*\.dev\.project-study\.com
 .*\.developer\.app
 .*\.development\.run
@@ -7933,6 +7934,7 @@
 .*\.scbl\.fr-par\.scw\.cloud
 .*\.scbl\.nl-ams\.scw\.cloud
 .*\.scbl\.pl-waw\.scw\.cloud
+.*\.sch\.ac
 .*\.sch\.ae
 .*\.sch\.bd
 .*\.sch\.id
@@ -8442,6 +8444,7 @@
 .*\.stordal\.no
 .*\.store
 .*\.store\.bb
+.*\.store\.cv
 .*\.store\.dk
 .*\.store\.nf
 .*\.store\.ro

@@ -1974,6 +1974,7 @@
 .*\.des\.br
 .*\.det\.br
 .*\.dev\.br
+.*\.dev\.cv
 .*\.dgn\.ec
 .*\.digital
 .*\.dni\.us
@@ -2962,6 +2963,7 @@
 .*\.samsung
 .*\.sandvik
 .*\.sar\.it
+.*\.sch\.ac
 .*\.sch\.ae
 .*\.sch\.bd
 .*\.sch\.id
@@ -3848,6 +3850,7 @@
 .*\.stockholm
 .*\.stord\.no
 .*\.store\.bb
+.*\.store\.cv
 .*\.store\.dk
 .*\.store\.nf
 .*\.store\.ro
