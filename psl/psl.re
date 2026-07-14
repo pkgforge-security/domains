@@ -193,6 +193,7 @@
 .*\.aem\.page
 .*\.aem\.reviews
 .*\.aero
+.*\.aero\.in
 .*\.aero\.mv
 .*\.aerobatic\.aero
 .*\.aeroclub\.aero
@@ -355,6 +356,7 @@
 .*\.altervista\.org
 .*\.alto-adige\.it
 .*\.altoadige\.it
+.*\.alumni\.in
 .*\.alvdal\.no
 .*\.alwaysdata\.net
 .*\.am
@@ -628,7 +630,7 @@
 .*\.audi
 .*\.audible
 .*\.audio
-.*\.audnedaln\.no
+.*\.audnedal\.no
 .*\.augustow\.pl
 .*\.auiusercontent\.com
 .*\.aukra\.no
@@ -1837,6 +1839,7 @@
 .*\.cx\.ua
 .*\.cy
 .*\.cy\.eu\.org
+.*\.cyb\.ge
 .*\.cymru
 .*\.cyon\.link
 .*\.cyon\.site
@@ -2835,7 +2838,6 @@
 .*\.freemyip\.com
 .*\.freesite\.host
 .*\.freetls\.fastly\.net
-.*\.frei\.no
 .*\.freight\.aero
 .*\.frenchkiss\.jp
 .*\.fresenius
@@ -3064,6 +3066,7 @@
 .*\.gi
 .*\.gialai\.vn
 .*\.giehtavuoatna\.no
+.*\.gielda\.no
 .*\.gift
 .*\.gifts
 .*\.gifu\.gifu\.jp
@@ -3476,6 +3479,7 @@
 .*\.hamamatsu\.shizuoka\.jp
 .*\.hamar\.no
 .*\.hamaroy\.no
+.*\.hamarøy\.no
 .*\.hamatama\.saga\.jp
 .*\.hamatonbetsu\.hokkaido\.jp
 .*\.hamburg
@@ -3686,6 +3690,7 @@
 .*\.holtålen\.no
 .*\.holy\.jp
 .*\.home-webserver\.de
+.*\.home64\.de
 .*\.home\.arpa
 .*\.home\.dyndns\.org
 .*\.homebuilt\.aero
@@ -4043,6 +4048,8 @@
 .*\.ipfs\.w3s\.link
 .*\.ipifony\.net
 .*\.ipiranga
+.*\.ipv64\.de
+.*\.ipv64\.net
 .*\.iq
 .*\.ir
 .*\.ir\.md
@@ -4464,6 +4471,7 @@
 .*\.kariwa\.niigata\.jp
 .*\.kariya\.aichi\.jp
 .*\.karlsoy\.no
+.*\.karlsøy\.no
 .*\.karmoy\.no
 .*\.karmøy\.no
 .*\.karpacz\.pl
@@ -5050,6 +5058,7 @@
 .*\.livorno\.it
 .*\.lk
 .*\.llc
+.*\.llc\.ge
 .*\.llp
 .*\.ln\.cn
 .*\.lo\.it
@@ -5751,6 +5760,7 @@
 .*\.myfritz\.net
 .*\.myftp\.biz
 .*\.myftp\.org
+.*\.mygov\.scot
 .*\.myhome-server\.de
 .*\.myiphost\.com
 .*\.myjino\.ru
@@ -6545,6 +6555,7 @@
 .*\.onjuku\.chiba\.jp
 .*\.onl
 .*\.online
+.*\.online\.ge
 .*\.online\.th
 .*\.onna\.okinawa\.jp
 .*\.ono\.fukui\.jp
@@ -7261,6 +7272,7 @@
 .*\.re
 .*\.re\.it
 .*\.re\.kr
+.*\.re\.no
 .*\.read
 .*\.read-books\.org
 .*\.readmyblog\.org
@@ -7956,6 +7968,7 @@
 .*\.scholarships
 .*\.school
 .*\.school\.ge
+.*\.school\.in
 .*\.school\.nz
 .*\.school\.za
 .*\.schoolbus\.jp
@@ -8530,6 +8543,7 @@
 .*\.sund\.no
 .*\.sunndal\.no
 .*\.sunnyday\.jp
+.*\.suohkan\.no
 .*\.supabase\.co
 .*\.supabase\.in
 .*\.supabase\.net
@@ -8787,6 +8801,7 @@
 .*\.tj
 .*\.tj\.cn
 .*\.tjeldsund\.no
+.*\.tjielte\.no
 .*\.tjmaxx
 .*\.tjome\.no
 .*\.tjx
@@ -8814,6 +8829,7 @@
 .*\.tn\.it
 .*\.tn\.oxa\.cloud
 .*\.tn\.us
+.*\.tnx\.ge
 .*\.to
 .*\.to\.gov\.br
 .*\.to\.it
@@ -9143,6 +9159,7 @@
 .*\.u\.channelsdvr\.net
 .*\.u\.se
 .*\.ua
+.*\.ub\.in
 .*\.ubank
 .*\.ube\.yamaguchi\.jp
 .*\.uber\.space
@@ -9159,6 +9176,7 @@
 .*\.ueda\.nagano\.jp
 .*\.ueno\.gunma\.jp
 .*\.uenohara\.yamanashi\.jp
+.*\.uenorge\.no
 .*\.ufcfan\.org
 .*\.ug
 .*\.ug\.gov\.pl
@@ -9184,6 +9202,7 @@
 .*\.ullensaker\.no
 .*\.ullensvang\.no
 .*\.ulsan\.kr
+.*\.ulstein\.no
 .*\.ulvik\.no
 .*\.um\.gov\.pl
 .*\.umaji\.kochi\.jp

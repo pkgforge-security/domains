@@ -4067,7 +4067,6 @@
 .*\.asso\.eu\.org
 .*\.at\.emf\.camp
 .*\.au\.ngrok\.io
-.*\.audnedaln\.no
 .*\.austevoll\.no
 .*\.austrheim\.no
 .*\.azure-api\.us
@@ -4474,6 +4473,7 @@
 .*\.api\.lp\.dev
 .*\.appspot\.com
 .*\.ashgabad\.su
+.*\.audnedal\.no
 .*\.augustow\.pl
 .*\.author\.aero
 .*\.avellino\.it
@@ -4657,6 +4657,7 @@
 .*\.haiduong\.vn
 .*\.haiphong\.vn
 .*\.halfmoon\.jp
+.*\.hamarøy\.no
 .*\.hashbang\.sh
 .*\.haugiang\.vn
 .*\.heiyu\.space
@@ -4698,6 +4699,7 @@
 .*\.kalmykia\.su
 .*\.kanagawa\.jp
 .*\.karasjok\.no
+.*\.karlsøy\.no
 .*\.katowice\.pl
 .*\.kawasaki\.jp
 .*\.keenetic\.io
@@ -5458,6 +5460,7 @@
 .*\.my\.eu\.org
 .*\.myaddr\.dev
 .*\.mybox\.page
+.*\.mygov\.scot
 .*\.mypep\.link
 .*\.mywire\.org
 .*\.måsøy\.no
@@ -5612,6 +5615,7 @@
 .*\.storj\.farm
 .*\.stranda\.no
 .*\.sunndal\.no
+.*\.suohkan\.no
 .*\.surveys\.so
 .*\.suwalki\.pl
 .*\.svelvik\.no
@@ -5623,6 +5627,7 @@
 .*\.telebit\.io
 .*\.theshop\.jp
 .*\.tickets\.io
+.*\.tjielte\.no
 .*\.to\.gov\.br
 .*\.to\.leg\.br
 .*\.tochigi\.jp
@@ -5645,9 +5650,11 @@
 .*\.twmail\.org
 .*\.tysvær\.no
 .*\.uber\.space
+.*\.uenorge\.no
 .*\.ufcfan\.org
 .*\.ug\.gov\.pl
 .*\.uk\.eu\.org
+.*\.ulstein\.no
 .*\.um\.gov\.pl
 .*\.union\.aero
 .*\.unjarga\.no
@@ -5699,6 +5706,7 @@
 .*\.africa\.bj
 .*\.aiven\.app
 .*\.algard\.no
+.*\.alumni\.in
 .*\.alvdal\.no
 .*\.ancona\.it
 .*\.andebu\.no
@@ -5874,6 +5882,7 @@
 .*\.gdynia\.pl
 .*\.genova\.it
 .*\.gialai\.vn
+.*\.gielda\.no
 .*\.giize\.com
 .*\.gitapp\.si
 .*\.github\.io
@@ -5917,6 +5926,7 @@
 .*\.hicam\.net
 .*\.hidns\.vip
 .*\.hobøl\.no
+.*\.home64\.de
 .*\.home\.arpa
 .*\.hopto\.org
 .*\.horten\.no
@@ -5933,6 +5943,7 @@
 .*\.industries
 .*\.int\.apple
 .*\.iopsys\.se
+.*\.ipv64\.net
 .*\.iris\.arpa
 .*\.iserv\.dev
 .*\.jambyl\.su
@@ -6055,6 +6066,7 @@
 .*\.on-k3s\.io
 .*\.on-rio\.io
 .*\.on-web\.fr
+.*\.online\.ge
 .*\.online\.th
 .*\.ooguy\.com
 .*\.oppdal\.no
@@ -6120,6 +6132,7 @@
 .*\.savona\.it
 .*\.schaeffler
 .*\.school\.ge
+.*\.school\.in
 .*\.school\.nz
 .*\.school\.za
 .*\.secret\.jp
@@ -6462,6 +6475,7 @@
 .*\.insurance
 .*\.iobb\.net
 .*\.ip6\.arpa
+.*\.ipv64\.de
 .*\.is-a\.dev
 .*\.is-by\.us
 .*\.itigo\.jp
@@ -6714,6 +6728,7 @@
 .*\.aaa\.pro
 .*\.abudhabi
 .*\.aca\.pro
+.*\.aero\.in
 .*\.aero\.mv
 .*\.agri\.jo
 .*\.agro\.bj
@@ -6844,7 +6859,6 @@
 .*\.flå\.no
 .*\.fool\.jp
 .*\.football
-.*\.frei\.no
 .*\.from\.hr
 .*\.from\.tv
 .*\.frontier
@@ -7411,6 +7425,7 @@
 .*\.cruises
 .*\.csx\.cc
 .*\.cue\.ec
+.*\.cyb\.ge
 .*\.daa\.jp
 .*\.de\.com
 .*\.def\.br
@@ -7879,6 +7894,7 @@
 .*\.lig\.it
 .*\.limited
 .*\.lincoln
+.*\.llc\.ge
 .*\.log\.br
 .*\.loj\.ec
 .*\.lom\.it
@@ -8470,6 +8486,7 @@
 .*\.theatre
 .*\.tickets
 .*\.tmp\.br
+.*\.tnx\.ge
 .*\.tos\.it
 .*\.toshiba
 .*\.tra\.kp
@@ -9091,6 +9108,7 @@
 .*\.rc\.it
 .*\.re\.it
 .*\.re\.kr
+.*\.re\.no
 .*\.realty
 .*\.reisen
 .*\.repair
@@ -9199,6 +9217,7 @@
 .*\.tv\.tz
 .*\.tw\.cn
 .*\.tx\.us
+.*\.ub\.in
 .*\.ud\.it
 .*\.uk\.cc
 .*\.uk\.in
