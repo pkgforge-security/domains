@@ -1281,7 +1281,6 @@
 .rc.it
 .re.it
 .re.kr
-.re.no
 .rehab
 .reise
 .rg.it
@@ -1395,7 +1394,6 @@
 .tv.tz
 .tw.cn
 .tx.us
-.ub.in
 .ubank
 .ud.it
 .uk.cc
@@ -1741,7 +1739,6 @@
 .cruise
 .csx.cc
 .cue.ec
-.cyb.ge
 .daa.jp
 .dating
 .datsun
@@ -2212,7 +2209,6 @@
 .lib.ee
 .lig.it
 .living
-.llc.ge
 .locker
 .log.br
 .loj.ec
@@ -2833,7 +2829,6 @@
 .tjmaxx
 .tkmaxx
 .tmp.br
-.tnx.ge
 .tos.it
 .toyota
 .tra.kp
@@ -2989,7 +2984,6 @@
 .abogado
 .aca.pro
 .academy
-.aero.in
 .aero.mv
 .agakhan
 .agri.jo
@@ -3133,6 +3127,7 @@
 .flå.no
 .fool.jp
 .forsale
+.frei.no
 .frogans
 .from.hr
 .from.tv
@@ -3704,7 +3699,6 @@
 .iobb.net
 .ip6.arpa
 .ipiranga
-.ipv64.de
 .is-a.dev
 .is-by.us
 .istanbul
@@ -3969,7 +3963,6 @@
 .al.leg.br
 .algard.no
 .allfinanz
-.alumni.in
 .alvdal.no
 .am.gov.br
 .am.leg.br
@@ -4130,7 +4123,6 @@
 .genova.it
 .gh.srv.us
 .gialai.vn
-.gielda.no
 .giize.com
 .gitapp.si
 .github.io
@@ -4164,7 +4156,6 @@
 .hisamitsu
 .hobøl.no
 .home.arpa
-.home64.de
 .homedepot
 .homegoods
 .homesense
@@ -4189,7 +4180,6 @@
 .insurance
 .int.apple
 .iopsys.se
-.ipv64.net
 .iris.arpa
 .is.eu.org
 .is.gov.pl
@@ -4446,7 +4436,6 @@
 .on-rio.io
 .on-web.fr
 .on.biz.ng
-.online.ge
 .online.th
 .ooguy.com
 .oppdal.no
@@ -4540,7 +4529,6 @@
 .sc.gov.br
 .sc.leg.br
 .school.ge
-.school.in
 .school.nz
 .school.za
 .se.eu.org
@@ -5048,7 +5036,6 @@
 .mup.gov.pl
 .myaddr.dev
 .mybox.page
-.mygov.scot
 .mypep.link
 .mywire.org
 .måsøy.no
@@ -5176,7 +5163,6 @@
 .storj.farm
 .stranda.no
 .sunndal.no
-.suohkan.no
 .surveys.so
 .suwalki.pl
 .svelvik.no
@@ -5192,7 +5178,6 @@
 .telebit.io
 .theshop.jp
 .tickets.io
-.tjielte.no
 .tochigi.jp
 .torsken.no
 .toscana.it
@@ -5213,9 +5198,7 @@
 .twmail.org
 .tysvær.no
 .uber.space
-.uenorge.no
 .ufcfan.org
-.ulstein.no
 .union.aero
 .university
 .unjarga.no
@@ -5292,7 +5275,6 @@
 .asso.eu.org
 .at.emf.camp
 .au.ngrok.io
-.audnedal.no
 .augustow.pl
 .author.aero
 .avellino.it
@@ -5489,7 +5471,6 @@
 .haiduong.vn
 .haiphong.vn
 .halfmoon.jp
-.hamarøy.no
 .hashbang.sh
 .haugiang.vn
 .heiyu.space
@@ -5531,7 +5512,6 @@
 .kalmykia.su
 .kanagawa.jp
 .karasjok.no
-.karlsøy.no
 .katowice.pl
 .kawasaki.jp
 .keenetic.io
@@ -5835,6 +5815,7 @@
 .arvanedge.ir
 .arvo.network
 .asahi.mie.jp
+.audnedaln.no
 .austevoll.no
 .austrheim.no
 .azure-api.us
