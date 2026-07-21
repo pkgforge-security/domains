@@ -1497,6 +1497,7 @@
 .*\.st\.no
 .*\.stream
 .*\.studio
+.*\.su\.it
 .*\.supply
 .*\.suzuki
 .*\.sv\.it
@@ -2364,7 +2365,6 @@
 .*\.hu\.net
 .*\.hue\.vn
 .*\.hyundai
-.*\.hzc\.io
 .*\.hå\.no
 .*\.ibr\.ec
 .*\.id\.pub
@@ -3952,7 +3952,6 @@
 .*\.aomori\.jp
 .*\.apartments
 .*\.apigee\.io
-.*\.aquila\.it
 .*\.arezzo\.it
 .*\.as\.sh\.cn
 .*\.aseral\.no
@@ -5152,7 +5151,6 @@
 .*\.steigen\.no
 .*\.sth\.ac\.at
 .*\.stordal\.no
-.*\.storj\.farm
 .*\.stranda\.no
 .*\.sunndal\.no
 .*\.suohkan\.no
@@ -5610,7 +5608,6 @@
 .*\.porsangu\.no
 .*\.potager\.org
 .*\.principe\.st
-.*\.protonet\.io
 .*\.pruszkow\.pl
 .*\.psp\.gov\.pl
 .*\.pup\.gov\.pl
@@ -6151,7 +6148,6 @@
 .*\.upsunapp\.com
 .*\.us\.ngrok\.io
 .*\.usa\.oita\.jp
-.*\.valdaosta\.it
 .*\.vegarshei\.no
 .*\.vestvagoy\.no
 .*\.vevelstad\.no
@@ -6766,6 +6762,7 @@
 .*\.sondre-land\.no
 .*\.sosa\.chiba\.jp
 .*\.stor-elvdal\.no
+.*\.sudsardegna\.it
 .*\.suzuka\.mie\.jp
 .*\.swinoujscie\.pl
 .*\.sør-aurdal\.no
@@ -6849,7 +6846,6 @@
 .*\.anan\.nagano\.jp
 .*\.aoki\.nagano\.jp
 .*\.aosta-valley\.it
-.*\.api\.stdlib\.com
 .*\.app-ionos\.space
 .*\.app\.render\.com
 .*\.apps\.fbsbx\.com
@@ -6886,7 +6882,6 @@
 .*\.conference\.aero
 .*\.consultant\.aero
 .*\.consulting\.aero
-.*\.cryptonomic\.net
 .*\.daito\.osaka\.jp
 .*\.davvenjárga\.no
 .*\.deployagent\.com
@@ -7111,6 +7106,7 @@
 .*\.streaklinks\.com
 .*\.stuff-4-sale\.us
 .*\.stufftoread\.com
+.*\.sud-sardegna\.it
 .*\.sue\.fukuoka\.jp
 .*\.suita\.osaka\.jp
 .*\.suwa\.nagano\.jp
@@ -8502,7 +8498,6 @@
 .*\.trentin-sudtirol\.it
 .*\.trentino-a-adige\.it
 .*\.trentino-s-tirol\.it
-.*\.trentinosudtirol\.it
 .*\.trentinsud-tirol\.it
 .*\.trentinsuedtirol\.it
 .*\.trentinsüdtirol\.it
@@ -9204,6 +9199,7 @@
 .*\.tokushima\.tokushima\.jp
 .*\.us-east-1\.convex\.cloud
 .*\.usgovtrafficmanager\.net
+.*\.verbano-cusio-ossola\.it
 .*\.yali\.mythic-beasts\.com
 .*\.yamanashi\.yamanashi\.jp
 .*\.yamatokoriyama\.nara\.jp

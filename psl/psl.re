@@ -477,7 +477,6 @@
 .*\.api\.br
 .*\.api\.gov\.uk
 .*\.api\.lp\.dev
-.*\.api\.stdlib\.com
 .*\.apigee\.io
 .*\.app
 .*\.app-ionos\.space
@@ -503,7 +502,6 @@
 .*\.aq
 .*\.aq\.it
 .*\.aquarelle
-.*\.aquila\.it
 .*\.ar
 .*\.ar\.it
 .*\.ar\.us
@@ -1805,7 +1803,6 @@
 .*\.crs
 .*\.cruise
 .*\.cruises
-.*\.cryptonomic\.net
 .*\.cs\.in
 .*\.cs\.it
 .*\.cs\.keliweb\.cloud
@@ -3775,7 +3772,6 @@
 .*\.hypernode\.io
 .*\.hyuga\.miyazaki\.jp
 .*\.hyundai
-.*\.hzc\.io
 .*\.hábmer\.no
 .*\.hámmárfeasta\.no
 .*\.hápmir\.no
@@ -7141,7 +7137,6 @@
 .*\.properties
 .*\.property
 .*\.protection
-.*\.protonet\.io
 .*\.pru
 .*\.prudential
 .*\.pruszkow\.pl
@@ -8464,7 +8459,6 @@
 .*\.store\.ve
 .*\.storebase\.store
 .*\.storfjord\.no
-.*\.storj\.farm
 .*\.strand\.no
 .*\.stranda\.no
 .*\.strapiapp\.com
@@ -8516,10 +8510,13 @@
 .*\.stufftoread\.com
 .*\.style
 .*\.su
+.*\.su\.it
 .*\.sub\.jp
 .*\.subsc-pay\.com
 .*\.subsc-pay\.net
 .*\.sucks
+.*\.sud-sardegna\.it
+.*\.sudsardegna\.it
 .*\.sue\.fukuoka\.jp
 .*\.suedtirol\.it
 .*\.suginami\.tokyo\.jp
@@ -9037,7 +9034,6 @@
 .*\.trentinos-tirol\.it
 .*\.trentinostirol\.it
 .*\.trentinosud-tirol\.it
-.*\.trentinosudtirol\.it
 .*\.trentinosued-tirol\.it
 .*\.trentinosuedtirol\.it
 .*\.trentinosüd-tirol\.it
@@ -9350,7 +9346,6 @@
 .*\.val-daosta\.it
 .*\.val\.run
 .*\.vald-aosta\.it
-.*\.valdaosta\.it
 .*\.valer\.hedmark\.no
 .*\.valer\.ostfold\.no
 .*\.valle-aosta\.it
@@ -9399,6 +9394,7 @@
 .*\.vennesla\.no
 .*\.ventures
 .*\.verbania\.it
+.*\.verbano-cusio-ossola\.it
 .*\.vercel\.app
 .*\.vercel\.dev
 .*\.vercel\.run
