@@ -1973,7 +1973,6 @@ df.leg.br
 dfirma.pl
 dgca.aero
 dgn.ec
-dh.bytemark.co.uk
 dhl
 diadem.cloud
 diamonds
@@ -9191,7 +9190,6 @@ uk.net
 uk.oxa.cloud
 uk.primetel.cloud
 uk.reclaim.cloud
-uk0.bigv.io
 uki.kumamoto.jp
 ukiha.fukuoka.jp
 ullensaker.no
@@ -9494,7 +9492,6 @@ vladikavkaz.su
 vladimir.ru
 vladimir.su
 vlog.br
-vm.bytemark.co.uk
 vn
 vn.ua
 voagat.no

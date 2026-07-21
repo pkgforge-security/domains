@@ -1973,7 +1973,6 @@
 .*\.dfirma\.pl
 .*\.dgca\.aero
 .*\.dgn\.ec
-.*\.dh\.bytemark\.co\.uk
 .*\.dhl
 .*\.diadem\.cloud
 .*\.diamonds
@@ -9183,7 +9182,6 @@
 .*\.ujiie\.tochigi\.jp
 .*\.ujitawara\.kyoto\.jp
 .*\.uk
-.*\.uk0\.bigv\.io
 .*\.uk\.cc
 .*\.uk\.com
 .*\.uk\.eu\.org
@@ -9494,7 +9492,6 @@
 .*\.vladimir\.ru
 .*\.vladimir\.su
 .*\.vlog\.br
-.*\.vm\.bytemark\.co\.uk
 .*\.vn
 .*\.vn\.ua
 .*\.voagat\.no
