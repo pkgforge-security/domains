@@ -6538,7 +6538,6 @@
 .*\.oncilla\.mythic-beasts\.com
 .*\.ondigitalocean\.app
 .*\.one
-.*\.onfabrica\.com
 .*\.ong
 .*\.ong\.br
 .*\.onga\.fukuoka\.jp
