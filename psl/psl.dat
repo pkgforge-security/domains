@@ -5,8 +5,8 @@
 // Please pull this list from, and only from https://publicsuffix.org/list/public_suffix_list.dat,
 // rather than any other VCS sites. Pulling from any other URL is not guaranteed to be supported.
 
-// VERSION: 2026-07-23_05-57-33_UTC
-// COMMIT: 438c5e02a9db7870300cb3108258aeefc8467c36
+// VERSION: 2026-07-22_17-32-17_UTC
+// COMMIT: 8ab4253fd2cbaf4c411bd7ccea56bff0db0e82cf
 
 // Instructions on pulling and using this list can be found at https://publicsuffix.org/list/.
 
@@ -12917,6 +12917,11 @@ deployagent.space
 // deSEC : https://desec.io/
 // Submitted by Peter Thomassen <peter@desec.io>
 dedyn.io
+
+// Deta : https://www.deta.sh/
+// Submitted by Aavash Shrestha <aavash@deta.sh>
+deta.app
+deta.dev
 
 // Deuxfleurs : https://deuxfleurs.fr
 // Submitted by Aeddis Desauw <ca@deuxfleurs.fr>

@@ -6382,6 +6382,8 @@
 .*\.demon\.nl
 .*\.deno\.dev
 .*\.deno\.net
+.*\.deta\.app
+.*\.deta\.dev
 .*\.directory
 .*\.disco\.ec
 .*\.dix\.asia

@@ -1952,6 +1952,8 @@ desi
 design
 design.aero
 det.br
+deta.app
+deta.dev
 deus-canvas.com
 deuxfleurs.eu
 deuxfleurs.page
