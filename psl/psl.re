@@ -9579,6 +9579,7 @@
 .*\.we\.crm\.dev
 .*\.weather
 .*\.weatherchannel
+.*\.web
 .*\.web\.app
 .*\.web\.bo
 .*\.web\.core\.usgovcloudapi\.net
