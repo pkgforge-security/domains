@@ -9508,7 +9508,7 @@
 .*\.vpndns\.net
 .*\.vpnplus\.to
 .*\.vps-host\.net
-.*\.vps\.hrsn\.au
+.*\.vps\.hrsn\.net
 .*\.vps\.mcdir\.ru
 .*\.vps\.myjino\.ru
 .*\.vr\.it
