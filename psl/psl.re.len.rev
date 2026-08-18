@@ -1264,7 +1264,6 @@
 .*\.biratori\.hokkaido\.jp
 .*\.cdn\.cloudflarecn\.net
 .*\.cloud\.metacentrum\.cz
-.*\.cursorusercontent\.com
 .*\.dev-builder\.code\.com
 .*\.diskussionsbereich\.de
 .*\.edgesuite-staging\.net
@@ -1877,7 +1876,6 @@
 .*\.okoppe\.hokkaido\.jp
 .*\.okuma\.fukushima\.jp
 .*\.omitama\.ibaraki\.jp
-.*\.online-server\.cloud
 .*\.oraclecloudapps\.com
 .*\.otake\.hiroshima\.jp
 .*\.otama\.fukushima\.jp
@@ -3719,6 +3717,7 @@
 .*\.123website\.nl
 .*\.1337\.pictures
 .*\.accesscam\.org
+.*\.adaptable\.app
 .*\.aeroclub\.aero
 .*\.aircraft\.aero
 .*\.akamaized\.net
@@ -3730,7 +3729,6 @@
 .*\.alto-adige\.it
 .*\.ama\.aichi\.jp
 .*\.americanfamily
-.*\.ams\.scw\.site
 .*\.ando\.nara\.jp
 .*\.apps\.lair\.io
 .*\.asahi\.mie\.jp
@@ -4015,7 +4013,6 @@
 .*\.vindafjord\.no
 .*\.vps\.hrsn\.net
 .*\.vps\.mcdir\.ru
-.*\.waw\.scw\.site
 .*\.weatherchannel
 .*\.webhosting\.be
 .*\.wixstudio\.com
@@ -4526,8 +4523,6 @@
 .*\.cloudns\.org
 .*\.cloudns\.pro
 .*\.co\.business
-.*\.codepen\.app
-.*\.codepen\.dev
 .*\.construction
 .*\.contagem\.br
 .*\.convex\.site
@@ -6446,7 +6441,6 @@
 .*\.heavy\.jp
 .*\.hemne\.no
 .*\.herad\.no
-.*\.here\.now
 .*\.hf\.space
 .*\.hidns\.co
 .*\.hippy\.jp
@@ -6599,7 +6593,6 @@
 .*\.sanok\.pl
 .*\.sauda\.no
 .*\.sav\.case
-.*\.scw\.site
 .*\.sejny\.pl
 .*\.selbu\.no
 .*\.selje\.no
